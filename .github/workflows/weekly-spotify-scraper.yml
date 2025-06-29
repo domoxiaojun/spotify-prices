@@ -1,0 +1,141 @@
+name: Weekly Spotify Price Scraper
+
+on:
+  schedule:
+    # 每周日UTC时间0点执行（北京时间周日上午8点）
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # 允许手动触发
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Install Playwright browsers
+      run: |
+        playwright install chromium
+        # 安装系统依赖
+        playwright install-deps chromium
+        
+    - name: Create output directory
+      run: mkdir -p output
+        
+    - name: Run Spotify scraper
+      id: scraper
+      env:
+        # Playwright 环境变量
+        PLAYWRIGHT_BROWSERS_PATH: 0
+        PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 0
+      run: |
+        echo "开始爬取Spotify价格数据..."
+        python spotify.py
+        echo "scraper_status=success" >> $GITHUB_OUTPUT
+      continue-on-error: true
+        
+    - name: Check scraper output
+      run: |
+        if [ -f "spotify_prices_all_countries.json" ]; then
+          echo "✅ 爬虫数据文件生成成功"
+          ls -la spotify_prices_all_countries*.json
+        else
+          echo "❌ 爬虫数据文件未生成"
+          exit 1
+        fi
+        
+    - name: Run rate converter
+      id: converter
+      env:
+        API_KEY: ${{ secrets.API_KEY }}
+      run: |
+        echo "开始汇率转换..."
+        python spotify_rate_converter.py
+        echo "converter_status=success" >> $GITHUB_OUTPUT
+      continue-on-error: true
+        
+    - name: Check converter output
+      run: |
+        if [ -f "spotify_prices_cny_sorted.json" ]; then
+          echo "✅ 汇率转换文件生成成功"
+          ls -la spotify_prices_cny_sorted.json
+        else
+          echo "❌ 汇率转换文件未生成"
+          exit 1
+        fi
+        
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git diff --name-only
+        if [ -n "$(git status --porcelain)" ]; then
+          echo "changes=true" >> $GITHUB_OUTPUT
+          echo "检测到文件变化"
+        else
+          echo "changes=false" >> $GITHUB_OUTPUT
+          echo "没有文件变化"
+        fi
+        
+    - name: Display summary
+      run: |
+        echo "=== 执行摘要 ==="
+        echo "日期: $(date +'%Y-%m-%d %H:%M:%S %Z')"
+        if [ -f "spotify_prices_cny_sorted.json" ]; then
+          echo "转换后的数据文件大小: $(du -h spotify_prices_cny_sorted.json | cut -f1)"
+          echo "文件行数: $(wc -l < spotify_prices_cny_sorted.json)"
+        fi
+        
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add *.json
+        git commit -m "Weekly update: Spotify prices - $(date +'%Y-%m-%d %H:%M:%S %Z')"
+        git push
+        echo "✅ 数据已提交到仓库"
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: spotify-price-data-${{ github.run_number }}
+        path: |
+          spotify_prices_all_countries*.json
+          spotify_prices_cny_sorted.json
+        retention-days: 30
+        
+    - name: Job summary
+      if: always()
+      run: |
+        echo "## 🎵 Spotify 价格爬虫执行报告" >> $GITHUB_STEP_SUMMARY
+        echo "**执行时间:** $(date +'%Y-%m-%d %H:%M:%S %Z')" >> $GITHUB_STEP_SUMMARY
+        echo "**爬虫状态:** ${{ steps.scraper.outputs.scraper_status || '失败' }}" >> $GITHUB_STEP_SUMMARY
+        echo "**转换状态:** ${{ steps.converter.outputs.converter_status || '失败' }}" >> $GITHUB_STEP_SUMMARY
+        echo "**文件变化:** ${{ steps.check_changes.outputs.changes || '否' }}" >> $GITHUB_STEP_SUMMARY
+        if [ -f "spotify_prices_cny_sorted.json" ]; then
+          echo "**输出文件大小:** $(du -h spotify_prices_cny_sorted.json | cut -f1)" >> $GITHUB_STEP_SUMMARY
+        fi
