@@ -36,11 +36,25 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Install Playwright browsers
+    - name: Install Playwright and browsers
       run: |
-        playwright install chromium
-        # 安装系统依赖
+        # 先安装系统依赖
+        sudo apt-get update
+        sudo apt-get install -y \
+          libnss3 \
+          libxss1 \
+          libasound2 \
+          libxrandr2 \
+          libatk1.0-0 \
+          libdrm2 \
+          libxcomposite1 \
+          libxdamage1 \
+          libgtk-3-0 \
+          libgbm1 \
+          libxkbcommon0
+        # 然后安装playwright浏览器和依赖
         playwright install-deps chromium
+        playwright install chromium
         
     - name: Create output directory
       run: mkdir -p output
@@ -51,8 +65,12 @@ jobs:
         # Playwright 环境变量
         PLAYWRIGHT_BROWSERS_PATH: 0
         PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 0
+        # 确保headless模式
+        DISPLAY: ":99"
       run: |
         echo "开始爬取Spotify价格数据..."
+        # 启动虚拟显示器
+        sudo Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
         python spotify.py
         echo "scraper_status=success" >> $GITHUB_OUTPUT
       continue-on-error: true
