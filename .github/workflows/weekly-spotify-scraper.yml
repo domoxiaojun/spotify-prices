@@ -23,6 +23,11 @@ jobs:
       with:
         python-version: '3.9'
         
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
     - name: Cache pip dependencies
       uses: actions/cache@v3
       with:
@@ -44,14 +49,27 @@ jobs:
         # 显示当前Python和Playwright版本
         echo "Python version: $(python --version)"
         echo "Playwright version: $(python -c 'import playwright; print(playwright.__version__)')"
-        # 清理可能存在的旧浏览器缓存
-        rm -rf ~/.cache/ms-playwright/
-        # 安装系统依赖
-        python -m playwright install-deps chromium
-        # 强制重新安装chromium浏览器
-        python -m playwright install chromium --force
+        # 参考官方方式安装依赖
+        npx playwright install-deps
+        # 安装所有浏览器（包括headless_shell）
+        python -m playwright install
         # 验证安装
-        python -c "from playwright.sync_api import sync_playwright; print('Playwright import successful')"
+        python -c "
+        from playwright.sync_api import sync_playwright
+        import os
+        with sync_playwright() as p:
+            print('Chromium executable:', p.chromium.executable_path)
+            if os.path.exists(p.chromium.executable_path):
+                print('✅ Chromium executable exists')
+            else:
+                print('❌ Chromium executable NOT found')
+                # List actual files in the directory
+                import glob
+                pattern = '/opt/hostedtoolcache/Python/*/x64/lib/python*/site-packages/playwright/driver/package/.local-browsers/chromium*'
+                print('Available chromium installations:')
+                for path in glob.glob(pattern):
+                    print(f'  {path}')
+        "
         
     - name: Create output directory
       run: mkdir -p output
