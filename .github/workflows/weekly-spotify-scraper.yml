@@ -41,10 +41,17 @@ jobs:
         # 安装基础依赖和虚拟显示器
         sudo apt-get update
         sudo apt-get install -y xvfb
-        # 让playwright自动安装所需的系统依赖
-        playwright install-deps chromium
-        # 安装chromium浏览器
-        playwright install chromium
+        # 显示当前Python和Playwright版本
+        echo "Python version: $(python --version)"
+        echo "Playwright version: $(python -c 'import playwright; print(playwright.__version__)')"
+        # 清理可能存在的旧浏览器缓存
+        rm -rf ~/.cache/ms-playwright/
+        # 安装系统依赖
+        python -m playwright install-deps chromium
+        # 强制重新安装chromium浏览器
+        python -m playwright install chromium --force
+        # 验证安装
+        python -c "from playwright.sync_api import sync_playwright; print('Playwright import successful')"
         
     - name: Create output directory
       run: mkdir -p output
@@ -61,6 +68,21 @@ jobs:
         echo "开始爬取Spotify价格数据..."
         # 启动虚拟显示器
         sudo Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
+        sleep 2
+        # 检查Playwright浏览器安装状态
+        echo "检查Playwright浏览器安装..."
+        python -c "
+        from playwright.sync_api import sync_playwright
+        import os
+        with sync_playwright() as p:
+            print('Available browsers:', p.chromium, p.firefox, p.webkit)
+            print('Chromium executable path:', p.chromium.executable_path)
+            if os.path.exists(p.chromium.executable_path):
+                print('✅ Chromium executable exists')
+            else:
+                print('❌ Chromium executable NOT found')
+        "
+        # 运行爬虫
         python spotify.py
         echo "scraper_status=success" >> $GITHUB_OUTPUT
       continue-on-error: true
