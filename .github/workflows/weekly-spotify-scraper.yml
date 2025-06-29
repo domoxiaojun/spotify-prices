@@ -42,6 +42,8 @@ jobs:
         pip install -r requirements.txt
         
     - name: Install Playwright and browsers
+      env:
+        PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
       run: |
         # 安装基础依赖和虚拟显示器
         sudo apt-get update
@@ -51,7 +53,8 @@ jobs:
         echo "Playwright version: $(python -c 'import playwright; print(playwright.__version__)')"
         # 参考官方方式安装依赖
         npx playwright install-deps
-        # 安装所有浏览器（包括headless_shell）
+        # 设置浏览器安装路径并安装所有浏览器
+        export PLAYWRIGHT_BROWSERS_PATH=/home/runner/.cache/ms-playwright
         python -m playwright install
         # 验证安装
         python -c "
@@ -63,13 +66,18 @@ jobs:
                 print('✅ Chromium executable exists')
             else:
                 print('❌ Chromium executable NOT found')
-                # List actual files in the directory
-                import glob
-                pattern = '/opt/hostedtoolcache/Python/*/x64/lib/python*/site-packages/playwright/driver/package/.local-browsers/chromium*'
-                print('Available chromium installations:')
-                for path in glob.glob(pattern):
-                    print(f'  {path}')
+                # Check actual browser cache location
+                cache_path = '/home/runner/.cache/ms-playwright'
+                if os.path.exists(cache_path):
+                    print(f'Browser cache directory exists: {cache_path}')
+                    import glob
+                    chromium_dirs = glob.glob(f'{cache_path}/chromium*')
+                    print(f'Found chromium directories: {chromium_dirs}')
+                else:
+                    print(f'Browser cache directory NOT found: {cache_path}')
         "
+        # 设置浏览器路径环境变量
+        export PLAYWRIGHT_BROWSERS_PATH=/home/runner/.cache/ms-playwright
         
     - name: Create output directory
       run: mkdir -p output
@@ -77,9 +85,9 @@ jobs:
     - name: Run Spotify scraper
       id: scraper
       env:
-        # Playwright 环境变量
-        PLAYWRIGHT_BROWSERS_PATH: 0
-        PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 0
+        # Playwright 环境变量 - 使用正确的浏览器路径
+        PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
+        PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
         # 确保headless模式
         DISPLAY: ":99"
       run: |
