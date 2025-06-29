@@ -38,22 +38,12 @@ jobs:
         
     - name: Install Playwright and browsers
       run: |
-        # 先安装系统依赖
+        # 安装基础依赖和虚拟显示器
         sudo apt-get update
-        sudo apt-get install -y \
-          libnss3 \
-          libxss1 \
-          libasound2 \
-          libxrandr2 \
-          libatk1.0-0 \
-          libdrm2 \
-          libxcomposite1 \
-          libxdamage1 \
-          libgtk-3-0 \
-          libgbm1 \
-          libxkbcommon0
-        # 然后安装playwright浏览器和依赖
+        sudo apt-get install -y xvfb
+        # 让playwright自动安装所需的系统依赖
         playwright install-deps chromium
+        # 安装chromium浏览器
         playwright install chromium
         
     - name: Create output directory
