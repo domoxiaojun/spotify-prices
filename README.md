@@ -17,7 +17,6 @@
 ├── spotify.py                          # 主爬虫脚本
 ├── spotify_rate_converter.py           # 汇率转换器
 ├── requirements.txt                     # Python依赖
-├── test_setup.py                       # 项目测试脚本
 ├── .env.example                        # 环境变量示例
 ├── .gitignore                          # Git忽略文件
 ├── .github/workflows/
@@ -56,6 +55,7 @@ API_KEY=你的API密钥
 
 ### 4. 运行测试
 ```bash
+# 运行基础测试（如果有test_setup.py）
 python test_setup.py
 ```
 
@@ -135,9 +135,6 @@ playwright install chromium
 
 ### 测试项目
 ```bash
-# 运行完整测试
-python test_setup.py
-
 # 测试单个组件
 python -c "import spotify; print('✅ spotify.py 导入成功')"
 python -c "import spotify_rate_converter; print('✅ 转换器导入成功')"
@@ -155,11 +152,11 @@ python -c "import spotify_rate_converter; print('✅ 转换器导入成功')"
 ```
 最便宜的10个Premium Family套餐:
 ------------------------------------------------------------
- 1. 尼日利亚        (NG): ¥  24.67 (NGN 900)
- 2. 巴基斯坦       (PK): ¥  25.89 (PKR 399)
- 3. 印度           (IN): ¥  28.45 (INR 179)
- 4. 埃及           (EG): ¥  31.23 (EGP 49.99)
- 5. 土耳其         (TR): ¥  35.67 (TRY 17.99)
+ 1. 尼日利亚        (NG): ¥  9.29 (NGN 2,000)
+ 2. 巴基斯坦       (PK): ¥ 14.64 (PKR 579)
+ 3. 印度           (IN): ¥ 15.01 (₹179)
+ 4. 埃及           (EG): ¥ 15.88 (EGP 109.99)
+ 5. 土耳其         (TR): ¥ 17.97 (TRY 99.99)
 ```
 
 ## ⚙️ 技术特性

@@ -15,8 +15,6 @@ from playwright.async_api import async_playwright, Browser, Page
 import time
 import random
 
-
-
 def extract_price_number(price_str: str) -> float:
     """从价格字符串中提取数值"""
     if not price_str:
