@@ -195,7 +195,8 @@ def process_spotify_data(data, rates):
                 processed_plan['price'] = secondary_price
                 # Try to extract price number from secondary_price or use existing price_number
                 if price_number is not None:
-                    processed_plan['price_number'] = price_number
+                    # 格式化 price_number 为带千位分隔符的字符串
+                    processed_plan['price_number'] = format_price_number(price_number)
                     # Convert to CNY
                     cny_price = convert_to_cny(price_number, currency, rates)
                     if cny_price is not None:
@@ -209,7 +210,8 @@ def process_spotify_data(data, rates):
                 # Use primary_price if no secondary_price
                 processed_plan['price'] = primary_price
                 if price_number is not None:
-                    processed_plan['price_number'] = price_number
+                    # 格式化 price_number 为带千位分隔符的字符串
+                    processed_plan['price_number'] = format_price_number(price_number)
                     # Convert to CNY
                     cny_price = convert_to_cny(price_number, currency, rates)
                     if cny_price is not None:
@@ -242,7 +244,7 @@ def process_spotify_data(data, rates):
     return processed_data
 
 
-def sort_by_family_plan_cny(processed_data):
+def sort_by_family_plan_cny(processed_data, original_data):
     """按Premium Family的CNY价格从低到高排序国家，并在JSON前面添加最便宜的10个"""
     countries_with_family_price = []
     countries_without_family_price = []
@@ -271,6 +273,15 @@ def sort_by_family_plan_cny(processed_data):
     top_10_cheapest = []
     for i, (country_code, price_cny, country_info, family_plan) in enumerate(countries_with_family_price[:10]):
         country_name_cn = COUNTRY_NAMES_CN.get(country_code, country_info.get('country_name', country_code))
+        # 获取原始 price_number 数值进行格式化
+        original_price_number = None
+        for original_plan in original_data.get(country_code, {}).get('plans', []):
+            if 'Premium Family' in original_plan.get('plan', ''):
+                original_price_number = original_plan.get('price_number')
+                break
+        
+        formatted_price_number = format_price_number(original_price_number)
+        
         top_10_cheapest.append({
             'rank': i + 1,
             'country_code': country_code,
@@ -278,7 +289,7 @@ def sort_by_family_plan_cny(processed_data):
             'country_name_cn': country_name_cn,
             'original_price': family_plan.get('price', ''),
             'currency': family_plan.get('currency', ''),
-            'price_number': family_plan.get('price_number'),
+            'price_number': formatted_price_number,
             'price_cny': family_plan.get('price_cny')
         })
     
@@ -297,6 +308,21 @@ def sort_by_family_plan_cny(processed_data):
         sorted_data[country_code] = country_info
     
     return sorted_data
+
+
+def format_price_number(price_number):
+    """格式化价格数字，添加千位分隔符，如果是整数则不显示小数点"""
+    if price_number is None:
+        return None
+    
+    # 如果是整数（包括像 1300.0 这样的浮点数），格式化为整数并添加千位分隔符
+    if isinstance(price_number, float) and price_number.is_integer():
+        return f"{int(price_number):,}"
+    elif isinstance(price_number, int):
+        return f"{price_number:,}"
+    else:
+        # 对于有小数的数字，保留小数位并添加千位分隔符
+        return f"{price_number:,}"
 
 
 # --- Main Script ---
@@ -340,7 +366,7 @@ def main():
     
     # 4. Sort by Premium Family CNY price
     print("\n4. 按Premium Family的CNY价格排序...")
-    sorted_data = sort_by_family_plan_cny(processed_data)
+    sorted_data = sort_by_family_plan_cny(processed_data, spotify_data)
     
     # 5. Save processed data
     print(f"\n5. 保存处理后的数据到 {OUTPUT_JSON_PATH}...")
