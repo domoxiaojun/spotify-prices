@@ -9,11 +9,102 @@ Spotify Premium Family 各国价格爬取脚本（Playwright版本）
 import re
 import asyncio
 import json
+import os
+import shutil
 from typing import Any, Dict, List, Optional
 from bs4 import BeautifulSoup, Tag
 from playwright.async_api import async_playwright, Browser, Page
 import time
 import random
+
+def extract_year_from_timestamp(timestamp: str) -> str:
+    """从时间戳中提取年份"""
+    try:
+        # 时间戳格式: YYYYMMDD_HHMMSS
+        if len(timestamp) >= 4:
+            return timestamp[:4]
+        else:
+            # 如果解析失败，返回当前年份
+            return time.strftime('%Y')
+    except:
+        return time.strftime('%Y')
+
+def create_archive_directory_structure(archive_dir: str, timestamp: str) -> str:
+    """根据时间戳创建按年份组织的归档目录结构"""
+    year = extract_year_from_timestamp(timestamp)
+    year_dir = os.path.join(archive_dir, year)
+    if not os.path.exists(year_dir):
+        os.makedirs(year_dir)
+        print(f"📁 创建年份目录: {year_dir}")
+    return year_dir
+
+def migrate_existing_archive_files(archive_dir: str):
+    """将现有的归档文件迁移到按年份组织的目录结构中"""
+    if not os.path.exists(archive_dir):
+        return
+    
+    migrated_count = 0
+    
+    # 查找根目录下的归档文件
+    for filename in os.listdir(archive_dir):
+        if filename.startswith('spotify_prices_all_countries_') and filename.endswith('.json'):
+            file_path = os.path.join(archive_dir, filename)
+            
+            # 确保是文件而不是目录
+            if os.path.isfile(file_path):
+                # 从文件名提取时间戳
+                try:
+                    # 文件名格式: spotify_prices_all_countries_YYYYMMDD_HHMMSS.json
+                    timestamp_part = filename.replace('spotify_prices_all_countries_', '').replace('.json', '')
+                    year = extract_year_from_timestamp(timestamp_part)
+                    
+                    # 创建年份目录
+                    year_dir = create_archive_directory_structure(archive_dir, timestamp_part)
+                    
+                    # 移动文件
+                    new_path = os.path.join(year_dir, filename)
+                    if not os.path.exists(new_path):  # 避免重复移动
+                        shutil.move(file_path, new_path)
+                        print(f"📦 迁移文件: {filename} → {year}/")
+                        migrated_count += 1
+                except Exception as e:
+                    print(f"⚠️  迁移文件失败 {filename}: {e}")
+    
+    if migrated_count > 0:
+        print(f"✅ 成功迁移 {migrated_count} 个归档文件到年份目录")
+    else:
+        print("📂 没有需要迁移的归档文件")
+
+def get_archive_statistics(archive_dir: str) -> dict:
+    """获取归档文件统计信息"""
+    if not os.path.exists(archive_dir):
+        return {"total_files": 0, "years": {}}
+    
+    stats = {"total_files": 0, "years": {}}
+    
+    # 遍历所有年份目录
+    for item in os.listdir(archive_dir):
+        item_path = os.path.join(archive_dir, item)
+        if os.path.isdir(item_path) and item.isdigit() and len(item) == 4:
+            year = item
+            year_files = []
+            
+            # 统计该年份的文件
+            for filename in os.listdir(item_path):
+                if filename.startswith('spotify_prices_all_countries_') and filename.endswith('.json'):
+                    filepath = os.path.join(item_path, filename)
+                    mtime = os.path.getmtime(filepath)
+                    year_files.append((filepath, mtime, filename))
+            
+            # 按时间排序
+            year_files.sort(key=lambda x: x[1], reverse=True)
+            stats["years"][year] = {
+                "count": len(year_files),
+                "files": year_files
+            }
+            stats["total_files"] += len(year_files)
+    
+    return stats
 
 def extract_price_number(price_str: str) -> float:
     """从价格字符串中提取数值"""
@@ -730,21 +821,41 @@ async def main():
     output_file = f'spotify_prices_all_countries_{timestamp}.json'
     output_file_latest = 'spotify_prices_all_countries.json'
     
-    # 保存带时间戳的版本
-    with open(output_file, 'w', encoding='utf-8') as f:
+    # 确保归档目录结构存在
+    archive_dir = 'archive'
+    if not os.path.exists(archive_dir):
+        os.makedirs(archive_dir)
+    
+    # 检查并迁移现有的归档文件到年份目录
+    migrate_existing_archive_files(archive_dir)
+    
+    # 根据时间戳创建年份子目录
+    year_archive_dir = create_archive_directory_structure(archive_dir, timestamp)
+    
+    # 保存带时间戳的版本到对应年份归档目录
+    archive_file = os.path.join(year_archive_dir, output_file)
+    with open(archive_file, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
     # 保存最新版本（供转换器使用）
     with open(output_file_latest, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
+    # 获取归档统计信息
+    archive_stats = get_archive_statistics(archive_dir)
+    
     # 打印统计信息
     print(f"\n" + "="*60)
     print(f"🎉 并发爬取完成！")
     print(f"✅ 成功: {len(results)} 个国家")
     print(f"❌ 失败: {len(failed_countries)} 个国家")
-    print(f"📁 结果已保存到: {output_file}")
+    print(f"📁 历史版本已保存到: {archive_file}")
     print(f"📁 最新版本已保存到: {output_file_latest}")
+    print(f"🗂️  归档统计: 共 {archive_stats['total_files']} 个文件，分布在 {len(archive_stats['years'])} 个年份")
+    
+    # 显示每年的文件数量
+    for year_key, year_data in sorted(archive_stats['years'].items(), reverse=True):
+        print(f"    {year_key}: {year_data['count']} 个文件")
     
     if failed_countries:
         print(f"\n❌ 失败的国家: {', '.join(failed_countries)}")

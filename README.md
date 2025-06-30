@@ -10,6 +10,7 @@
 - 🤖 **自动化运行**: GitHub Actions每周自动运行
 - 🔐 **安全管理**: 使用GitHub Secrets安全管理API密钥
 - 📁 **详细报告**: 生成详细的JSON报告和统计信息
+- 🗂️ **历史归档**: 自动归档历史数据，按年份组织，保留所有运行结果
 
 ## 📂 项目结构
 
@@ -19,6 +20,10 @@
 ├── requirements.txt                     # Python依赖
 ├── .env.example                        # 环境变量示例
 ├── .gitignore                          # Git忽略文件
+├── archive/                            # 历史数据归档目录
+│   ├── 2025/                          # 2025年数据
+│   ├── 2026/                          # 2026年数据
+│   └── README.md                      # 归档说明
 ├── .github/workflows/
 │   ├── weekly-spotify-scraper.yml      # 主自动化工作流
 │   └── manual-test.yml                 # 手动测试工作流
@@ -114,50 +119,36 @@ python spotify_rate_converter.py
 - **`spotify_prices_cny_sorted.json`**: 转换为人民币并排序的数据
 - **包含最便宜的10个Premium Family套餐排行**
 
-## 🛠️ 本地开发
+## 📊 数据文件说明
 
-### 环境配置
-```bash
-# 安装Python依赖
-pip install -r requirements.txt
+项目运行后会生成以下数据文件：
 
-# 安装Playwright浏览器
-playwright install chromium
-```
+### 主要数据文件
+- `spotify_prices_all_countries.json` - 最新的价格数据（供转换器使用）
+- `spotify_prices_cny_sorted.json` - 按人民币价格排序的结果
 
-### 环境变量配置
-项目需要设置API密钥才能运行：
+### 历史归档
+- `archive/YYYY/spotify_prices_all_countries_YYYYMMDD_HHMMSS.json` - 按年份组织的历史数据
+- **智能归档**: 自动解析文件名中的时间戳，归档到正确的年份目录
+- 自动迁移现有根目录下的归档文件到对应年份目录
+- 保留所有历史记录，便于长期趋势分析
+- 目录结构示例：
+  ```
+  archive/
+  ├── 2025/
+  │   ├── spotify_prices_all_countries_20250630_143025.json
+  │   ├── spotify_prices_all_countries_20250707_140000.json
+  │   └── ...
+  ├── 2026/
+  │   └── spotify_prices_all_countries_20260101_080000.json
+  └── ...
+  ```
 
-1. **环境变量** (推荐)
-2. **.env文件** (本地开发)
-
-**注意**: 不再提供默认API密钥，必须用户自己申请。
-
-### 测试项目
-```bash
-# 测试单个组件
-python -c "import spotify; print('✅ spotify.py 导入成功')"
-python -c "import spotify_rate_converter; print('✅ 转换器导入成功')"
-```
-
-## 📊 数据分析
-
-生成的数据包含：
-- 各国Spotify价格对比
-- 实时汇率转换
-- Premium Family套餐排行榜
-- 详细的价格统计信息
-
-### 示例输出
-```
-最便宜的10个Premium Family套餐:
-------------------------------------------------------------
- 1. 尼日利亚        (NG): ¥  9.29 (NGN 2,000)
- 2. 巴基斯坦       (PK): ¥ 14.64 (PKR 579)
- 3. 印度           (IN): ¥ 15.01 (₹179)
- 4. 埃及           (EG): ¥ 15.88 (EGP 109.99)
- 5. 土耳其         (TR): ¥ 17.97 (TRY 99.99)
-```
+#### 归档功能特性
+- **按年份自动分类**: 根据时间戳年份创建子目录
+- **自动迁移**: 检测并迁移现有的归档文件到正确位置
+- **统计信息**: 显示各年份的文件数量和总体统计
+- **数据用途**: 跨年价格变化趋势分析、历史数据对比、价格波动研究
 
 ## ⚙️ 技术特性
 
