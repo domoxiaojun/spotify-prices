@@ -175,6 +175,16 @@ def standardize_plan_name(plan_name):
         'premium 個人': 'Premium Individual',
         'premium个人': 'Premium Individual',
         'premium 个人': 'Premium Individual',
+        # 法语
+        'premium personnel': 'Premium Individual',
+        # 芬兰语
+        'yksilö-premium': 'Premium Individual',
+        # 匈牙利语
+        'egyéni premium csomag': 'Premium Individual',
+        # 韩语/日语
+        'premium standard': 'Premium Individual',
+        # 斯瓦希里语
+        'premium ya binafsi': 'Premium Individual',
         
         # Student plans
         'premium para estudiantes': 'Premium Student',
@@ -189,6 +199,14 @@ def standardize_plan_name(plan_name):
         'premium 大学生': 'Premium Student',
         'premium 學生': 'Premium Student',
         'premium學生': 'Premium Student',
+        # 法语
+        'premium étudiants': 'Premium Student',
+        # 芬兰语
+        'opiskelija‑premium': 'Premium Student',
+        # 匈牙利语
+        'hallgatói premium csomag': 'Premium Student',
+        # 摩洛哥法语
+        'premium étudiants': 'Premium Student',
         
         # Duo plans
         'premium duo': 'Premium Duo',
@@ -198,6 +216,10 @@ def standardize_plan_name(plan_name):
         'premium 雙人': 'Premium Duo',
         'premium双人': 'Premium Duo',
         'premium 双人': 'Premium Duo',
+        # 芬兰语
+        'duo‑premium': 'Premium Duo',
+        # 匈牙利语
+        'premium duo csomag': 'Premium Duo',
         
         # Family plans
         'premium familiar': 'Premium Family',
@@ -209,6 +231,16 @@ def standardize_plan_name(plan_name):
         'premium 家庭': 'Premium Family',
         'premium家族': 'Premium Family',
         'premium 家族': 'Premium Family',
+        # 芬兰语
+        'perhe‑premium': 'Premium Family',
+        # 匈牙利语
+        'családi premium csomag': 'Premium Family',
+        # 斯瓦希里语
+        'premium ya familia': 'Premium Family',
+        
+        # Special/Other plans
+        'premium basic': 'Premium Basic',  # 韩国特殊套餐
+        'premium lite': 'Premium Lite',    # 哥伦比亚等
         
         # Free plans
         'spotify free': 'Spotify Free',
@@ -224,24 +256,31 @@ def standardize_plan_name(plan_name):
         return standardization_map[plan_lower]
     
     # 模糊匹配（包含关键词）
-    if 'individual' in plan_lower or 'personal' in plan_lower:
+    if any(keyword in plan_lower for keyword in ['individual', 'personal', 'personnel', 'yksilö', 'egyéni', 'binafsi']):
         if 'premium' in plan_lower:
             return 'Premium Individual'
     
-    if any(keyword in plan_lower for keyword in ['estudiante', 'student', 'étudiant', 'studenten', '学生', '學生', '大学生']):
+    if any(keyword in plan_lower for keyword in ['estudiante', 'student', 'étudiant', 'studenten', 'opiskelija', 'hallgatói', '学生', '學生', '大学生']):
         if 'premium' in plan_lower:
             return 'Premium Student'
     
-    if 'duo' in plan_lower or 'couple' in plan_lower or '双人' in plan_lower or '雙人' in plan_lower:
+    if any(keyword in plan_lower for keyword in ['duo', 'couple', '双人', '雙人']):
         if 'premium' in plan_lower:
             return 'Premium Duo'
     
-    if any(keyword in plan_lower for keyword in ['familiar', 'family', 'família', 'famille', 'familie', '家庭', '家族']):
+    if any(keyword in plan_lower for keyword in ['familiar', 'family', 'família', 'famille', 'familie', 'perhe', 'családi', 'familia', '家庭', '家族']):
         if 'premium' in plan_lower:
             return 'Premium Family'
     
     if any(keyword in plan_lower for keyword in ['free', 'gratuito', 'gratuit', '免費', '免费']):
         return 'Spotify Free'
+    
+    # 特殊处理
+    if 'basic' in plan_lower and 'premium' in plan_lower:
+        return 'Premium Basic'
+    
+    if 'lite' in plan_lower and 'premium' in plan_lower:
+        return 'Premium Lite'
     
     # 如果没有匹配到，保持原名称但首字母大写
     return plan_name.title()
