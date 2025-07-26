@@ -111,33 +111,86 @@ def extract_price_number(price_str: str) -> float:
     if not price_str:
         return 0.0
     
-    # 移除货币符号和空格
-    cleaned = re.sub(r'[^\d,.]', '', price_str)
+    # 首先尝试提取货币符号后面的数字部分
+    # 匹配货币符号(如USD, $, €等)后跟数字的模式
+    currency_pattern = r'([$]|US[$]|CA[$]|A[$]|S[$]|HK[$]|MX[$]|NZ[$]|NT[$]|R[$]|C[$]|USD|EUR|GBP|CAD|AUD|SGD|HKD|MXN|BRL|JPY|CNY|KRW|INR|THB|MYR|IDR|PHP|VND|TWD|CHF|SEK|NOK|DKK|PLN|CZK|HUF|RON|BGN|HRK|RSD|BAM|MKD|ALL|MDL|UAH|BYN|RUB|GEL|AMD|AZN|KGS|KZT|UZS|TJS|TMT|AFN|PKR|LKR|BDT|BTN|NPR|MVR|IRR|IQD|JOD|KWD|BHD|QAR|SAR|AED|OMR|YER|EGP|LBP|SYP|TND|DZD|MAD|LYD|SDG|SOS|ETB|ERN|DJF|KMF|SCR|MUR|MGA|MWK|ZMW|BWP|SZL|LSL|ZAR|NAD|AOA|XAF|XOF|XPF|NZD|FJD|TOP|WST|VUV|SBD|PGK|NCF|TVD|KID|MHD|PWD|FMD|GHS|NGN|LRD|SLL|GMD|GNF|CIV|BFA|MLI|NER|TCD|CMR|GAB|GNQ|COG|CAF|TZS|KES|UGX|RWF|BIF|MZN|ZWL|€|£|¥|￥|₹|₱|₪|₨|₦|₵|₡|₩|₴|₽|₺|zł|Kč|Ft|kr)\s+([\d,\.]+)'
+    
+    currency_match = re.search(currency_pattern, price_str, re.IGNORECASE)
+    if currency_match:
+        number_part = currency_match.group(2)
+    else:
+        # 如果没找到货币符号，尝试提取纯数字部分
+        # 查找数字、逗号、点的连续组合
+        number_pattern = r'([\d,\.]+)'
+        number_matches = re.findall(number_pattern, price_str)
+        
+        if number_matches:
+            # 找到最长的数字串（通常是价格）
+            number_part = max(number_matches, key=len)
+        else:
+            return 0.0
+
+    # 如果没有数字，返回0                                                                              
+    if not re.search(r'\d', number_part):                                                                  
+        return 0.0 
     
     # 处理不同的数字格式
+    cleaned = number_part
     if ',' in cleaned and '.' in cleaned:
         # 判断是欧式格式还是美式格式
-        if cleaned.rindex(',') > cleaned.rindex('.'):
-            # 欧式格式 (1.234,56)
+        comma_pos = cleaned.rindex(',')
+        dot_pos = cleaned.rindex('.')
+        if comma_pos > dot_pos:
+            # 欧式格式 (1.234,56) - 点是千位分隔符，逗号是小数点
             cleaned = cleaned.replace('.', '').replace(',', '.')
         else:
-            # 美式格式 (1,234.56)
+            # 美式格式 (1,234.56) - 逗号是千位分隔符，点是小数点
             cleaned = cleaned.replace(',', '')
     elif ',' in cleaned:
-        # 可能是小数点或千位分隔符
+        # 只有逗号的情况
         parts = cleaned.split(',')
-        if len(parts[-1]) <= 2:  # 最后部分是2位数，可能是小数
-            cleaned = cleaned.replace(',', '.')
-        else:  # 千位分隔符
+        if len(parts) == 2:
+            # 检查小数部分长度来判断是小数点还是千位分隔符
+            decimal_part = parts[-1]
+            if len(decimal_part) <= 2:
+                # 小数部分是1-2位数，很可能是小数点 (例如: 5,99)
+                cleaned = cleaned.replace(',', '.')
+            else:
+                # 小数部分超过2位，很可能是千位分隔符 (例如: 2,499)
+                cleaned = cleaned.replace(',', '')
+        else:
+            # 多个逗号，都是千位分隔符
             cleaned = cleaned.replace(',', '')
+    elif '.' in cleaned:
+        # 只有点的情况
+        parts = cleaned.split('.')
+        if len(parts) == 2:
+            # 检查小数部分长度
+            decimal_part = parts[-1]
+            if len(decimal_part) <= 2:
+                # 小数部分是1-2位数，保持为小数点 (例如: 5.99)
+                pass  # 保持不变
+            else:
+                # 小数部分超过2位，很可能是千位分隔符 (例如: 2.499)
+                cleaned = cleaned.replace('.', '')
+        else:
+            # 多个点，都是千位分隔符
+            cleaned = cleaned.replace('.', '')
     
     try:
         return float(cleaned)
     except ValueError:
         return 0.0
 
-def detect_currency(price_str: str) -> str:
+def detect_currency(price_str: str, country_code: str = None) -> str:
     """检测价格字符串中的货币"""
+
+    # 1. 优先使用静态映射表
+    if country_code and country_code in SPOTIFY_REAL_CURRENCY_MAP:
+        expected_currency = SPOTIFY_REAL_CURRENCY_MAP[country_code]["currency"]
+        print(f"    💱 {country_code}: 使用映射表货币 {expected_currency}")
+        return expected_currency
+    
     currency_symbols = {
         # 优先检查带前缀的美元符号
         'US$': 'USD', 'USD': 'USD',
@@ -177,6 +230,7 @@ SPOTIFY_REAL_CURRENCY_MAP = {
     "AG": {"currency": "USD", "symbol": "US$"},  # Antigua and Barbuda
     "AL": {"currency": "EUR", "symbol": "€"},  # Albania
     "AM": {"currency": "USD", "symbol": "US$"},  # Armenia
+    "AR": {"currency": "ARS", "symbol": "$"},  # Argentina
     "AO": {"currency": "USD", "symbol": "US$"},  # Angola
     "AT": {"currency": "EUR", "symbol": "€"},  # Austria
     "AU": {"currency": "AUD", "symbol": "A$"},  # Australia
@@ -256,6 +310,7 @@ SPOTIFY_REAL_CURRENCY_MAP = {
     "LS": {"currency": "USD", "symbol": "US$"},  # Lesotho
     "LT": {"currency": "EUR", "symbol": "€"},  # Lithuania
     "LV": {"currency": "EUR", "symbol": "€"},  # Latvia
+    "MA": {"currency": "MAD", "symbol": "MAD"},  # Morocco
     "MD": {"currency": "USD", "symbol": "US$"},  # Moldova
     "ME": {"currency": "EUR", "symbol": "€"},  # Montenegro
     "MG": {"currency": "USD", "symbol": "US$"},  # Madagascar
@@ -281,6 +336,7 @@ SPOTIFY_REAL_CURRENCY_MAP = {
     "NR": {"currency": "AUD", "symbol": "A$"},  # Nauru
     "NZ": {"currency": "NZD", "symbol": "NZ$"},  # New Zealand
     "OM": {"currency": "USD", "symbol": "US$"},  # Oman
+    "PE": {"currency": "PEN", "symbol": "S/"},  # Peru
     "PG": {"currency": "USD", "symbol": "US$"},  # Papua New Guinea
     "PH": {"currency": "PHP", "symbol": "₱"},  # Philippines
     "PK": {"currency": "PKR", "symbol": "PKR"},  # Pakistan
@@ -309,6 +365,7 @@ SPOTIFY_REAL_CURRENCY_MAP = {
     "TG": {"currency": "USD", "symbol": "US$"},  # Togo
     "TH": {"currency": "THB", "symbol": "THB"},  # Thailand
     "TL": {"currency": "USD", "symbol": "US$"},  # Timor-Leste
+    "TN": {"currency": "TND", "symbol": "DT"},  # Tunisia
     "TO": {"currency": "USD", "symbol": "US$"},  # Tonga
     "TR": {"currency": "TRY", "symbol": "TRY"},  # Turkey
     "TT": {"currency": "USD", "symbol": "US$"},  # Trinidad and Tobago
@@ -321,6 +378,7 @@ SPOTIFY_REAL_CURRENCY_MAP = {
     "UZ": {"currency": "USD", "symbol": "US$"},  # Uzbekistan
     "VC": {"currency": "USD", "symbol": "US$"},  # St. Vincent and the Grenadines
     "VE": {"currency": "USD", "symbol": "US$"},  # Venezuela
+    "VN": {"currency": "VND", "symbol": "₫"},  # Vietnam
     "VU": {"currency": "USD", "symbol": "US$"},  # Vanuatu
     "WS": {"currency": "USD", "symbol": "US$"},  # Samoa
     "XK": {"currency": "EUR", "symbol": "€"},  # Kosovo
@@ -675,7 +733,7 @@ async def get_spotify_prices_for_country(browser: Browser, country_code: str, co
                         price_str = plan.get('price', '')
                         if price_str:
                             price_number = extract_price_number(price_str)
-                            detected_currency = detect_currency(price_str)
+                            detected_currency = detect_currency(price_str, country_code)
                             
                             enhanced_plan['price_number'] = price_number
                             enhanced_plan['currency'] = detected_currency
