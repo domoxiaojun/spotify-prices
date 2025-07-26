@@ -2,6 +2,8 @@ import json
 import requests
 import os
 from decimal import Decimal, ROUND_HALF_UP, InvalidOperation
+from datetime import datetime  # 添加这一行
+import re
 
 
 # --- Configuration ---
@@ -96,6 +98,158 @@ COUNTRY_NAMES_CN = {
 
 # --- Functions ---
 
+def extract_price_from_text(price_text, currency):
+    """从价格文本中提取数字价格"""
+    if not price_text or not isinstance(price_text, str):
+        return None
+    
+    # 不同货币的符号
+    currency_symbols = {
+        'USD': r'\$',
+        'EUR': r'€',
+        'GBP': r'£',
+        'CNY': r'¥|yuan',
+        'JPY': r'¥',
+    }
+    
+    # 获取当前货币的符号，如果没有找到则使用通用模式
+    symbol = currency_symbols.get(currency, r'[¥$€£]')
+    
+    # 更精确的匹配模式
+    patterns = [
+        # 匹配 $6,49 格式（欧洲/拉美用逗号作小数点）
+        rf'{symbol}\s*(\d+),(\d{{1,2}})',  # $6,49
+        # 匹配 $6.49 格式（美国用点作小数点）  
+        rf'{symbol}\s*(\d+)\.(\d{{1,2}})',  # $6.49
+        # 匹配 $1,234.56 格式（千位分隔符+小数点）
+        rf'{symbol}\s*(\d{{1,3}}(?:,\d{{3}})+)\.(\d{{1,2}})',  # $1,234.56
+        # 匹配整数
+        rf'{symbol}\s*(\d+)',  # $6
+        # 后置符号格式
+        rf'(\d+),(\d{{1,2}})\s*{symbol}',  # 6,49$
+        rf'(\d+)\.(\d{{1,2}})\s*{symbol}',  # 6.49$
+        rf'(\d+)\s*{symbol}',  # 6$
+    ]
+    
+    for i, pattern in enumerate(patterns):
+        match = re.search(pattern, price_text)
+        if match:
+            try:
+                if len(match.groups()) == 2:
+                    # 有小数部分
+                    integer_part = match.group(1)
+                    decimal_part = match.group(2)
+                    
+                    # 如果是千位分隔符格式，移除逗号
+                    if ',' in integer_part and i == 2:  # $1,234.56 格式
+                        integer_part = integer_part.replace(',', '')
+                    
+                    price_str = f"{integer_part}.{decimal_part}"
+                    return float(price_str)
+                else:
+                    # 只有整数部分
+                    integer_part = match.group(1)
+                    # 移除千位分隔符（如果有）
+                    integer_part = integer_part.replace(',', '')
+                    return float(integer_part)
+            except (ValueError, AttributeError):
+                continue
+    
+    print(f"无法从 '{price_text}' 中提取价格")
+    return None
+
+def standardize_plan_name(plan_name):
+    """标准化套餐名称为英文统一格式"""
+    if not plan_name:
+        return plan_name
+    
+    # 转换为小写用于匹配
+    plan_lower = plan_name.lower()
+    
+    # 定义标准化映射规则
+    standardization_map = {
+        # Individual/Personal plans
+        'premium individual': 'Premium Individual',
+        'premium personal': 'Premium Individual', 
+        'premium個人': 'Premium Individual',
+        'premium 個人': 'Premium Individual',
+        'premium个人': 'Premium Individual',
+        'premium 个人': 'Premium Individual',
+        
+        # Student plans
+        'premium para estudiantes': 'Premium Student',
+        'premium student': 'Premium Student',
+        'premium estudiantil': 'Premium Student',
+        'premium universitário': 'Premium Student',
+        'premium étudiant': 'Premium Student',
+        'premium studenten': 'Premium Student',
+        'premium学生': 'Premium Student',
+        'premium 学生': 'Premium Student',
+        'premium大学生': 'Premium Student',
+        'premium 大学生': 'Premium Student',
+        'premium 學生': 'Premium Student',
+        'premium學生': 'Premium Student',
+        
+        # Duo plans
+        'premium duo': 'Premium Duo',
+        'premium para dois': 'Premium Duo',
+        'premium couple': 'Premium Duo',
+        'premium雙人': 'Premium Duo',
+        'premium 雙人': 'Premium Duo',
+        'premium双人': 'Premium Duo',
+        'premium 双人': 'Premium Duo',
+        
+        # Family plans
+        'premium familiar': 'Premium Family',
+        'premium family': 'Premium Family',
+        'premium família': 'Premium Family',
+        'premium famille': 'Premium Family',
+        'premium familie': 'Premium Family',
+        'premium家庭': 'Premium Family',
+        'premium 家庭': 'Premium Family',
+        'premium家族': 'Premium Family',
+        'premium 家族': 'Premium Family',
+        
+        # Free plans
+        'spotify free': 'Spotify Free',
+        'free': 'Spotify Free',
+        'gratuito': 'Spotify Free',
+        'gratuit': 'Spotify Free',
+        '免費': 'Spotify Free',
+        '免费': 'Spotify Free',
+    }
+    
+    # 直接匹配
+    if plan_lower in standardization_map:
+        return standardization_map[plan_lower]
+    
+    # 模糊匹配（包含关键词）
+    if 'individual' in plan_lower or 'personal' in plan_lower:
+        if 'premium' in plan_lower:
+            return 'Premium Individual'
+    
+    if any(keyword in plan_lower for keyword in ['estudiante', 'student', 'étudiant', 'studenten', '学生', '學生', '大学生']):
+        if 'premium' in plan_lower:
+            return 'Premium Student'
+    
+    if 'duo' in plan_lower or 'couple' in plan_lower or '双人' in plan_lower or '雙人' in plan_lower:
+        if 'premium' in plan_lower:
+            return 'Premium Duo'
+    
+    if any(keyword in plan_lower for keyword in ['familiar', 'family', 'família', 'famille', 'familie', '家庭', '家族']):
+        if 'premium' in plan_lower:
+            return 'Premium Family'
+    
+    if any(keyword in plan_lower for keyword in ['free', 'gratuito', 'gratuit', '免費', '免费']):
+        return 'Spotify Free'
+    
+    # 如果没有匹配到，保持原名称但首字母大写
+    return plan_name.title()
+    
+def get_current_date():
+    """获取当前日期"""
+    return datetime.now().strftime('%Y-%m-%d')
+        
 def get_exchange_rates(api_keys, url_template):
     """获取最新汇率，如果API失败则返回None"""
     rates = None
@@ -178,49 +332,71 @@ def process_spotify_data(data, rates):
             plan_name = plan.get('plan', '')
             currency = plan.get('currency', '')
             
+            # 标准化套餐名称
+            standardized_plan_name = standardize_plan_name(plan_name)
+            
             # Create processed plan object
             processed_plan = {
-                'plan': plan_name,
+                'plan': standardized_plan_name,  # 使用标准化名称
+                'original_plan_name': plan_name,  # 保留原始名称以备参考
                 'currency': currency
             }
             
             # Process primary_price and secondary_price
-            # If both exist, only keep secondary_price (as per user requirement)
             primary_price = plan.get('primary_price', '')
             secondary_price = plan.get('secondary_price', '')
             price_number = plan.get('price_number')
             
+            # 优先使用 secondary_price
             if secondary_price and secondary_price.strip():
-                # Use secondary_price
                 processed_plan['price'] = secondary_price
-                # Try to extract price number from secondary_price or use existing price_number
-                if price_number is not None:
-                    # 格式化 price_number 为带千位分隔符的字符串
+                
+                # 尝试从 price_number 获取价格，如果为0或None则从文本提取
+                if price_number is not None and price_number > 0:
                     processed_plan['price_number'] = format_price_number(price_number)
-                    # Convert to CNY
                     cny_price = convert_to_cny(price_number, currency, rates)
                     if cny_price is not None:
                         processed_plan['price_cny'] = float(cny_price)
                     else:
                         processed_plan['price_cny'] = None
                 else:
-                    processed_plan['price_number'] = None
-                    processed_plan['price_cny'] = None
+                    # 从 secondary_price 文本中提取价格
+                    extracted_price = extract_price_from_text(secondary_price, currency)
+                    if extracted_price is not None:
+                        processed_plan['price_number'] = format_price_number(extracted_price)
+                        cny_price = convert_to_cny(extracted_price, currency, rates)
+                        if cny_price is not None:
+                            processed_plan['price_cny'] = float(cny_price)
+                        else:
+                            processed_plan['price_cny'] = None
+                    else:
+                        processed_plan['price_number'] = None
+                        processed_plan['price_cny'] = None
+                        
             elif primary_price and primary_price.strip():
-                # Use primary_price if no secondary_price
                 processed_plan['price'] = primary_price
-                if price_number is not None:
-                    # 格式化 price_number 为带千位分隔符的字符串
+                
+                # 尝试从 price_number 获取价格，如果为0或None则从文本提取
+                if price_number is not None and price_number > 0:
                     processed_plan['price_number'] = format_price_number(price_number)
-                    # Convert to CNY
                     cny_price = convert_to_cny(price_number, currency, rates)
                     if cny_price is not None:
                         processed_plan['price_cny'] = float(cny_price)
                     else:
                         processed_plan['price_cny'] = None
                 else:
-                    processed_plan['price_number'] = None
-                    processed_plan['price_cny'] = None
+                    # 从 primary_price 文本中提取价格
+                    extracted_price = extract_price_from_text(primary_price, currency)
+                    if extracted_price is not None:
+                        processed_plan['price_number'] = format_price_number(extracted_price)
+                        cny_price = convert_to_cny(extracted_price, currency, rates)
+                        if cny_price is not None:
+                            processed_plan['price_cny'] = float(cny_price)
+                        else:
+                            processed_plan['price_cny'] = None
+                    else:
+                        processed_plan['price_number'] = None
+                        processed_plan['price_cny'] = None
             else:
                 # No valid price found
                 processed_plan['price'] = ''
@@ -242,7 +418,6 @@ def process_spotify_data(data, rates):
         }
     
     return processed_data
-
 
 def sort_by_family_plan_cny(processed_data, original_data):
     """按Premium Family的CNY价格从低到高排序国家，并在JSON前面添加最便宜的10个"""
@@ -295,7 +470,7 @@ def sort_by_family_plan_cny(processed_data, original_data):
     
     sorted_data['_top_10_cheapest_premium_family'] = {
         'description': '最便宜的10个Premium Family套餐',
-        'updated_at': '2025-06-29',
+        'updated_at': get_current_date(), 
         'data': top_10_cheapest
     }
     
