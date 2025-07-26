@@ -466,9 +466,11 @@ def sort_by_family_plan_cny(processed_data, original_data):
     for country_code, country_info in processed_data.items():
         family_plan = None
         
-        # Find Premium Family plan
+        # Find Premium Family plan (支持多语言)
         for plan in country_info.get('plans', []):
-            if 'Premium Family' in plan.get('plan', ''):
+            plan_name = plan.get('plan', '')
+            if ('Premium Family' in plan_name or 'Premium Familiar' in plan_name or 
+                'Premium Famille' in plan_name or 'Premium Familie' in plan_name):
                 family_plan = plan
                 break
         
@@ -490,7 +492,10 @@ def sort_by_family_plan_cny(processed_data, original_data):
         # 获取原始 price_number 数值进行格式化
         original_price_number = None
         for original_plan in original_data.get(country_code, {}).get('plans', []):
-            if 'Premium Family' in original_plan.get('plan', ''):
+            plan_name = original_plan.get('plan', '')
+            # 支持多语言的家庭套餐名称
+            if ('Premium Family' in plan_name or 'Premium Familiar' in plan_name or 
+                'Premium Famille' in plan_name or 'Premium Familie' in plan_name):
                 original_price_number = original_plan.get('price_number')
                 break
         
@@ -602,7 +607,10 @@ def main():
                 if country_code.startswith('_'):
                     continue
                 for plan in country_info.get('plans', []):
-                    if 'Premium Family' in plan.get('plan', '') and plan.get('price_cny') is not None:
+                    plan_name = plan.get('plan', '')
+                    if (('Premium Family' in plan_name or 'Premium Familiar' in plan_name or 
+                         'Premium Famille' in plan_name or 'Premium Familie' in plan_name) and 
+                        plan.get('price_cny') is not None):
                         country_name_cn = COUNTRY_NAMES_CN.get(country_code, country_info['country_name'])
                         print(f"{count+1:2d}. {country_name_cn:15s} ({country_code}): "
                               f"¥{plan['price_cny']:7.2f} ({plan['currency']} {plan.get('price_number', 'N/A')})")
