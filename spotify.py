@@ -254,6 +254,7 @@ SPOTIFY_REAL_CURRENCY_MAP = {
     "CA": {"currency": "CAD", "symbol": "CA$"},  # Canada
     "CH": {"currency": "CHF", "symbol": "CHF"},  # Switzerland
     "CI": {"currency": "USD", "symbol": "US$"},  # Côte d'Ivoire
+    "CL": {"currency": "CLP", "symbol": "CLP"},  # Chile
     "CM": {"currency": "USD", "symbol": "US$"},  # Cameroon
     "CO": {"currency": "COP", "symbol": "COP"},  # Colombia
     "CV": {"currency": "USD", "symbol": "US$"},  # Cabo Verde
