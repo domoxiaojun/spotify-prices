@@ -175,6 +175,7 @@ def standardize_plan_name(plan_name):
         'premium 個人': 'Premium Individual',
         'premium个人': 'Premium Individual',
         'premium 个人': 'Premium Individual',
+
         # 法语
         'premium personnel': 'Premium Individual',
         # 芬兰语
@@ -199,6 +200,7 @@ def standardize_plan_name(plan_name):
         'premium 大学生': 'Premium Student',
         'premium 學生': 'Premium Student',
         'premium學生': 'Premium Student',
+
         # 法语
         'premium étudiants': 'Premium Student',
         # 芬兰语
@@ -216,6 +218,7 @@ def standardize_plan_name(plan_name):
         'premium 雙人': 'Premium Duo',
         'premium双人': 'Premium Duo',
         'premium 双人': 'Premium Duo',
+
         # 芬兰语
         'duo‑premium': 'Premium Duo',
         # 匈牙利语
@@ -231,6 +234,7 @@ def standardize_plan_name(plan_name):
         'premium 家庭': 'Premium Family',
         'premium家族': 'Premium Family',
         'premium 家族': 'Premium Family',
+
         # 芬兰语
         'perhe‑premium': 'Premium Family',
         # 匈牙利语
@@ -269,6 +273,21 @@ def standardize_plan_name(plan_name):
             return 'Premium Duo'
     
     if any(keyword in plan_lower for keyword in ['familiar', 'family', 'família', 'famille', 'familie', 'perhe', 'családi', 'familia', '家庭', '家族']):
+
+    if 'individual' in plan_lower or 'personal' in plan_lower:
+        if 'premium' in plan_lower:
+            return 'Premium Individual'
+    
+    if any(keyword in plan_lower for keyword in ['estudiante', 'student', 'étudiant', 'studenten', '学生', '學生', '大学生']):
+        if 'premium' in plan_lower:
+            return 'Premium Student'
+    
+    if 'duo' in plan_lower or 'couple' in plan_lower or '双人' in plan_lower or '雙人' in plan_lower:
+        if 'premium' in plan_lower:
+            return 'Premium Duo'
+    
+    if any(keyword in plan_lower for keyword in ['familiar', 'family', 'família', 'famille', 'familie', '家庭', '家族']):
+
         if 'premium' in plan_lower:
             return 'Premium Family'
     
