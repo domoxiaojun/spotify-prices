@@ -170,13 +170,74 @@ jobs:
           echo "文件行数: $(wc -l < spotify_prices_cny_sorted.json)"
         fi
         
+    - name: Archive data with timestamp
+      if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
+      run: |
+        TIMESTAMP=$(date +'%Y%m%d_%H%M%S')
+        YEAR=$(date +'%Y')
+        MONTH=$(date +'%m')
+        ARCHIVE_DIR="archive/${YEAR}/${MONTH}"
+        mkdir -p ${ARCHIVE_DIR}
+        echo "开始归档数据到 ${ARCHIVE_DIR}..."
+        if [ -f "spotify_prices_all_countries.json" ]; then
+          cp spotify_prices_all_countries.json "${ARCHIVE_DIR}/spotify_prices_all_countries_${TIMESTAMP}.json"
+          echo "✅ 已归档原始价格数据"
+        fi
+        if [ -f "spotify_prices_cny_sorted.json" ]; then
+          cp spotify_prices_cny_sorted.json "${ARCHIVE_DIR}/spotify_prices_cny_sorted_${TIMESTAMP}.json"
+          echo "✅ 已归档转换后价格数据"
+        fi
+        echo "归档完成，文件保存在: ${ARCHIVE_DIR}"
+        
+    - name: Detect price changes and generate changelog
+      id: price_changes
+      if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
+      run: |
+        echo "🔍 开始检测价格变化..."
+        python price_change_detector.py
+        
+        # 检查脚本执行结果并设置默认值
+        if [ ! -f "$GITHUB_OUTPUT" ] || ! grep -q "changes_count=" "$GITHUB_OUTPUT" 2>/dev/null; then
+          echo "changes_count=0" >> $GITHUB_OUTPUT
+          echo "summary_file=" >> $GITHUB_OUTPUT
+        fi
+      continue-on-error: true
+        
     - name: Commit and push changes
       if: steps.check_changes.outputs.changes == 'true'
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add *.json
-        git commit -m "Weekly update: Spotify prices - $(date +'%Y-%m-%d %H:%M:%S %Z')"
+        
+        # 分别添加存在的文件，避免 git add 失败
+        git add . || echo "Adding all changes"
+        
+        # 构建提交信息
+        COMMIT_MSG="Weekly update: Spotify prices and archive data - $(date +'%Y-%m-%d %H:%M:%S %Z')"
+        if [ "${{ steps.price_changes.outputs.changes_count }}" != "0" ] && [ "${{ steps.price_changes.outputs.changes_count }}" != "" ]; then
+          COMMIT_MSG="${COMMIT_MSG} [发现 ${{ steps.price_changes.outputs.changes_count }} 项价格变化]"
+        fi
+        
+        # 检查是否有 CHANGELOG 归档
+        if [ -d "changelog_archive" ] && [ -n "$(find changelog_archive -name "*.md" -type f 2>/dev/null)" ]; then
+          # 计算上个月（处理跨年情况）
+          CURRENT_YEAR=$(date +'%Y')
+          CURRENT_MONTH=$(date +'%m')
+          if [ "$CURRENT_MONTH" = "01" ]; then
+            LAST_YEAR=$((CURRENT_YEAR - 1))
+            LAST_MONTH="${LAST_YEAR}-12"
+          else
+            LAST_MONTH_NUM=$((10#$CURRENT_MONTH - 1))
+            LAST_MONTH="${CURRENT_YEAR}-$(printf '%02d' $LAST_MONTH_NUM)"
+          fi
+          
+          ARCHIVED_COUNT=$(find changelog_archive -name "changelog_${LAST_MONTH}*.md" -type f 2>/dev/null | wc -l)
+          if [ "$ARCHIVED_COUNT" -gt 0 ]; then
+            COMMIT_MSG="${COMMIT_MSG} [归档CHANGELOG]"
+          fi
+        fi
+        
+        git commit -m "${COMMIT_MSG}"
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
         echo "✅ 数据已提交到仓库"
         
@@ -188,6 +249,9 @@ jobs:
         path: |
           spotify_prices_all_countries*.json
           spotify_prices_cny_sorted.json
+          CHANGELOG.md
+          changelog_archive/
+          price_changes_summary_*.json
         retention-days: 30
         
     - name: Job summary
@@ -198,6 +262,56 @@ jobs:
         echo "**爬虫状态:** ${{ steps.scraper.outputs.scraper_status || '失败' }}" >> $GITHUB_STEP_SUMMARY
         echo "**转换状态:** ${{ steps.converter.outputs.converter_status || '失败' }}" >> $GITHUB_STEP_SUMMARY
         echo "**文件变化:** ${{ steps.check_changes.outputs.changes || '否' }}" >> $GITHUB_STEP_SUMMARY
+        
+        # 价格变化信息
+        CHANGES_COUNT="${{ steps.price_changes.outputs.changes_count }}"
+        if [ "$CHANGES_COUNT" != "" ] && [ "$CHANGES_COUNT" != "0" ]; then
+          echo "**价格变化:** 🔄 发现 $CHANGES_COUNT 项变化" >> $GITHUB_STEP_SUMMARY
+        elif [ "$CHANGES_COUNT" = "0" ]; then
+          echo "**价格变化:** ✅ 无变化" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "**价格变化:** ⚠️ 检测失败" >> $GITHUB_STEP_SUMMARY
+        fi
+        
         if [ -f "spotify_prices_cny_sorted.json" ]; then
           echo "**输出文件大小:** $(du -h spotify_prices_cny_sorted.json | cut -f1)" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        # 显示归档信息
+        YEAR=$(date +'%Y')
+        MONTH=$(date +'%m')
+        ARCHIVE_DIR="archive/${YEAR}/${MONTH}"
+        if [ -d "${ARCHIVE_DIR}" ] && [ -n "$(ls -A ${ARCHIVE_DIR} 2>/dev/null)" ]; then
+          echo "**归档状态:** ✅ 已归档到 ${ARCHIVE_DIR}" >> $GITHUB_STEP_SUMMARY
+          echo "**归档文件数量:** $(ls ${ARCHIVE_DIR}/*$(date +'%Y%m%d')* 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "**归档状态:** ❌ 未归档" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        # 如果有价格变化，显示changelog链接
+        if [ -f "CHANGELOG.md" ] && [ "$CHANGES_COUNT" != "0" ] && [ "$CHANGES_COUNT" != "" ]; then
+          echo "**变化详情:** 📋 查看 [CHANGELOG.md](./CHANGELOG.md)" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        # 显示 CHANGELOG 归档信息
+        if [ -d "changelog_archive" ]; then
+          ARCHIVE_COUNT=$(find changelog_archive -name "*.md" -type f 2>/dev/null | wc -l)
+          if [ "$ARCHIVE_COUNT" -gt 0 ]; then
+            echo "**CHANGELOG归档:** 📚 共 $ARCHIVE_COUNT 个月度归档" >> $GITHUB_STEP_SUMMARY
+            # 检查本次是否新增了归档（检查上个月，处理跨年情况）
+            CURRENT_YEAR=$(date +'%Y')
+            CURRENT_MONTH=$(date +'%m')
+            if [ "$CURRENT_MONTH" = "01" ]; then
+              LAST_YEAR=$((CURRENT_YEAR - 1))
+              LAST_MONTH="${LAST_YEAR}-12"
+            else
+              LAST_MONTH_NUM=$((10#$CURRENT_MONTH - 1))
+              LAST_MONTH="${CURRENT_YEAR}-$(printf '%02d' $LAST_MONTH_NUM)"
+            fi
+            
+            LAST_MONTH_ARCHIVE=$(find changelog_archive -name "changelog_${LAST_MONTH}*.md" -type f 2>/dev/null | wc -l)
+            if [ "$LAST_MONTH_ARCHIVE" -gt 0 ]; then
+              echo "**本次归档:** ✅ 已归档上月记录" >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
         fi
