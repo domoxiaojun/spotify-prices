@@ -1,7 +1,7 @@
 {
   "_top_10_cheapest_premium_family": {
     "description": "最便宜的10个Premium Family套餐",
-    "updated_at": "2026-10-04",
+    "updated_at": "2026-10-11",
     "data": [
       {
         "rank": 1,
@@ -11,7 +11,7 @@
         "original_price": "Rs 679 / month",
         "currency": "PKR",
         "price_number": "679",
-        "price_cny": 16.47
+        "price_cny": 16.41
       },
       {
         "rank": 2,
@@ -21,7 +21,7 @@
         "original_price": "EGP 139 / month",
         "currency": "EGP",
         "price_number": "139",
-        "price_cny": 17.85
+        "price_cny": 17.75
       },
       {
         "rank": 3,
@@ -31,7 +31,7 @@
         "original_price": "BDT 379 / month",
         "currency": "BDT",
         "price_number": "379",
-        "price_cny": 20.67
+        "price_cny": 20.57
       },
       {
         "rank": 4,
@@ -41,7 +41,7 @@
         "original_price": "GH₵43 / month",
         "currency": "GHS",
         "price_number": "43",
-        "price_cny": 24.6
+        "price_cny": 24.45
       },
       {
         "rank": 5,
@@ -51,7 +51,7 @@
         "original_price": "LKR 1,269 / month",
         "currency": "LKR",
         "price_number": "1,269",
-        "price_cny": 25.79
+        "price_cny": 25.67
       },
       {
         "rank": 6,
@@ -61,7 +61,7 @@
         "original_price": "TRY 199 / month",
         "currency": "TRY",
         "price_number": "199",
-        "price_cny": 27.16
+        "price_cny": 27.06
       },
       {
         "rank": 7,
@@ -71,7 +71,7 @@
         "original_price": "USh 19,000 / month",
         "currency": "UGX",
         "price_number": "19,000",
-        "price_cny": 32.0
+        "price_cny": 31.1
       },
       {
         "rank": 8,
@@ -81,7 +81,7 @@
         "original_price": "TSh 13,000 / month",
         "currency": "TZS",
         "price_number": "13,000",
-        "price_cny": 33.08
+        "price_cny": 32.96
       },
       {
         "rank": 9,
@@ -91,7 +91,7 @@
         "original_price": "$ 7.599*** al mes",
         "currency": "ARS",
         "price_number": "7,599",
-        "price_cny": 33.41
+        "price_cny": 33.51
       },
       {
         "rank": 10,
@@ -101,7 +101,7 @@
         "original_price": "Ksh 669 / month",
         "currency": "KES",
         "price_number": "669",
-        "price_cny": 34.97
+        "price_cny": 34.49
       }
     ]
   },
@@ -115,7 +115,7 @@
         "currency": "PKR",
         "price": "Rs 379/month after",
         "price_number": "379",
-        "price_cny": 9.19,
+        "price_cny": 9.16,
         "source": "structured_data"
       },
       {
@@ -124,7 +124,7 @@
         "currency": "PKR",
         "price": "Rs 199/month after",
         "price_number": "199",
-        "price_cny": 4.83,
+        "price_cny": 4.81,
         "source": "structured_data"
       },
       {
@@ -133,7 +133,7 @@
         "currency": "PKR",
         "price": "Rs 519 / month",
         "price_number": "519",
-        "price_cny": 12.59,
+        "price_cny": 12.54,
         "source": "structured_data"
       },
       {
@@ -142,11 +142,11 @@
         "currency": "PKR",
         "price": "Rs 679 / month",
         "price_number": "679",
-        "price_cny": 16.47,
+        "price_cny": 16.41,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:42",
+    "scraped_at": "2026-10-11 10:48:44",
     "source_url": "https://www.spotify.com/pk-en/premium",
     "attempt": 1
   },
@@ -160,7 +160,7 @@
         "currency": "EGP",
         "price": "EGP 79/month after",
         "price_number": "79",
-        "price_cny": 10.15,
+        "price_cny": 10.09,
         "source": "structured_data"
       },
       {
@@ -169,7 +169,7 @@
         "currency": "EGP",
         "price": "EGP 39/month after",
         "price_number": "39",
-        "price_cny": 5.01,
+        "price_cny": 4.98,
         "source": "structured_data"
       },
       {
@@ -178,7 +178,7 @@
         "currency": "EGP",
         "price": "EGP 109 / month",
         "price_number": "109",
-        "price_cny": 14.0,
+        "price_cny": 13.92,
         "source": "structured_data"
       },
       {
@@ -187,11 +187,11 @@
         "currency": "EGP",
         "price": "EGP 139 / month",
         "price_number": "139",
-        "price_cny": 17.85,
+        "price_cny": 17.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:30",
+    "scraped_at": "2026-10-11 10:45:43",
     "source_url": "https://www.spotify.com/eg-en/premium",
     "attempt": 1
   },
@@ -205,7 +205,7 @@
         "currency": "BDT",
         "price": "BDT 219/month after",
         "price_number": "219",
-        "price_cny": 11.95,
+        "price_cny": 11.89,
         "source": "structured_data"
       },
       {
@@ -214,7 +214,7 @@
         "currency": "BDT",
         "price": "BDT 109/month after",
         "price_number": "109",
-        "price_cny": 5.95,
+        "price_cny": 5.92,
         "source": "structured_data"
       },
       {
@@ -223,7 +223,7 @@
         "currency": "BDT",
         "price": "BDT 299 / month",
         "price_number": "299",
-        "price_cny": 16.31,
+        "price_cny": 16.23,
         "source": "structured_data"
       },
       {
@@ -232,11 +232,11 @@
         "currency": "BDT",
         "price": "BDT 379 / month",
         "price_number": "379",
-        "price_cny": 20.67,
+        "price_cny": 20.57,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:23",
+    "scraped_at": "2026-10-11 10:47:27",
     "source_url": "https://www.spotify.com/bd-en/premium",
     "attempt": 1
   },
@@ -250,7 +250,7 @@
         "currency": "GHS",
         "price": "GH₵24/month after",
         "price_number": "24",
-        "price_cny": 13.73,
+        "price_cny": 13.65,
         "source": "structured_data"
       },
       {
@@ -259,7 +259,7 @@
         "currency": "GHS",
         "price": "GH₵12/month after",
         "price_number": "12",
-        "price_cny": 6.87,
+        "price_cny": 6.82,
         "source": "structured_data"
       },
       {
@@ -268,7 +268,7 @@
         "currency": "GHS",
         "price": "GH₵33 / month",
         "price_number": "33",
-        "price_cny": 18.88,
+        "price_cny": 18.76,
         "source": "structured_data"
       },
       {
@@ -277,11 +277,11 @@
         "currency": "GHS",
         "price": "GH₵43 / month",
         "price_number": "43",
-        "price_cny": 24.6,
+        "price_cny": 24.45,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:50",
+    "scraped_at": "2026-10-11 10:46:04",
     "source_url": "https://www.spotify.com/gh/premium",
     "attempt": 1
   },
@@ -295,7 +295,7 @@
         "currency": "LKR",
         "price": "LKR 749/month after",
         "price_number": "749",
-        "price_cny": 15.22,
+        "price_cny": 15.15,
         "source": "structured_data"
       },
       {
@@ -304,7 +304,7 @@
         "currency": "LKR",
         "price": "LKR 375/month after",
         "price_number": "375",
-        "price_cny": 7.62,
+        "price_cny": 7.58,
         "source": "structured_data"
       },
       {
@@ -313,7 +313,7 @@
         "currency": "LKR",
         "price": "LKR 969 / month",
         "price_number": "969",
-        "price_cny": 19.69,
+        "price_cny": 19.6,
         "source": "structured_data"
       },
       {
@@ -322,11 +322,11 @@
         "currency": "LKR",
         "price": "LKR 1,269 / month",
         "price_number": "1,269",
-        "price_cny": 25.79,
+        "price_cny": 25.67,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:25",
+    "scraped_at": "2026-10-11 10:49:25",
     "source_url": "https://www.spotify.com/lk-en/premium",
     "attempt": 1
   },
@@ -340,7 +340,7 @@
         "currency": "TRY",
         "price": "TRY 115/month after",
         "price_number": "115",
-        "price_cny": 15.7,
+        "price_cny": 15.64,
         "source": "structured_data"
       },
       {
@@ -349,7 +349,7 @@
         "currency": "TRY",
         "price": "TRY 60/month after",
         "price_number": "60",
-        "price_cny": 8.19,
+        "price_cny": 8.16,
         "source": "structured_data"
       },
       {
@@ -358,7 +358,7 @@
         "currency": "TRY",
         "price": "TRY 159 / month",
         "price_number": "159",
-        "price_cny": 21.7,
+        "price_cny": 21.62,
         "source": "structured_data"
       },
       {
@@ -367,11 +367,11 @@
         "currency": "TRY",
         "price": "TRY 199 / month",
         "price_number": "199",
-        "price_cny": 27.16,
+        "price_cny": 27.06,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:32",
+    "scraped_at": "2026-10-11 10:49:32",
     "source_url": "https://www.spotify.com/tr-en/premium",
     "attempt": 1
   },
@@ -385,7 +385,7 @@
         "currency": "UGX",
         "price": "USh 11,000/month after",
         "price_number": "11,000",
-        "price_cny": 18.52,
+        "price_cny": 18.01,
         "source": "structured_data"
       },
       {
@@ -394,7 +394,7 @@
         "currency": "UGX",
         "price": "USh 5,500/month after",
         "price_number": "5,500",
-        "price_cny": 9.26,
+        "price_cny": 9.0,
         "source": "structured_data"
       },
       {
@@ -403,7 +403,7 @@
         "currency": "UGX",
         "price": "USh 15,000 / month",
         "price_number": "15,000",
-        "price_cny": 25.26,
+        "price_cny": 24.55,
         "source": "structured_data"
       },
       {
@@ -412,11 +412,11 @@
         "currency": "UGX",
         "price": "USh 19,000 / month",
         "price_number": "19,000",
-        "price_cny": 32.0,
+        "price_cny": 31.1,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:08",
+    "scraped_at": "2026-10-11 10:47:11",
     "source_url": "https://www.spotify.com/ug-en/premium",
     "attempt": 1
   },
@@ -430,7 +430,7 @@
         "currency": "TZS",
         "price": "TSh 7,500/month after",
         "price_number": "7,500",
-        "price_cny": 19.08,
+        "price_cny": 19.01,
         "source": "structured_data"
       },
       {
@@ -439,7 +439,7 @@
         "currency": "TZS",
         "price": "TSh 4,000/month after",
         "price_number": "4,000",
-        "price_cny": 10.18,
+        "price_cny": 10.14,
         "source": "structured_data"
       },
       {
@@ -448,7 +448,7 @@
         "currency": "TZS",
         "price": "TSh 10,000 / month",
         "price_number": "10,000",
-        "price_cny": 25.45,
+        "price_cny": 25.35,
         "source": "structured_data"
       },
       {
@@ -457,11 +457,11 @@
         "currency": "TZS",
         "price": "TSh 13,000 / month",
         "price_number": "13,000",
-        "price_cny": 33.08,
+        "price_cny": 32.96,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:00",
+    "scraped_at": "2026-10-11 10:47:03",
     "source_url": "https://www.spotify.com/tz-en/premium",
     "attempt": 1
   },
@@ -475,7 +475,7 @@
         "currency": "ARS",
         "price": "Después, cuesta $ 4.499*** al mes",
         "price_number": "4,499",
-        "price_cny": 19.78,
+        "price_cny": 19.84,
         "source": "structured_data"
       },
       {
@@ -484,7 +484,7 @@
         "currency": "ARS",
         "price": "Después, cuesta $ 2.299*** al mes",
         "price_number": "2,299",
-        "price_cny": 10.11,
+        "price_cny": 10.14,
         "source": "structured_data"
       },
       {
@@ -493,7 +493,7 @@
         "currency": "ARS",
         "price": "$ 5.999*** al mes",
         "price_number": "5,999",
-        "price_cny": 26.38,
+        "price_cny": 26.45,
         "source": "structured_data"
       },
       {
@@ -502,11 +502,11 @@
         "currency": "ARS",
         "price": "$ 7.599*** al mes",
         "price_number": "7,599",
-        "price_cny": 33.41,
+        "price_cny": 33.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:37",
+    "scraped_at": "2026-10-11 10:52:32",
     "source_url": "https://www.spotify.com/ar/premium",
     "attempt": 1
   },
@@ -520,7 +520,7 @@
         "currency": "KES",
         "price": "Ksh 419/month after",
         "price_number": "419",
-        "price_cny": 21.9,
+        "price_cny": 21.6,
         "source": "structured_data"
       },
       {
@@ -529,7 +529,7 @@
         "currency": "KES",
         "price": "Ksh 209/month after",
         "price_number": "209",
-        "price_cny": 10.92,
+        "price_cny": 10.78,
         "source": "structured_data"
       },
       {
@@ -538,7 +538,7 @@
         "currency": "KES",
         "price": "Ksh 549 / month",
         "price_number": "549",
-        "price_cny": 28.69,
+        "price_cny": 28.31,
         "source": "structured_data"
       },
       {
@@ -547,11 +547,11 @@
         "currency": "KES",
         "price": "Ksh 669 / month",
         "price_number": "669",
-        "price_cny": 34.97,
+        "price_cny": 34.49,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:02",
+    "scraped_at": "2026-10-11 10:46:16",
     "source_url": "https://www.spotify.com/ke-en/premium",
     "attempt": 1
   },
@@ -565,7 +565,7 @@
         "currency": "BGN",
         "price": "€5.62/month after",
         "price_number": "5.62",
-        "price_cny": 21.68,
+        "price_cny": 21.54,
         "source": "structured_data"
       },
       {
@@ -574,7 +574,7 @@
         "currency": "BGN",
         "price": "€2.81/month after",
         "price_number": "2.81",
-        "price_cny": 10.84,
+        "price_cny": 10.77,
         "source": "structured_data"
       },
       {
@@ -583,7 +583,7 @@
         "currency": "BGN",
         "price": "€7.92 / month",
         "price_number": "7.92",
-        "price_cny": 30.55,
+        "price_cny": 30.36,
         "source": "structured_data"
       },
       {
@@ -592,147 +592,12 @@
         "currency": "BGN",
         "price": "€9.97 / month",
         "price_number": "9.97",
-        "price_cny": 38.46,
+        "price_cny": 38.22,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:02",
+    "scraped_at": "2026-10-11 10:50:03",
     "source_url": "https://www.spotify.com/bg-en/premium",
-    "attempt": 1
-  },
-  "BI": {
-    "country_code": "BI",
-    "country_name": "Burundi",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "$3.29/month after",
-        "price_number": "3.29",
-        "price_cny": 22.06,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "$1.69/month after",
-        "price_number": "1.69",
-        "price_cny": 11.33,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "$4.49 / month",
-        "price_number": "4.49",
-        "price_cny": 30.11,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "$5.79 / month",
-        "price_number": "5.79",
-        "price_cny": 38.82,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:18:14",
-    "source_url": "https://www.spotify.com/bi-en/premium",
-    "attempt": 1
-  },
-  "BF": {
-    "country_code": "BF",
-    "country_name": "Burkina Faso",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$3.29/month after",
-        "price_number": "3.29",
-        "price_cny": 22.06,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$1.69/month after",
-        "price_number": "1.69",
-        "price_cny": 11.33,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "US$4.49 / month",
-        "price_number": "4.49",
-        "price_cny": 30.11,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "US$5.79 / month",
-        "price_number": "5.79",
-        "price_cny": 38.82,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:18:14",
-    "source_url": "https://www.spotify.com/bf-en/premium",
-    "attempt": 1
-  },
-  "AO": {
-    "country_code": "AO",
-    "country_name": "Angola",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$3.29/month after",
-        "price_number": "3.29",
-        "price_cny": 22.06,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$1.69/month after",
-        "price_number": "1.69",
-        "price_cny": 11.33,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "US$4.49 / month",
-        "price_number": "4.49",
-        "price_cny": 30.11,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "US$5.79 / month",
-        "price_number": "5.79",
-        "price_cny": 38.82,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:18:15",
-    "source_url": "https://www.spotify.com/ao-en/premium",
     "attempt": 1
   },
   "BJ": {
@@ -745,7 +610,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -754,7 +619,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -763,7 +628,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -772,62 +637,62 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:15",
+    "scraped_at": "2026-10-11 10:45:28",
     "source_url": "https://www.spotify.com/bj-en/premium",
     "attempt": 1
   },
-  "CV": {
-    "country_code": "CV",
-    "country_name": "Cabo Verde",
+  "BI": {
+    "country_code": "BI",
+    "country_name": "Burundi",
     "plans": [
       {
         "plan": "Premium Individual",
         "original_plan_name": "Premium Individual",
         "currency": "USD",
-        "price": "US$3.29/month after",
+        "price": "$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
         "plan": "Premium Student",
         "original_plan_name": "Premium Student",
         "currency": "USD",
-        "price": "US$1.69/month after",
+        "price": "$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
         "plan": "Premium Duo",
         "original_plan_name": "Premium Duo",
         "currency": "USD",
-        "price": "US$4.49 / month",
+        "price": "$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
         "plan": "Premium Family",
         "original_plan_name": "Premium Family",
         "currency": "USD",
-        "price": "US$5.79 / month",
+        "price": "$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:22",
-    "source_url": "https://www.spotify.com/cv-en/premium",
+    "scraped_at": "2026-10-11 10:45:28",
+    "source_url": "https://www.spotify.com/bi-en/premium",
     "attempt": 1
   },
-  "CM": {
-    "country_code": "CM",
-    "country_name": "Cameroon",
+  "AO": {
+    "country_code": "AO",
+    "country_name": "Angola",
     "plans": [
       {
         "plan": "Premium Individual",
@@ -835,7 +700,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -844,7 +709,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -853,7 +718,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -862,12 +727,57 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:22",
-    "source_url": "https://www.spotify.com/cm-en/premium",
+    "scraped_at": "2026-10-11 10:45:28",
+    "source_url": "https://www.spotify.com/ao-en/premium",
+    "attempt": 1
+  },
+  "BF": {
+    "country_code": "BF",
+    "country_name": "Burkina Faso",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 22.02,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.31,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 30.05,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.75,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:45:29",
+    "source_url": "https://www.spotify.com/bf-en/premium",
     "attempt": 1
   },
   "BW": {
@@ -880,7 +790,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -889,7 +799,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -898,7 +808,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -907,17 +817,17 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:22",
+    "scraped_at": "2026-10-11 10:45:35",
     "source_url": "https://www.spotify.com/bw/premium",
     "attempt": 1
   },
-  "KM": {
-    "country_code": "KM",
-    "country_name": "Comoros",
+  "CM": {
+    "country_code": "CM",
+    "country_name": "Cameroon",
     "plans": [
       {
         "plan": "Premium Individual",
@@ -925,7 +835,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -934,7 +844,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -943,7 +853,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -952,12 +862,57 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:23",
-    "source_url": "https://www.spotify.com/km-en/premium",
+    "scraped_at": "2026-10-11 10:45:35",
+    "source_url": "https://www.spotify.com/cm-en/premium",
+    "attempt": 1
+  },
+  "CV": {
+    "country_code": "CV",
+    "country_name": "Cabo Verde",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 22.02,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.31,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 30.05,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.75,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:45:36",
+    "source_url": "https://www.spotify.com/cv-en/premium",
     "attempt": 1
   },
   "TD": {
@@ -970,7 +925,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -979,7 +934,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -988,7 +943,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -997,12 +952,57 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:23",
+    "scraped_at": "2026-10-11 10:45:36",
     "source_url": "https://www.spotify.com/td-en/premium",
+    "attempt": 1
+  },
+  "KM": {
+    "country_code": "KM",
+    "country_name": "Comoros",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 22.02,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.31,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 30.05,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.75,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:45:37",
+    "source_url": "https://www.spotify.com/km-en/premium",
     "attempt": 1
   },
   "CI": {
@@ -1015,7 +1015,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1024,7 +1024,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1033,7 +1033,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1042,11 +1042,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:29",
+    "scraped_at": "2026-10-11 10:45:42",
     "source_url": "https://www.spotify.com/ci-en/premium",
     "attempt": 1
   },
@@ -1060,7 +1060,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1069,7 +1069,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1078,7 +1078,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1087,11 +1087,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:30",
+    "scraped_at": "2026-10-11 10:45:44",
     "source_url": "https://www.spotify.com/dj-en/premium",
     "attempt": 1
   },
@@ -1105,7 +1105,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1114,7 +1114,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1123,7 +1123,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1132,11 +1132,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:31",
+    "scraped_at": "2026-10-11 10:45:44",
     "source_url": "https://www.spotify.com/gq-en/premium",
     "attempt": 1
   },
@@ -1150,7 +1150,7 @@
         "currency": "USD",
         "price": "US$ 3,29 kila mwezi baada ya hapo",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1159,7 +1159,7 @@
         "currency": "USD",
         "price": "US$ 1,69 kila mwezi baada ya hapo",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1168,7 +1168,7 @@
         "currency": "USD",
         "price": "US$ 4,49 kwa mwezi",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1177,11 +1177,11 @@
         "currency": "USD",
         "price": "US$ 5,79 kwa mwezi",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:36",
+    "scraped_at": "2026-10-11 10:45:49",
     "source_url": "https://www.spotify.com/cd/premium",
     "attempt": 1
   },
@@ -1195,7 +1195,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1204,7 +1204,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1213,7 +1213,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1222,11 +1222,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:37",
+    "scraped_at": "2026-10-11 10:45:50",
     "source_url": "https://www.spotify.com/et-en/premium",
     "attempt": 1
   },
@@ -1240,7 +1240,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1249,7 +1249,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1258,7 +1258,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1267,11 +1267,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:37",
+    "scraped_at": "2026-10-11 10:45:51",
     "source_url": "https://www.spotify.com/ga-en/premium",
     "attempt": 1
   },
@@ -1285,7 +1285,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1294,7 +1294,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1303,7 +1303,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1312,11 +1312,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:43",
+    "scraped_at": "2026-10-11 10:45:56",
     "source_url": "https://www.spotify.com/sz/premium",
     "attempt": 1
   },
@@ -1330,7 +1330,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1339,7 +1339,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1348,7 +1348,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1357,11 +1357,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:45",
+    "scraped_at": "2026-10-11 10:45:58",
     "source_url": "https://www.spotify.com/gn-en/premium",
     "attempt": 1
   },
@@ -1375,7 +1375,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1384,7 +1384,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1393,7 +1393,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1402,11 +1402,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:18:46",
+    "scraped_at": "2026-10-11 10:45:59",
     "source_url": "https://www.spotify.com/gm/premium",
     "attempt": 1
   },
@@ -1420,7 +1420,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1429,7 +1429,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1438,7 +1438,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1447,11 +1447,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:02",
+    "scraped_at": "2026-10-11 10:46:16",
     "source_url": "https://www.spotify.com/gw-en/premium",
     "attempt": 1
   },
@@ -1465,7 +1465,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1474,7 +1474,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1483,7 +1483,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1492,11 +1492,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:09",
+    "scraped_at": "2026-10-11 10:46:23",
     "source_url": "https://www.spotify.com/lr/premium",
     "attempt": 1
   },
@@ -1510,7 +1510,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1519,7 +1519,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1528,7 +1528,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1537,11 +1537,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:09",
+    "scraped_at": "2026-10-11 10:46:24",
     "source_url": "https://www.spotify.com/mg-en/premium",
     "attempt": 1
   },
@@ -1555,7 +1555,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1564,7 +1564,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1573,7 +1573,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1582,11 +1582,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:10",
+    "scraped_at": "2026-10-11 10:46:24",
     "source_url": "https://www.spotify.com/ls/premium",
     "attempt": 1
   },
@@ -1600,7 +1600,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1609,7 +1609,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1618,7 +1618,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1627,11 +1627,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:11",
+    "scraped_at": "2026-10-11 10:46:24",
     "source_url": "https://www.spotify.com/ml-en/premium",
     "attempt": 1
   },
@@ -1645,7 +1645,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1654,7 +1654,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1663,7 +1663,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1672,11 +1672,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:16",
+    "scraped_at": "2026-10-11 10:46:30",
     "source_url": "https://www.spotify.com/mr-en/premium",
     "attempt": 1
   },
@@ -1690,7 +1690,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1699,7 +1699,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1708,7 +1708,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1717,11 +1717,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:16",
+    "scraped_at": "2026-10-11 10:46:31",
     "source_url": "https://www.spotify.com/mw/premium",
     "attempt": 1
   },
@@ -1735,7 +1735,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1744,7 +1744,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1753,7 +1753,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1762,57 +1762,12 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:18",
+    "scraped_at": "2026-10-11 10:46:32",
     "source_url": "https://www.spotify.com/mz-en/premium",
-    "attempt": 1
-  },
-  "MU": {
-    "country_code": "MU",
-    "country_name": "Mauritius",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$3.29/month after",
-        "price_number": "3.29",
-        "price_cny": 22.06,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$1.69/month after",
-        "price_number": "1.69",
-        "price_cny": 11.33,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "US$4.49 / month",
-        "price_number": "4.49",
-        "price_cny": 30.11,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "US$5.79 / month",
-        "price_number": "5.79",
-        "price_cny": 38.82,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:19:23",
-    "source_url": "https://www.spotify.com/mu/premium",
     "attempt": 1
   },
   "NA": {
@@ -1825,7 +1780,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1834,7 +1789,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1843,7 +1798,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1852,12 +1807,57 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:24",
+    "scraped_at": "2026-10-11 10:46:38",
     "source_url": "https://www.spotify.com/na-en/premium",
+    "attempt": 1
+  },
+  "MU": {
+    "country_code": "MU",
+    "country_name": "Mauritius",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 22.02,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.31,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 30.05,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.75,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:46:39",
+    "source_url": "https://www.spotify.com/mu/premium",
     "attempt": 1
   },
   "NE": {
@@ -1870,7 +1870,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1879,7 +1879,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1888,7 +1888,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1897,11 +1897,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:25",
+    "scraped_at": "2026-10-11 10:46:39",
     "source_url": "https://www.spotify.com/ne-en/premium",
     "attempt": 1
   },
@@ -1915,7 +1915,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1924,7 +1924,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1933,7 +1933,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1942,11 +1942,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:32",
+    "scraped_at": "2026-10-11 10:46:46",
     "source_url": "https://www.spotify.com/sn-en/premium",
     "attempt": 1
   },
@@ -1960,7 +1960,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -1969,7 +1969,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -1978,7 +1978,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -1987,11 +1987,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:32",
+    "scraped_at": "2026-10-11 10:46:46",
     "source_url": "https://www.spotify.com/st-en/premium",
     "attempt": 1
   },
@@ -2005,7 +2005,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2014,7 +2014,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2023,7 +2023,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2032,11 +2032,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:39",
+    "scraped_at": "2026-10-11 10:46:52",
     "source_url": "https://www.spotify.com/rw/premium",
     "attempt": 1
   },
@@ -2050,7 +2050,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2059,7 +2059,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2068,7 +2068,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2077,11 +2077,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:00",
+    "scraped_at": "2026-10-11 10:47:03",
     "source_url": "https://www.spotify.com/tg-en/premium",
     "attempt": 1
   },
@@ -2095,7 +2095,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2104,7 +2104,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2113,7 +2113,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2122,11 +2122,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:07",
+    "scraped_at": "2026-10-11 10:47:10",
     "source_url": "https://www.spotify.com/sl/premium",
     "attempt": 1
   },
@@ -2140,7 +2140,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2149,7 +2149,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2158,7 +2158,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2167,11 +2167,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:16",
+    "scraped_at": "2026-10-11 10:47:18",
     "source_url": "https://www.spotify.com/zm/premium",
     "attempt": 1
   },
@@ -2185,7 +2185,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2194,7 +2194,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2203,7 +2203,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2212,11 +2212,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:21",
+    "scraped_at": "2026-10-11 10:47:24",
     "source_url": "https://www.spotify.com/zw/premium",
     "attempt": 1
   },
@@ -2230,7 +2230,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2239,7 +2239,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2248,7 +2248,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2257,11 +2257,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:34",
+    "scraped_at": "2026-10-11 10:47:38",
     "source_url": "https://www.spotify.com/bt/premium",
     "attempt": 1
   },
@@ -2275,7 +2275,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2284,7 +2284,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2293,7 +2293,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2302,11 +2302,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:37",
+    "scraped_at": "2026-10-11 10:47:40",
     "source_url": "https://www.spotify.com/kh/premium",
     "attempt": 1
   },
@@ -2320,7 +2320,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2329,7 +2329,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2338,7 +2338,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2347,11 +2347,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:33",
+    "scraped_at": "2026-10-11 10:48:36",
     "source_url": "https://www.spotify.com/la/premium",
     "attempt": 1
   },
@@ -2365,7 +2365,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2374,7 +2374,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2383,7 +2383,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2392,11 +2392,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:40",
+    "scraped_at": "2026-10-11 10:48:43",
     "source_url": "https://www.spotify.com/np-en/premium",
     "attempt": 1
   },
@@ -2410,7 +2410,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -2419,7 +2419,7 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       },
       {
@@ -2428,7 +2428,7 @@
         "currency": "USD",
         "price": "US$4.49 / month",
         "price_number": "4.49",
-        "price_cny": 30.11,
+        "price_cny": 30.05,
         "source": "structured_data"
       },
       {
@@ -2437,11 +2437,11 @@
         "currency": "USD",
         "price": "US$5.79 / month",
         "price_number": "5.79",
-        "price_cny": 38.82,
+        "price_cny": 38.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:53",
+    "scraped_at": "2026-10-11 10:53:53",
     "source_url": "https://www.spotify.com/ht-en/premium",
     "attempt": 1
   },
@@ -2455,7 +2455,7 @@
         "currency": "IQD",
         "price": "IQD 4,900/month after",
         "price_number": "4,900",
-        "price_cny": 25.13,
+        "price_cny": 25.02,
         "source": "structured_data"
       },
       {
@@ -2464,7 +2464,7 @@
         "currency": "IQD",
         "price": "IQD 2,450/month after",
         "price_number": "2,450",
-        "price_cny": 12.57,
+        "price_cny": 12.51,
         "source": "structured_data"
       },
       {
@@ -2473,7 +2473,7 @@
         "currency": "IQD",
         "price": "IQD 6,700 / month",
         "price_number": "6,700",
-        "price_cny": 34.37,
+        "price_cny": 34.22,
         "source": "structured_data"
       },
       {
@@ -2482,11 +2482,11 @@
         "currency": "IQD",
         "price": "IQD 8,400 / month",
         "price_number": "8,400",
-        "price_cny": 43.09,
+        "price_cny": 42.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:19",
+    "scraped_at": "2026-10-11 10:48:22",
     "source_url": "https://www.spotify.com/iq-en/premium",
     "attempt": 1
   },
@@ -2500,7 +2500,7 @@
         "currency": "TND",
         "price": "12,50 DT/mois ensuite",
         "price_number": "12.5",
-        "price_cny": 28.19,
+        "price_cny": 28.03,
         "source": "structured_data"
       },
       {
@@ -2509,7 +2509,7 @@
         "currency": "TND",
         "price": "16,50 DT/mois ensuite",
         "price_number": "16.5",
-        "price_cny": 37.21,
+        "price_cny": 37.0,
         "source": "structured_data"
       },
       {
@@ -2518,11 +2518,11 @@
         "currency": "TND",
         "price": "19,90 DT/mois ensuite",
         "price_number": "19.9",
-        "price_cny": 44.88,
+        "price_cny": 44.63,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:06",
+    "scraped_at": "2026-10-11 10:47:10",
     "source_url": "https://www.spotify.com/tn/premium",
     "attempt": 1
   },
@@ -2536,7 +2536,7 @@
         "currency": "MYR",
         "price": "RM 17.50/month after",
         "price_number": "17.5",
-        "price_cny": 28.72,
+        "price_cny": 28.67,
         "source": "structured_data"
       },
       {
@@ -2545,7 +2545,7 @@
         "currency": "MYR",
         "price": "RM 9.50/month after",
         "price_number": "9.5",
-        "price_cny": 15.59,
+        "price_cny": 15.56,
         "source": "structured_data"
       },
       {
@@ -2554,7 +2554,7 @@
         "currency": "MYR",
         "price": "RM 24.50/month after",
         "price_number": "24.5",
-        "price_cny": 40.21,
+        "price_cny": 40.13,
         "source": "structured_data"
       },
       {
@@ -2563,11 +2563,11 @@
         "currency": "MYR",
         "price": "RM 27.90 / month",
         "price_number": "27.9",
-        "price_cny": 45.79,
+        "price_cny": 45.7,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:34",
+    "scraped_at": "2026-10-11 10:48:36",
     "source_url": "https://www.spotify.com/my-en/premium",
     "attempt": 1
   },
@@ -2581,7 +2581,7 @@
         "currency": "MAD",
         "price": "45 MAD/mois ensuite",
         "price_number": "45",
-        "price_cny": 30.4,
+        "price_cny": 30.63,
         "source": "structured_data"
       },
       {
@@ -2590,7 +2590,7 @@
         "currency": "MAD",
         "price": "23 MAD/mois ensuite",
         "price_number": "23",
-        "price_cny": 15.54,
+        "price_cny": 15.65,
         "source": "structured_data"
       },
       {
@@ -2599,7 +2599,7 @@
         "currency": "MAD",
         "price": "60 MAD/mois ensuite",
         "price_number": "60",
-        "price_cny": 40.54,
+        "price_cny": 40.84,
         "source": "structured_data"
       },
       {
@@ -2608,11 +2608,11 @@
         "currency": "MAD",
         "price": "75 MAD/mois ensuite",
         "price_number": "75",
-        "price_cny": 50.67,
+        "price_cny": 51.05,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:24",
+    "scraped_at": "2026-10-11 10:46:37",
     "source_url": "https://www.spotify.com/ma/premium",
     "attempt": 1
   },
@@ -2626,7 +2626,7 @@
         "currency": "USD",
         "price": "US$4.99/month after",
         "price_number": "4.99",
-        "price_cny": 33.46,
+        "price_cny": 33.4,
         "source": "structured_data"
       },
       {
@@ -2635,7 +2635,7 @@
         "currency": "USD",
         "price": "US$2.49/month after",
         "price_number": "2.49",
-        "price_cny": 16.7,
+        "price_cny": 16.66,
         "source": "structured_data"
       },
       {
@@ -2644,7 +2644,7 @@
         "currency": "USD",
         "price": "US$6.49 / month",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -2653,11 +2653,11 @@
         "currency": "USD",
         "price": "US$7.99 / month",
         "price_number": "7.99",
-        "price_cny": 53.57,
+        "price_cny": 53.47,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:19",
+    "scraped_at": "2026-10-11 10:48:21",
     "source_url": "https://www.spotify.com/kz-en/premium",
     "attempt": 1
   },
@@ -2671,7 +2671,7 @@
         "currency": "USD",
         "price": "US$4.99/month after",
         "price_number": "4.99",
-        "price_cny": 33.46,
+        "price_cny": 33.4,
         "source": "structured_data"
       },
       {
@@ -2680,7 +2680,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -2689,7 +2689,7 @@
         "currency": "USD",
         "price": "US$6.49 / month",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -2698,11 +2698,11 @@
         "currency": "USD",
         "price": "US$7.99 / month",
         "price_number": "7.99",
-        "price_cny": 53.57,
+        "price_cny": 53.47,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:42",
+    "scraped_at": "2026-10-11 10:48:44",
     "source_url": "https://www.spotify.com/ps-en/premium",
     "attempt": 1
   },
@@ -2716,7 +2716,7 @@
         "currency": "USD",
         "price": "4,99 US$/month after",
         "price_number": "4.99",
-        "price_cny": 33.46,
+        "price_cny": 33.4,
         "source": "structured_data"
       },
       {
@@ -2725,7 +2725,7 @@
         "currency": "USD",
         "price": "2,49 US$/month after",
         "price_number": "2.49",
-        "price_cny": 16.7,
+        "price_cny": 16.66,
         "source": "structured_data"
       },
       {
@@ -2734,7 +2734,7 @@
         "currency": "USD",
         "price": "6,49 US$ / month",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -2743,11 +2743,11 @@
         "currency": "USD",
         "price": "7,99 US$ / month",
         "price_number": "7.99",
-        "price_cny": 53.57,
+        "price_cny": 53.47,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:23",
+    "scraped_at": "2026-10-11 10:52:19",
     "source_url": "https://www.spotify.com/ua-en/premium",
     "attempt": 1
   },
@@ -2761,7 +2761,7 @@
         "currency": "RON",
         "price": "26 RON/month after",
         "price_number": "26",
-        "price_cny": 36.76,
+        "price_cny": 36.51,
         "source": "structured_data"
       },
       {
@@ -2770,7 +2770,7 @@
         "currency": "RON",
         "price": "14 RON/month after",
         "price_number": "14",
-        "price_cny": 19.8,
+        "price_cny": 19.66,
         "source": "structured_data"
       },
       {
@@ -2779,7 +2779,7 @@
         "currency": "RON",
         "price": "35 RON / month",
         "price_number": "35",
-        "price_cny": 49.49,
+        "price_cny": 49.15,
         "source": "structured_data"
       },
       {
@@ -2788,11 +2788,11 @@
         "currency": "RON",
         "price": "42 RON / month",
         "price_number": "42",
-        "price_cny": 59.39,
+        "price_cny": 58.98,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:52",
+    "scraped_at": "2026-10-11 10:51:50",
     "source_url": "https://www.spotify.com/ro-en/premium",
     "attempt": 1
   },
@@ -2806,7 +2806,7 @@
         "currency": "TWD",
         "price": "後續每月只要 $168",
         "price_number": "168",
-        "price_cny": 35.4,
+        "price_cny": 35.18,
         "source": "structured_data"
       },
       {
@@ -2815,7 +2815,7 @@
         "currency": "TWD",
         "price": "後續每月只要 $88",
         "price_number": "88",
-        "price_cny": 18.54,
+        "price_cny": 18.43,
         "source": "structured_data"
       },
       {
@@ -2824,7 +2824,7 @@
         "currency": "TWD",
         "price": "每月 $228",
         "price_number": "228",
-        "price_cny": 48.04,
+        "price_cny": 47.74,
         "source": "structured_data"
       },
       {
@@ -2833,11 +2833,11 @@
         "currency": "TWD",
         "price": "每月 $298",
         "price_number": "298",
-        "price_cny": 62.79,
+        "price_cny": 62.4,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:31",
+    "scraped_at": "2026-10-11 10:49:32",
     "source_url": "https://www.spotify.com/tw/premium",
     "attempt": 1
   },
@@ -2851,7 +2851,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -2860,7 +2860,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -2869,7 +2869,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -2878,11 +2878,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:39",
+    "scraped_at": "2026-10-11 10:46:52",
     "source_url": "https://www.spotify.com/sc-en/premium",
     "attempt": 1
   },
@@ -2896,7 +2896,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -2905,7 +2905,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -2914,7 +2914,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -2923,11 +2923,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:15",
+    "scraped_at": "2026-10-11 10:47:19",
     "source_url": "https://www.spotify.com/az-en/premium",
     "attempt": 1
   },
@@ -2941,7 +2941,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -2950,7 +2950,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -2959,7 +2959,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -2968,11 +2968,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:21",
+    "scraped_at": "2026-10-11 10:47:24",
     "source_url": "https://www.spotify.com/am/premium",
     "attempt": 1
   },
@@ -2986,7 +2986,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -2995,7 +2995,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3004,7 +3004,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3013,11 +3013,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:23",
+    "scraped_at": "2026-10-11 10:47:26",
     "source_url": "https://www.spotify.com/bh-en/premium",
     "attempt": 1
   },
@@ -3031,7 +3031,7 @@
         "currency": "USD",
         "price": "5,49 US$/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3040,7 +3040,7 @@
         "currency": "USD",
         "price": "2,99 US$/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3049,7 +3049,7 @@
         "currency": "USD",
         "price": "7,49 US$ / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3058,11 +3058,11 @@
         "currency": "USD",
         "price": "9,49 US$ / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:38",
+    "scraped_at": "2026-10-11 10:47:42",
     "source_url": "https://www.spotify.com/ge/premium",
     "attempt": 1
   },
@@ -3076,7 +3076,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3085,7 +3085,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3094,7 +3094,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3103,57 +3103,12 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:18",
+    "scraped_at": "2026-10-11 10:48:21",
     "source_url": "https://www.spotify.com/jo-en/premium",
-    "attempt": 1
-  },
-  "KG": {
-    "country_code": "KG",
-    "country_name": "Kyrgyz Republic",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$5.49/month after",
-        "price_number": "5.49",
-        "price_cny": 36.81,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$2.99/month after",
-        "price_number": "2.99",
-        "price_cny": 20.05,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "US$7.49 / month",
-        "price_number": "7.49",
-        "price_cny": 50.22,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "US$9.49 / month",
-        "price_number": "9.49",
-        "price_cny": 63.63,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:21:26",
-    "source_url": "https://www.spotify.com/kg-en/premium",
     "attempt": 1
   },
   "KW": {
@@ -3166,7 +3121,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3175,7 +3130,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3184,7 +3139,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3193,12 +3148,57 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:26",
+    "scraped_at": "2026-10-11 10:48:28",
     "source_url": "https://www.spotify.com/kw-en/premium",
+    "attempt": 1
+  },
+  "KG": {
+    "country_code": "KG",
+    "country_name": "Kyrgyz Republic",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$5.49/month after",
+        "price_number": "5.49",
+        "price_cny": 36.74,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$2.99/month after",
+        "price_number": "2.99",
+        "price_cny": 20.01,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$7.49 / month",
+        "price_number": "7.49",
+        "price_cny": 50.13,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$9.49 / month",
+        "price_number": "9.49",
+        "price_cny": 63.51,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:48:29",
+    "source_url": "https://www.spotify.com/kg-en/premium",
     "attempt": 1
   },
   "LB": {
@@ -3211,7 +3211,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3220,7 +3220,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3229,7 +3229,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3238,11 +3238,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:27",
+    "scraped_at": "2026-10-11 10:48:29",
     "source_url": "https://www.spotify.com/lb-en/premium",
     "attempt": 1
   },
@@ -3256,7 +3256,7 @@
         "currency": "USD",
         "price": "US$ 5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3265,7 +3265,7 @@
         "currency": "USD",
         "price": "US$ 2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3274,7 +3274,7 @@
         "currency": "USD",
         "price": "US$ 7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3283,11 +3283,11 @@
         "currency": "USD",
         "price": "US$ 9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:34",
+    "scraped_at": "2026-10-11 10:48:37",
     "source_url": "https://www.spotify.com/mv-en/premium",
     "attempt": 1
   },
@@ -3301,7 +3301,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3310,7 +3310,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3319,7 +3319,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3328,11 +3328,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:41",
+    "scraped_at": "2026-10-11 10:48:44",
     "source_url": "https://www.spotify.com/om-en/premium",
     "attempt": 1
   },
@@ -3346,7 +3346,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3355,7 +3355,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3364,7 +3364,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3373,11 +3373,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:41",
+    "scraped_at": "2026-10-11 10:48:45",
     "source_url": "https://www.spotify.com/mn/premium",
     "attempt": 1
   },
@@ -3391,7 +3391,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3400,7 +3400,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3409,7 +3409,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3418,11 +3418,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:32",
+    "scraped_at": "2026-10-11 10:49:32",
     "source_url": "https://www.spotify.com/tl-en/premium",
     "attempt": 1
   },
@@ -3436,7 +3436,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3445,7 +3445,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3454,7 +3454,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3463,11 +3463,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:44",
+    "scraped_at": "2026-10-11 10:49:47",
     "source_url": "https://www.spotify.com/uz/premium",
     "attempt": 1
   },
@@ -3481,7 +3481,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3490,7 +3490,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3499,7 +3499,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3508,11 +3508,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:54",
+    "scraped_at": "2026-10-11 10:49:55",
     "source_url": "https://www.spotify.com/by-en/premium",
     "attempt": 1
   },
@@ -3526,7 +3526,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3535,7 +3535,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3544,7 +3544,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3553,11 +3553,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:11",
+    "scraped_at": "2026-10-11 10:51:10",
     "source_url": "https://www.spotify.com/md-en/premium",
     "attempt": 1
   },
@@ -3571,7 +3571,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3580,7 +3580,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3589,7 +3589,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3598,11 +3598,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:16",
+    "scraped_at": "2026-10-11 10:55:15",
     "source_url": "https://www.spotify.com/fj/premium",
     "attempt": 1
   },
@@ -3616,7 +3616,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3625,7 +3625,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3634,7 +3634,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3643,11 +3643,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:30",
+    "scraped_at": "2026-10-11 10:55:30",
     "source_url": "https://www.spotify.com/fm/premium",
     "attempt": 1
   },
@@ -3661,7 +3661,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3670,7 +3670,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3679,7 +3679,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3688,11 +3688,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:41",
+    "scraped_at": "2026-10-11 10:55:41",
     "source_url": "https://www.spotify.com/pg/premium",
     "attempt": 1
   },
@@ -3706,7 +3706,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3715,7 +3715,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3724,7 +3724,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3733,11 +3733,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:44",
+    "scraped_at": "2026-10-11 10:55:45",
     "source_url": "https://www.spotify.com/ws/premium",
     "attempt": 1
   },
@@ -3751,7 +3751,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3760,7 +3760,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3769,7 +3769,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3778,11 +3778,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:44",
+    "scraped_at": "2026-10-11 10:55:47",
     "source_url": "https://www.spotify.com/sb/premium",
     "attempt": 1
   },
@@ -3796,7 +3796,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3805,7 +3805,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3814,7 +3814,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3823,11 +3823,11 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:58",
+    "scraped_at": "2026-10-11 10:55:58",
     "source_url": "https://www.spotify.com/vu-en/premium",
     "attempt": 1
   },
@@ -3841,7 +3841,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -3850,7 +3850,7 @@
         "currency": "USD",
         "price": "US$2.99/month after",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3859,7 +3859,7 @@
         "currency": "USD",
         "price": "US$7.49 / month",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -3868,13 +3868,58 @@
         "currency": "USD",
         "price": "US$9.49 / month",
         "price_number": "9.49",
-        "price_cny": 63.63,
+        "price_cny": 63.51,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:29:05",
+    "scraped_at": "2026-10-11 10:56:04",
     "source_url": "https://www.spotify.com/to/premium",
     "attempt": 1
+  },
+  "GT": {
+    "country_code": "GT",
+    "country_name": "Guatemala",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "Después, USD 6.49 por mes",
+        "price_number": "6.49",
+        "price_cny": 43.44,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium para Estudiantes",
+        "currency": "USD",
+        "price": "Después, USD 3.49 por mes",
+        "price_number": "3.49",
+        "price_cny": 23.36,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "USD 7.99 al mes",
+        "price_number": "7.99",
+        "price_cny": 53.47,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Familiar",
+        "currency": "USD",
+        "price": "USD 9.99 al mes",
+        "price_number": "9.99",
+        "price_cny": 66.86,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:54:06",
+    "source_url": "https://www.spotify.com/gt/premium",
+    "attempt": 2
   },
   "PY": {
     "country_code": "PY",
@@ -3886,7 +3931,7 @@
         "currency": "USD",
         "price": "Después, USD 5,99*** por mes",
         "price_number": "5.99",
-        "price_cny": 40.16,
+        "price_cny": 40.09,
         "source": "structured_data"
       },
       {
@@ -3895,7 +3940,7 @@
         "currency": "USD",
         "price": "Después, USD 2,99*** por mes",
         "price_number": "2.99",
-        "price_cny": 20.05,
+        "price_cny": 20.01,
         "source": "structured_data"
       },
       {
@@ -3904,7 +3949,7 @@
         "currency": "USD",
         "price": "USD 7,99*** al mes",
         "price_number": "7.99",
-        "price_cny": 53.57,
+        "price_cny": 53.47,
         "source": "structured_data"
       },
       {
@@ -3913,11 +3958,11 @@
         "currency": "USD",
         "price": "USD 9,99*** al mes",
         "price_number": "9.99",
-        "price_cny": 66.98,
+        "price_cny": 66.86,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:16",
+    "scraped_at": "2026-10-11 10:54:14",
     "source_url": "https://www.spotify.com/py/premium",
     "attempt": 1
   },
@@ -3931,7 +3976,7 @@
         "currency": "QAR",
         "price": "QAR 21.99/month after",
         "price_number": "21.99",
-        "price_cny": 40.54,
+        "price_cny": 40.43,
         "source": "structured_data"
       },
       {
@@ -3940,7 +3985,7 @@
         "currency": "QAR",
         "price": "QAR 10.99/month after",
         "price_number": "10.99",
-        "price_cny": 20.26,
+        "price_cny": 20.21,
         "source": "structured_data"
       },
       {
@@ -3949,7 +3994,7 @@
         "currency": "QAR",
         "price": "QAR 29.99 / month",
         "price_number": "29.99",
-        "price_cny": 55.29,
+        "price_cny": 55.14,
         "source": "structured_data"
       },
       {
@@ -3958,11 +4003,11 @@
         "currency": "QAR",
         "price": "QAR 37.99 / month",
         "price_number": "37.99",
-        "price_cny": 70.03,
+        "price_cny": 69.85,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:48",
+    "scraped_at": "2026-10-11 10:48:51",
     "source_url": "https://www.spotify.com/qa-en/premium",
     "attempt": 1
   },
@@ -3976,7 +4021,7 @@
         "currency": "USD",
         "price": "Después, USD 6,99*** por mes",
         "price_number": "6.99",
-        "price_cny": 46.87,
+        "price_cny": 46.78,
         "source": "structured_data"
       },
       {
@@ -3985,7 +4030,7 @@
         "currency": "USD",
         "price": "Después, USD 3,99*** por mes",
         "price_number": "3.99",
-        "price_cny": 26.75,
+        "price_cny": 26.7,
         "source": "structured_data"
       },
       {
@@ -3994,7 +4039,7 @@
         "currency": "USD",
         "price": "USD 8,99*** al mes",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4003,7 +4048,7 @@
         "currency": "USD",
         "price": "USD 10,99*** al mes",
         "price_number": "10.99",
-        "price_cny": 73.69,
+        "price_cny": 73.55,
         "source": "structured_data"
       },
       {
@@ -4012,11 +4057,11 @@
         "currency": "USD",
         "price": "USD 11,99*** al mes",
         "price_number": "11.99",
-        "price_cny": 80.39,
+        "price_cny": 80.25,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:24",
+    "scraped_at": "2026-10-11 10:53:21",
     "source_url": "https://www.spotify.com/cr/premium",
     "attempt": 1
   },
@@ -4030,7 +4075,7 @@
         "currency": "USD",
         "price": "Después, US$6.49 por mes",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4039,7 +4084,7 @@
         "currency": "USD",
         "price": "Después, US$3.49 por mes",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4048,7 +4093,7 @@
         "currency": "USD",
         "price": "US$8.99 al mes",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4057,7 +4102,7 @@
         "currency": "USD",
         "price": "US$10.99 al mes",
         "price_number": "10.99",
-        "price_cny": 73.69,
+        "price_cny": 73.55,
         "source": "structured_data"
       },
       {
@@ -4066,11 +4111,11 @@
         "currency": "USD",
         "price": "US$11.99 al mes",
         "price_number": "11.99",
-        "price_cny": 80.39,
+        "price_cny": 80.25,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:32",
+    "scraped_at": "2026-10-11 10:53:31",
     "source_url": "https://www.spotify.com/do/premium",
     "attempt": 1
   },
@@ -4084,7 +4129,7 @@
         "currency": "HUF",
         "price": "Utána 2190 Ft/hó",
         "price_number": "2,190",
-        "price_cny": 44.87,
+        "price_cny": 44.99,
         "source": "structured_data"
       },
       {
@@ -4093,7 +4138,7 @@
         "currency": "HUF",
         "price": "Utána 1190 Ft/hó",
         "price_number": "1,190",
-        "price_cny": 24.38,
+        "price_cny": 24.45,
         "source": "structured_data"
       },
       {
@@ -4102,7 +4147,7 @@
         "currency": "HUF",
         "price": "3090 Ft/hó",
         "price_number": "3,090",
-        "price_cny": 63.3,
+        "price_cny": 63.48,
         "source": "structured_data"
       },
       {
@@ -4111,7 +4156,7 @@
         "currency": "HUF",
         "price": "3690 Ft/hó",
         "price_number": "3,690",
-        "price_cny": 75.6,
+        "price_cny": 75.81,
         "source": "structured_data"
       },
       {
@@ -4120,11 +4165,11 @@
         "currency": "HUF",
         "price": "4090 Ft/hó",
         "price_number": "4,090",
-        "price_cny": 83.79,
+        "price_cny": 84.03,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:47",
+    "scraped_at": "2026-10-11 10:50:46",
     "source_url": "https://www.spotify.com/hu/premium",
     "attempt": 1
   },
@@ -4138,7 +4183,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4147,7 +4192,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4156,7 +4201,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4165,11 +4210,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:31",
+    "scraped_at": "2026-10-11 10:52:28",
     "source_url": "https://www.spotify.com/ag/premium",
     "attempt": 1
   },
@@ -4183,7 +4228,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4192,7 +4237,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4201,7 +4246,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4210,11 +4255,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:37",
+    "scraped_at": "2026-10-11 10:52:34",
     "source_url": "https://www.spotify.com/bs/premium",
     "attempt": 1
   },
@@ -4228,7 +4273,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4237,7 +4282,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4246,7 +4291,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4255,11 +4300,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:45",
+    "scraped_at": "2026-10-11 10:52:40",
     "source_url": "https://www.spotify.com/bz-en/premium",
     "attempt": 1
   },
@@ -4273,7 +4318,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4282,7 +4327,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4291,7 +4336,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4300,11 +4345,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:45",
+    "scraped_at": "2026-10-11 10:52:41",
     "source_url": "https://www.spotify.com/bb/premium",
     "attempt": 1
   },
@@ -4318,7 +4363,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4327,7 +4372,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4336,7 +4381,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4345,11 +4390,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:17",
+    "scraped_at": "2026-10-11 10:53:15",
     "source_url": "https://www.spotify.com/cw-en/premium",
     "attempt": 1
   },
@@ -4363,7 +4408,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4372,7 +4417,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4381,7 +4426,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4390,11 +4435,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:32",
+    "scraped_at": "2026-10-11 10:53:30",
     "source_url": "https://www.spotify.com/dm/premium",
     "attempt": 1
   },
@@ -4408,7 +4453,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4417,7 +4462,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4426,7 +4471,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4435,11 +4480,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:47",
+    "scraped_at": "2026-10-11 10:53:45",
     "source_url": "https://www.spotify.com/gd/premium",
     "attempt": 1
   },
@@ -4453,7 +4498,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4462,7 +4507,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4471,7 +4516,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4480,11 +4525,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:54",
+    "scraped_at": "2026-10-11 10:53:53",
     "source_url": "https://www.spotify.com/gy/premium",
     "attempt": 1
   },
@@ -4498,7 +4543,7 @@
         "currency": "USD",
         "price": "Después, USD 6.49 por mes",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4507,7 +4552,7 @@
         "currency": "USD",
         "price": "Después, USD 3.49 por mes",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4516,7 +4561,7 @@
         "currency": "USD",
         "price": "USD 8.99 al mes",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4525,11 +4570,11 @@
         "currency": "USD",
         "price": "USD 11.49 al mes",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:02",
+    "scraped_at": "2026-10-11 10:54:00",
     "source_url": "https://www.spotify.com/hn/premium",
     "attempt": 1
   },
@@ -4543,7 +4588,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4552,7 +4597,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4561,7 +4606,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4570,11 +4615,11 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:07",
+    "scraped_at": "2026-10-11 10:54:06",
     "source_url": "https://www.spotify.com/jm/premium",
     "attempt": 1
   },
@@ -4588,7 +4633,7 @@
         "currency": "USD",
         "price": "Después, USD 6.49 por mes",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4597,7 +4642,7 @@
         "currency": "USD",
         "price": "Después, USD 3.49 por mes",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4606,7 +4651,7 @@
         "currency": "USD",
         "price": "USD 8.99 al mes",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4615,11 +4660,11 @@
         "currency": "USD",
         "price": "USD 11.49 al mes",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:09",
+    "scraped_at": "2026-10-11 10:54:08",
     "source_url": "https://www.spotify.com/ni/premium",
     "attempt": 1
   },
@@ -4633,7 +4678,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4642,7 +4687,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4651,7 +4696,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4660,57 +4705,12 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:48",
+    "scraped_at": "2026-10-11 10:54:48",
     "source_url": "https://www.spotify.com/sr-en/premium",
-    "attempt": 1
-  },
-  "VC": {
-    "country_code": "VC",
-    "country_name": "St. Vincent and the Grenadines",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$6.49/month after",
-        "price_number": "6.49",
-        "price_cny": 43.51,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$3.49/month after",
-        "price_number": "3.49",
-        "price_cny": 23.4,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "US$8.99 / month",
-        "price_number": "8.99",
-        "price_cny": 60.28,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "US$11.49 / month",
-        "price_number": "11.49",
-        "price_cny": 77.04,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:27:55",
-    "source_url": "https://www.spotify.com/vc/premium",
     "attempt": 1
   },
   "KN": {
@@ -4723,7 +4723,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4732,7 +4732,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4741,7 +4741,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4750,57 +4750,12 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:56",
+    "scraped_at": "2026-10-11 10:54:54",
     "source_url": "https://www.spotify.com/kn/premium",
-    "attempt": 1
-  },
-  "LC": {
-    "country_code": "LC",
-    "country_name": "St. Lucia",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$6.49/month after",
-        "price_number": "6.49",
-        "price_cny": 43.51,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$3.49/month after",
-        "price_number": "3.49",
-        "price_cny": 23.4,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "USD",
-        "price": "US$8.99 / month",
-        "price_number": "8.99",
-        "price_cny": 60.28,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "USD",
-        "price": "US$11.49 / month",
-        "price_number": "11.49",
-        "price_cny": 77.04,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:27:56",
-    "source_url": "https://www.spotify.com/lc/premium",
     "attempt": 1
   },
   "TT": {
@@ -4813,7 +4768,7 @@
         "currency": "USD",
         "price": "US$6.49/month after",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -4822,7 +4777,7 @@
         "currency": "USD",
         "price": "US$3.49/month after",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -4831,7 +4786,7 @@
         "currency": "USD",
         "price": "US$8.99 / month",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -4840,13 +4795,148 @@
         "currency": "USD",
         "price": "US$11.49 / month",
         "price_number": "11.49",
-        "price_cny": 77.04,
+        "price_cny": 76.9,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:57",
+    "scraped_at": "2026-10-11 10:54:55",
     "source_url": "https://www.spotify.com/tt/premium",
     "attempt": 1
+  },
+  "LC": {
+    "country_code": "LC",
+    "country_name": "St. Lucia",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$6.49/month after",
+        "price_number": "6.49",
+        "price_cny": 43.44,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$3.49/month after",
+        "price_number": "3.49",
+        "price_cny": 23.36,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$8.99 / month",
+        "price_number": "8.99",
+        "price_cny": 60.17,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$11.49 / month",
+        "price_number": "11.49",
+        "price_cny": 76.9,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:54:55",
+    "source_url": "https://www.spotify.com/lc/premium",
+    "attempt": 1
+  },
+  "VC": {
+    "country_code": "VC",
+    "country_name": "St. Vincent and the Grenadines",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$6.49/month after",
+        "price_number": "6.49",
+        "price_cny": 43.44,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$3.49/month after",
+        "price_number": "3.49",
+        "price_cny": 23.36,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$8.99 / month",
+        "price_number": "8.99",
+        "price_cny": 60.17,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$11.49 / month",
+        "price_number": "11.49",
+        "price_cny": 76.9,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:54:56",
+    "source_url": "https://www.spotify.com/vc/premium",
+    "attempt": 1
+  },
+  "PL": {
+    "country_code": "PL",
+    "country_name": "Poland",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "PLN",
+        "price": "Po tym okresie 26,99 zł/miesiąc.",
+        "price_number": "26.99",
+        "price_cny": 46.12,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "PLN",
+        "price": "Po tym okresie 14,49 zł/miesiąc.",
+        "price_number": "14.49",
+        "price_cny": 24.76,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "PLN",
+        "price": "36,99 zł miesięcznie",
+        "price_number": "36.99",
+        "price_cny": 63.2,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "PLN",
+        "price": "45,99 zł miesięcznie",
+        "price_number": "45.99",
+        "price_cny": 78.58,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:52:13",
+    "source_url": "https://www.spotify.com/pl/premium",
+    "attempt": 2
   },
   "AL": {
     "country_code": "AL",
@@ -4858,7 +4948,7 @@
         "currency": "EUR",
         "price": "€5.99/month after",
         "price_number": "5.99",
-        "price_cny": 45.21,
+        "price_cny": 44.91,
         "source": "structured_data"
       },
       {
@@ -4867,7 +4957,7 @@
         "currency": "EUR",
         "price": "€3.29/month after",
         "price_number": "3.29",
-        "price_cny": 24.83,
+        "price_cny": 24.67,
         "source": "structured_data"
       },
       {
@@ -4876,7 +4966,7 @@
         "currency": "EUR",
         "price": "€8.49 / month",
         "price_number": "8.49",
-        "price_cny": 64.08,
+        "price_cny": 63.66,
         "source": "structured_data"
       },
       {
@@ -4885,11 +4975,11 @@
         "currency": "EUR",
         "price": "€10.49 / month",
         "price_number": "10.49",
-        "price_cny": 79.18,
+        "price_cny": 78.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:47",
+    "scraped_at": "2026-10-11 10:49:47",
     "source_url": "https://www.spotify.com/al/premium",
     "attempt": 1
   },
@@ -4903,7 +4993,7 @@
         "currency": "EUR",
         "price": "€5.99/month after",
         "price_number": "5.99",
-        "price_cny": 45.21,
+        "price_cny": 44.91,
         "source": "structured_data"
       },
       {
@@ -4912,7 +5002,7 @@
         "currency": "EUR",
         "price": "€3.29/month after",
         "price_number": "3.29",
-        "price_cny": 24.83,
+        "price_cny": 24.67,
         "source": "structured_data"
       },
       {
@@ -4921,7 +5011,7 @@
         "currency": "EUR",
         "price": "€8.49 / month",
         "price_number": "8.49",
-        "price_cny": 64.08,
+        "price_cny": 63.66,
         "source": "structured_data"
       },
       {
@@ -4930,11 +5020,11 @@
         "currency": "EUR",
         "price": "€10.49 / month",
         "price_number": "10.49",
-        "price_cny": 79.18,
+        "price_cny": 78.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:09",
+    "scraped_at": "2026-10-11 10:50:09",
     "source_url": "https://www.spotify.com/ba/premium",
     "attempt": 1
   },
@@ -4948,7 +5038,7 @@
         "currency": "EUR",
         "price": "€5.99/month after",
         "price_number": "5.99",
-        "price_cny": 45.21,
+        "price_cny": 44.91,
         "source": "structured_data"
       },
       {
@@ -4957,7 +5047,7 @@
         "currency": "EUR",
         "price": "€3.29/month after",
         "price_number": "3.29",
-        "price_cny": 24.83,
+        "price_cny": 24.67,
         "source": "structured_data"
       },
       {
@@ -4966,7 +5056,7 @@
         "currency": "EUR",
         "price": "€8.49 / month",
         "price_number": "8.49",
-        "price_cny": 64.08,
+        "price_cny": 63.66,
         "source": "structured_data"
       },
       {
@@ -4975,11 +5065,11 @@
         "currency": "EUR",
         "price": "€10.49 / month",
         "price_number": "10.49",
-        "price_cny": 79.18,
+        "price_cny": 78.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:56",
+    "scraped_at": "2026-10-11 10:50:55",
     "source_url": "https://www.spotify.com/xk-en/premium",
     "attempt": 1
   },
@@ -4993,7 +5083,7 @@
         "currency": "EUR",
         "price": "€5.99/month after",
         "price_number": "5.99",
-        "price_cny": 45.21,
+        "price_cny": 44.91,
         "source": "structured_data"
       },
       {
@@ -5002,7 +5092,7 @@
         "currency": "EUR",
         "price": "€3.29/month after",
         "price_number": "3.29",
-        "price_cny": 24.83,
+        "price_cny": 24.67,
         "source": "structured_data"
       },
       {
@@ -5011,7 +5101,7 @@
         "currency": "EUR",
         "price": "€8.49 / month",
         "price_number": "8.49",
-        "price_cny": 64.08,
+        "price_cny": 63.66,
         "source": "structured_data"
       },
       {
@@ -5020,11 +5110,11 @@
         "currency": "EUR",
         "price": "€10.49 / month",
         "price_number": "10.49",
-        "price_cny": 79.18,
+        "price_cny": 78.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:18",
+    "scraped_at": "2026-10-11 10:51:17",
     "source_url": "https://www.spotify.com/me-en/premium",
     "attempt": 1
   },
@@ -5038,7 +5128,7 @@
         "currency": "EUR",
         "price": "€5.99/month after",
         "price_number": "5.99",
-        "price_cny": 45.21,
+        "price_cny": 44.91,
         "source": "structured_data"
       },
       {
@@ -5047,7 +5137,7 @@
         "currency": "EUR",
         "price": "€3.29/month after",
         "price_number": "3.29",
-        "price_cny": 24.83,
+        "price_cny": 24.67,
         "source": "structured_data"
       },
       {
@@ -5056,7 +5146,7 @@
         "currency": "EUR",
         "price": "€8.49 / month",
         "price_number": "8.49",
-        "price_cny": 64.08,
+        "price_cny": 63.66,
         "source": "structured_data"
       },
       {
@@ -5065,11 +5155,11 @@
         "currency": "EUR",
         "price": "€10.49 / month",
         "price_number": "10.49",
-        "price_cny": 79.18,
+        "price_cny": 78.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:00",
+    "scraped_at": "2026-10-11 10:51:56",
     "source_url": "https://www.spotify.com/mk/premium",
     "attempt": 1
   },
@@ -5083,7 +5173,7 @@
         "currency": "EUR",
         "price": "€5.99 / month",
         "price_number": "5.99",
-        "price_cny": 45.21,
+        "price_cny": 44.91,
         "source": "structured_data"
       },
       {
@@ -5092,7 +5182,7 @@
         "currency": "EUR",
         "price": "€3.29 / month",
         "price_number": "3.29",
-        "price_cny": 24.83,
+        "price_cny": 24.67,
         "source": "structured_data"
       },
       {
@@ -5101,7 +5191,7 @@
         "currency": "EUR",
         "price": "€8.49 / month",
         "price_number": "8.49",
-        "price_cny": 64.08,
+        "price_cny": 63.66,
         "source": "structured_data"
       },
       {
@@ -5110,11 +5200,11 @@
         "currency": "EUR",
         "price": "€10.49 / month",
         "price_number": "10.49",
-        "price_cny": 79.18,
+        "price_cny": 78.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:01",
+    "scraped_at": "2026-10-11 10:51:58",
     "source_url": "https://www.spotify.com/rs-en/premium",
     "attempt": 1
   },
@@ -5128,7 +5218,7 @@
         "currency": "JPY",
         "price": "キャンペーン期間終了後は月額￥1,080",
         "price_number": "1,080",
-        "price_cny": 45.88,
+        "price_cny": 45.67,
         "source": "structured_data"
       },
       {
@@ -5137,7 +5227,7 @@
         "currency": "JPY",
         "price": "キャンペーン期間終了後は月額￥580",
         "price_number": "580",
-        "price_cny": 24.64,
+        "price_cny": 24.52,
         "source": "structured_data"
       },
       {
@@ -5146,7 +5236,7 @@
         "currency": "JPY",
         "price": "月額￥1,480",
         "price_number": "1,480",
-        "price_cny": 62.87,
+        "price_cny": 62.58,
         "source": "structured_data"
       },
       {
@@ -5155,11 +5245,11 @@
         "currency": "JPY",
         "price": "月額￥1,880",
         "price_number": "1,880",
-        "price_cny": 79.86,
+        "price_cny": 79.49,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:26",
+    "scraped_at": "2026-10-11 10:48:29",
     "source_url": "https://www.spotify.com/jp/premium",
     "attempt": 1
   },
@@ -5173,7 +5263,7 @@
         "currency": "USD",
         "price": "Después, $6.49 por mes",
         "price_number": "6.49",
-        "price_cny": 43.51,
+        "price_cny": 43.44,
         "source": "structured_data"
       },
       {
@@ -5182,7 +5272,7 @@
         "currency": "USD",
         "price": "Después, $3.49 por mes",
         "price_number": "3.49",
-        "price_cny": 23.4,
+        "price_cny": 23.36,
         "source": "structured_data"
       },
       {
@@ -5191,7 +5281,7 @@
         "currency": "USD",
         "price": "$8.99 al mes",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -5200,11 +5290,11 @@
         "currency": "USD",
         "price": "$11.99 al mes",
         "price_number": "11.99",
-        "price_cny": 80.39,
+        "price_cny": 80.25,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:46",
+    "scraped_at": "2026-10-11 10:53:45",
     "source_url": "https://www.spotify.com/sv/premium",
     "attempt": 1
   },
@@ -5218,7 +5308,7 @@
         "currency": "USD",
         "price": "US$7.49/month after",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -5227,7 +5317,7 @@
         "currency": "USD",
         "price": "US$3.99/month after",
         "price_number": "3.99",
-        "price_cny": 26.75,
+        "price_cny": 26.7,
         "source": "structured_data"
       },
       {
@@ -5236,7 +5326,7 @@
         "currency": "USD",
         "price": "US$10.49 / month",
         "price_number": "10.49",
-        "price_cny": 70.33,
+        "price_cny": 70.21,
         "source": "structured_data"
       },
       {
@@ -5245,11 +5335,11 @@
         "currency": "USD",
         "price": "US$12.99 / month",
         "price_number": "12.99",
-        "price_cny": 87.1,
+        "price_cny": 86.94,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:28",
+    "scraped_at": "2026-10-11 10:47:32",
     "source_url": "https://www.spotify.com/bn-en/premium",
     "attempt": 1
   },
@@ -5263,7 +5353,7 @@
         "currency": "USD",
         "price": "US$7.49/month after",
         "price_number": "7.49",
-        "price_cny": 50.22,
+        "price_cny": 50.13,
         "source": "structured_data"
       },
       {
@@ -5272,7 +5362,7 @@
         "currency": "USD",
         "price": "US$3.99/month after",
         "price_number": "3.99",
-        "price_cny": 26.75,
+        "price_cny": 26.7,
         "source": "structured_data"
       },
       {
@@ -5281,7 +5371,7 @@
         "currency": "USD",
         "price": "US$10.49 / month",
         "price_number": "10.49",
-        "price_cny": 70.33,
+        "price_cny": 70.21,
         "source": "structured_data"
       },
       {
@@ -5290,11 +5380,11 @@
         "currency": "USD",
         "price": "US$12.99 / month",
         "price_number": "12.99",
-        "price_cny": 87.1,
+        "price_cny": 86.94,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:33",
+    "scraped_at": "2026-10-11 10:48:36",
     "source_url": "https://www.spotify.com/mo-en/premium",
     "attempt": 1
   },
@@ -5308,7 +5398,7 @@
         "currency": "USD",
         "price": "Después, USD 6.99 por mes",
         "price_number": "6.99",
-        "price_cny": 46.87,
+        "price_cny": 46.78,
         "source": "structured_data"
       },
       {
@@ -5317,7 +5407,7 @@
         "currency": "USD",
         "price": "Después, USD 3.99 por mes",
         "price_number": "3.99",
-        "price_cny": 26.75,
+        "price_cny": 26.7,
         "source": "structured_data"
       },
       {
@@ -5326,7 +5416,7 @@
         "currency": "USD",
         "price": "USD 9.99 al mes",
         "price_number": "9.99",
-        "price_cny": 66.98,
+        "price_cny": 66.86,
         "source": "structured_data"
       },
       {
@@ -5335,11 +5425,11 @@
         "currency": "USD",
         "price": "USD 12.99 al mes",
         "price_number": "12.99",
-        "price_cny": 87.1,
+        "price_cny": 86.94,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:16",
+    "scraped_at": "2026-10-11 10:54:14",
     "source_url": "https://www.spotify.com/pa/premium",
     "attempt": 1
   },
@@ -5353,7 +5443,7 @@
         "currency": "ILS",
         "price": "₪23.90/month after",
         "price_number": "23.9",
-        "price_cny": 52.5,
+        "price_cny": 52.21,
         "source": "structured_data"
       },
       {
@@ -5362,7 +5452,7 @@
         "currency": "ILS",
         "price": "₪12.90/month after",
         "price_number": "12.9",
-        "price_cny": 28.34,
+        "price_cny": 28.18,
         "source": "structured_data"
       },
       {
@@ -5371,7 +5461,7 @@
         "currency": "ILS",
         "price": "₪33.90 / month",
         "price_number": "33.9",
-        "price_cny": 74.47,
+        "price_cny": 74.06,
         "source": "structured_data"
       },
       {
@@ -5380,11 +5470,11 @@
         "currency": "ILS",
         "price": "₪39.90 / month",
         "price_number": "39.9",
-        "price_cny": 87.65,
+        "price_cny": 87.17,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:21:18",
+    "scraped_at": "2026-10-11 10:48:21",
     "source_url": "https://www.spotify.com/il-en/premium",
     "attempt": 1
   },
@@ -5398,7 +5488,7 @@
         "currency": "EUR",
         "price": "€6.99/month after",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -5407,7 +5497,7 @@
         "currency": "EUR",
         "price": "€3.99/month after",
         "price_number": "3.99",
-        "price_cny": 30.12,
+        "price_cny": 29.92,
         "source": "structured_data"
       },
       {
@@ -5416,7 +5506,7 @@
         "currency": "EUR",
         "price": "€9.99 / month",
         "price_number": "9.99",
-        "price_cny": 75.4,
+        "price_cny": 74.9,
         "source": "structured_data"
       },
       {
@@ -5425,7 +5515,7 @@
         "currency": "EUR",
         "price": "€11.99 / month",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -5434,11 +5524,11 @@
         "currency": "EUR",
         "price": "€12.99 / month",
         "price_number": "12.99",
-        "price_cny": 98.04,
+        "price_cny": 97.4,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:07",
+    "scraped_at": "2026-10-11 10:52:04",
     "source_url": "https://www.spotify.com/sk-en/premium",
     "attempt": 1
   },
@@ -5452,7 +5542,7 @@
         "currency": "CZK",
         "price": "Potom 185 Kč/měsíc",
         "price_number": "185",
-        "price_cny": 57.11,
+        "price_cny": 56.89,
         "source": "structured_data"
       },
       {
@@ -5461,7 +5551,7 @@
         "currency": "CZK",
         "price": "Potom 97 Kč/měsíc",
         "price_number": "97",
-        "price_cny": 29.94,
+        "price_cny": 29.83,
         "source": "structured_data"
       },
       {
@@ -5470,7 +5560,7 @@
         "currency": "CZK",
         "price": "249 Kč/měsíc",
         "price_number": "249",
-        "price_cny": 76.87,
+        "price_cny": 76.57,
         "source": "structured_data"
       },
       {
@@ -5479,11 +5569,11 @@
         "currency": "CZK",
         "price": "299 Kč/měsíc",
         "price_number": "299",
-        "price_cny": 92.3,
+        "price_cny": 91.95,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:12",
+    "scraped_at": "2026-10-11 10:50:15",
     "source_url": "https://www.spotify.com/cz/premium",
     "attempt": 1
   },
@@ -5497,7 +5587,7 @@
         "currency": "EUR",
         "price": "€6.99/month after",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -5506,7 +5596,7 @@
         "currency": "EUR",
         "price": "€3.99/month after",
         "price_number": "3.99",
-        "price_cny": 30.12,
+        "price_cny": 29.92,
         "source": "structured_data"
       },
       {
@@ -5515,7 +5605,7 @@
         "currency": "EUR",
         "price": "€9.99 / month",
         "price_number": "9.99",
-        "price_cny": 75.4,
+        "price_cny": 74.9,
         "source": "structured_data"
       },
       {
@@ -5524,11 +5614,11 @@
         "currency": "EUR",
         "price": "€12.49 / month",
         "price_number": "12.49",
-        "price_cny": 94.27,
+        "price_cny": 93.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:03",
+    "scraped_at": "2026-10-11 10:50:02",
     "source_url": "https://www.spotify.com/hr-en/premium",
     "attempt": 1
   },
@@ -5542,7 +5632,7 @@
         "currency": "EUR",
         "price": "€6.99/month after",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -5551,7 +5641,7 @@
         "currency": "EUR",
         "price": "€3.99/month after",
         "price_number": "3.99",
-        "price_cny": 30.12,
+        "price_cny": 29.92,
         "source": "structured_data"
       },
       {
@@ -5560,7 +5650,7 @@
         "currency": "EUR",
         "price": "€9.99 / month",
         "price_number": "9.99",
-        "price_cny": 75.4,
+        "price_cny": 74.9,
         "source": "structured_data"
       },
       {
@@ -5569,11 +5659,11 @@
         "currency": "EUR",
         "price": "€12.49 / month",
         "price_number": "12.49",
-        "price_cny": 94.27,
+        "price_cny": 93.65,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:08",
+    "scraped_at": "2026-10-11 10:52:06",
     "source_url": "https://www.spotify.com/si-en/premium",
     "attempt": 1
   },
@@ -5587,7 +5677,7 @@
         "currency": "USD",
         "price": "Después, US$ 8,99 por mes",
         "price_number": "8.99",
-        "price_cny": 60.28,
+        "price_cny": 60.17,
         "source": "structured_data"
       },
       {
@@ -5596,7 +5686,7 @@
         "currency": "USD",
         "price": "Después, US$ 4,99 por mes",
         "price_number": "4.99",
-        "price_cny": 33.46,
+        "price_cny": 33.4,
         "source": "structured_data"
       },
       {
@@ -5605,7 +5695,7 @@
         "currency": "USD",
         "price": "US$ 11,99 al mes",
         "price_number": "11.99",
-        "price_cny": 80.39,
+        "price_cny": 80.25,
         "source": "structured_data"
       },
       {
@@ -5614,11 +5704,11 @@
         "currency": "USD",
         "price": "US$ 14,99 al mes",
         "price_number": "14.99",
-        "price_cny": 100.51,
+        "price_cny": 100.32,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:03",
+    "scraped_at": "2026-10-11 10:55:02",
     "source_url": "https://www.spotify.com/uy/premium",
     "attempt": 1
   },
@@ -5632,7 +5722,7 @@
         "currency": "AUD",
         "price": "$12.99/month after",
         "price_number": "12.99",
-        "price_cny": 60.44,
+        "price_cny": 60.72,
         "source": "structured_data"
       },
       {
@@ -5641,7 +5731,7 @@
         "currency": "AUD",
         "price": "$6.99/month after",
         "price_number": "6.99",
-        "price_cny": 32.52,
+        "price_cny": 32.67,
         "source": "structured_data"
       },
       {
@@ -5650,7 +5740,7 @@
         "currency": "AUD",
         "price": "$17.99 / month",
         "price_number": "17.99",
-        "price_cny": 83.7,
+        "price_cny": 84.09,
         "source": "structured_data"
       },
       {
@@ -5659,11 +5749,11 @@
         "currency": "AUD",
         "price": "$22.49 / month",
         "price_number": "22.49",
-        "price_cny": 104.64,
+        "price_cny": 105.12,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:16",
+    "scraped_at": "2026-10-11 10:55:16",
     "source_url": "https://www.spotify.com/ki/premium",
     "attempt": 1
   },
@@ -5677,7 +5767,7 @@
         "currency": "AUD",
         "price": "$12.99/month after",
         "price_number": "12.99",
-        "price_cny": 60.44,
+        "price_cny": 60.72,
         "source": "structured_data"
       },
       {
@@ -5686,7 +5776,7 @@
         "currency": "AUD",
         "price": "$6.99/month after",
         "price_number": "6.99",
-        "price_cny": 32.52,
+        "price_cny": 32.67,
         "source": "structured_data"
       },
       {
@@ -5695,7 +5785,7 @@
         "currency": "AUD",
         "price": "$17.99 / month",
         "price_number": "17.99",
-        "price_cny": 83.7,
+        "price_cny": 84.09,
         "source": "structured_data"
       },
       {
@@ -5704,11 +5794,11 @@
         "currency": "AUD",
         "price": "$22.49 / month",
         "price_number": "22.49",
-        "price_cny": 104.64,
+        "price_cny": 105.12,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:30",
+    "scraped_at": "2026-10-11 10:55:30",
     "source_url": "https://www.spotify.com/nr/premium",
     "attempt": 1
   },
@@ -5722,7 +5812,7 @@
         "currency": "AUD",
         "price": "$12.99/month after",
         "price_number": "12.99",
-        "price_cny": 60.44,
+        "price_cny": 60.72,
         "source": "structured_data"
       },
       {
@@ -5731,7 +5821,7 @@
         "currency": "AUD",
         "price": "$6.99/month after",
         "price_number": "6.99",
-        "price_cny": 32.52,
+        "price_cny": 32.67,
         "source": "structured_data"
       },
       {
@@ -5740,7 +5830,7 @@
         "currency": "AUD",
         "price": "$17.99 / month",
         "price_number": "17.99",
-        "price_cny": 83.7,
+        "price_cny": 84.09,
         "source": "structured_data"
       },
       {
@@ -5749,11 +5839,11 @@
         "currency": "AUD",
         "price": "$22.49 / month",
         "price_number": "22.49",
-        "price_cny": 104.64,
+        "price_cny": 105.12,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:29:05",
+    "scraped_at": "2026-10-11 10:56:04",
     "source_url": "https://www.spotify.com/tv/premium",
     "attempt": 1
   },
@@ -5767,7 +5857,7 @@
         "currency": "HKD",
         "price": "HK$78/month after",
         "price_number": "78",
-        "price_cny": 66.64,
+        "price_cny": 66.51,
         "source": "structured_data"
       },
       {
@@ -5776,7 +5866,7 @@
         "currency": "HKD",
         "price": "HK$48/month after",
         "price_number": "48",
-        "price_cny": 41.01,
+        "price_cny": 40.93,
         "source": "structured_data"
       },
       {
@@ -5785,7 +5875,7 @@
         "currency": "HKD",
         "price": "HK$98 / month",
         "price_number": "98",
-        "price_cny": 83.73,
+        "price_cny": 83.57,
         "source": "structured_data"
       },
       {
@@ -5794,11 +5884,11 @@
         "currency": "HKD",
         "price": "HK$128 / month",
         "price_number": "128",
-        "price_cny": 109.36,
+        "price_cny": 109.15,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:35",
+    "scraped_at": "2026-10-11 10:47:39",
     "source_url": "https://www.spotify.com/hk-en/premium",
     "attempt": 1
   },
@@ -5812,7 +5902,7 @@
         "currency": "SGD",
         "price": "$11.98/month after",
         "price_number": "11.98",
-        "price_cny": 62.82,
+        "price_cny": 62.67,
         "source": "structured_data"
       },
       {
@@ -5821,7 +5911,7 @@
         "currency": "SGD",
         "price": "$6.48/month after",
         "price_number": "6.48",
-        "price_cny": 33.98,
+        "price_cny": 33.9,
         "source": "structured_data"
       },
       {
@@ -5830,7 +5920,7 @@
         "currency": "SGD",
         "price": "$16.98 / month",
         "price_number": "16.98",
-        "price_cny": 89.04,
+        "price_cny": 88.82,
         "source": "structured_data"
       },
       {
@@ -5839,57 +5929,12 @@
         "currency": "SGD",
         "price": "$20.98 / month",
         "price_number": "20.98",
-        "price_cny": 110.02,
+        "price_cny": 109.75,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:24",
+    "scraped_at": "2026-10-11 10:49:24",
     "source_url": "https://www.spotify.com/sg-en/premium",
-    "attempt": 1
-  },
-  "CA": {
-    "country_code": "CA",
-    "country_name": "Canada",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "CAD",
-        "price": "$13.99 / month after. Cancel anytime.",
-        "price_number": "13.99",
-        "price_cny": 65.84,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "CAD",
-        "price": "$6.39 / month after. Cancel anytime.",
-        "price_number": "6.39",
-        "price_cny": 30.07,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Duo",
-        "original_plan_name": "Premium Duo",
-        "currency": "CAD",
-        "price": "$19.99 / month",
-        "price_number": "19.99",
-        "price_cny": 94.08,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Family",
-        "original_plan_name": "Premium Family",
-        "currency": "CAD",
-        "price": "$23.99 / month",
-        "price_number": "23.99",
-        "price_cny": 112.91,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:28:03",
-    "source_url": "https://www.spotify.com/ca-en/premium",
     "attempt": 1
   },
   "CY": {
@@ -5902,7 +5947,7 @@
         "currency": "EUR",
         "price": "€8.99/month after",
         "price_number": "8.99",
-        "price_cny": 67.85,
+        "price_cny": 67.41,
         "source": "structured_data"
       },
       {
@@ -5911,7 +5956,7 @@
         "currency": "EUR",
         "price": "€4.99/month after",
         "price_number": "4.99",
-        "price_cny": 37.66,
+        "price_cny": 37.41,
         "source": "structured_data"
       },
       {
@@ -5920,7 +5965,7 @@
         "currency": "EUR",
         "price": "€11.99 / month",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -5929,11 +5974,11 @@
         "currency": "EUR",
         "price": "€14.99 / month",
         "price_number": "14.99",
-        "price_cny": 113.14,
+        "price_cny": 112.39,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:37",
+    "scraped_at": "2026-10-11 10:47:40",
     "source_url": "https://www.spotify.com/cy/premium",
     "attempt": 1
   },
@@ -5947,7 +5992,7 @@
         "currency": "EUR",
         "price": "8,99 €/μήνα στη συνέχεια",
         "price_number": "8.99",
-        "price_cny": 67.85,
+        "price_cny": 67.41,
         "source": "structured_data"
       },
       {
@@ -5956,7 +6001,7 @@
         "currency": "EUR",
         "price": "4,99 €/μήνα στη συνέχεια",
         "price_number": "4.99",
-        "price_cny": 37.66,
+        "price_cny": 37.41,
         "source": "structured_data"
       },
       {
@@ -5965,7 +6010,7 @@
         "currency": "EUR",
         "price": "11,99 € / μήνα",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -5974,11 +6019,11 @@
         "currency": "EUR",
         "price": "14,99 € / μήνα",
         "price_number": "14.99",
-        "price_cny": 113.14,
+        "price_cny": 112.39,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:40",
+    "scraped_at": "2026-10-11 10:50:40",
     "source_url": "https://www.spotify.com/gr/premium",
     "attempt": 1
   },
@@ -5992,7 +6037,7 @@
         "currency": "EUR",
         "price": "€8.99/month after",
         "price_number": "8.99",
-        "price_cny": 67.85,
+        "price_cny": 67.41,
         "source": "structured_data"
       },
       {
@@ -6001,7 +6046,7 @@
         "currency": "EUR",
         "price": "€4.99/month after",
         "price_number": "4.99",
-        "price_cny": 37.66,
+        "price_cny": 37.41,
         "source": "structured_data"
       },
       {
@@ -6010,7 +6055,7 @@
         "currency": "EUR",
         "price": "€11.99 / month",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6019,11 +6064,11 @@
         "currency": "EUR",
         "price": "€14.99 / month",
         "price_number": "14.99",
-        "price_cny": 113.14,
+        "price_cny": 112.39,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:03",
+    "scraped_at": "2026-10-11 10:51:03",
     "source_url": "https://www.spotify.com/lt-en/premium",
     "attempt": 1
   },
@@ -6037,7 +6082,7 @@
         "currency": "EUR",
         "price": "€8.99/month after",
         "price_number": "8.99",
-        "price_cny": 67.85,
+        "price_cny": 67.41,
         "source": "structured_data"
       },
       {
@@ -6046,7 +6091,7 @@
         "currency": "EUR",
         "price": "€4.99/month after",
         "price_number": "4.99",
-        "price_cny": 37.66,
+        "price_cny": 37.41,
         "source": "structured_data"
       },
       {
@@ -6055,7 +6100,7 @@
         "currency": "EUR",
         "price": "€11.99 / month",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6064,12 +6109,57 @@
         "currency": "EUR",
         "price": "€14.99 / month",
         "price_number": "14.99",
-        "price_cny": 113.14,
+        "price_cny": 112.39,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:17",
+    "scraped_at": "2026-10-11 10:51:14",
     "source_url": "https://www.spotify.com/mt/premium",
+    "attempt": 1
+  },
+  "CA": {
+    "country_code": "CA",
+    "country_name": "Canada",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "CAD",
+        "price": "$13.99 / month after. Cancel anytime.",
+        "price_number": "13.99",
+        "price_cny": 65.64,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "CAD",
+        "price": "$6.39 / month after. Cancel anytime.",
+        "price_number": "6.39",
+        "price_cny": 29.98,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "CAD",
+        "price": "$19.99 / month",
+        "price_number": "19.99",
+        "price_cny": 93.79,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "CAD",
+        "price": "$23.99 / month",
+        "price_number": "23.99",
+        "price_cny": 112.56,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:55:02",
+    "source_url": "https://www.spotify.com/ca-en/premium",
     "attempt": 1
   },
   "PT": {
@@ -6082,7 +6172,7 @@
         "currency": "EUR",
         "price": "€8.99/month after",
         "price_number": "8.99",
-        "price_cny": 67.85,
+        "price_cny": 67.41,
         "source": "structured_data"
       },
       {
@@ -6091,7 +6181,7 @@
         "currency": "EUR",
         "price": "€4.99/month after",
         "price_number": "4.99",
-        "price_cny": 37.66,
+        "price_cny": 37.41,
         "source": "structured_data"
       },
       {
@@ -6100,7 +6190,7 @@
         "currency": "EUR",
         "price": "€11.99 / month",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6109,7 +6199,7 @@
         "currency": "EUR",
         "price": "€15.49 / month",
         "price_number": "15.49",
-        "price_cny": 116.91,
+        "price_cny": 116.14,
         "source": "structured_data"
       },
       {
@@ -6118,11 +6208,11 @@
         "currency": "EUR",
         "price": "€16.99 / month",
         "price_number": "16.99",
-        "price_cny": 128.24,
+        "price_cny": 127.39,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:53",
+    "scraped_at": "2026-10-11 10:51:50",
     "source_url": "https://www.spotify.com/pt-en/premium",
     "attempt": 1
   },
@@ -6136,7 +6226,7 @@
         "currency": "USD",
         "price": "$10.99 / month after",
         "price_number": "10.99",
-        "price_cny": 73.69,
+        "price_cny": 73.55,
         "source": "structured_data"
       },
       {
@@ -6145,7 +6235,7 @@
         "currency": "USD",
         "price": "$5.49 / month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -6154,7 +6244,7 @@
         "currency": "USD",
         "price": "$14.99 / month",
         "price_number": "14.99",
-        "price_cny": 100.51,
+        "price_cny": 100.32,
         "source": "structured_data"
       },
       {
@@ -6163,11 +6253,11 @@
         "currency": "USD",
         "price": "$18.99 / month",
         "price_number": "18.99",
-        "price_cny": 127.33,
+        "price_cny": 127.09,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:18",
+    "scraped_at": "2026-10-11 10:55:17",
     "source_url": "https://www.spotify.com/mh/premium",
     "attempt": 1
   },
@@ -6181,7 +6271,7 @@
         "currency": "USD",
         "price": "US$10.99/month after",
         "price_number": "10.99",
-        "price_cny": 73.69,
+        "price_cny": 73.55,
         "source": "structured_data"
       },
       {
@@ -6190,7 +6280,7 @@
         "currency": "USD",
         "price": "US$5.49/month after",
         "price_number": "5.49",
-        "price_cny": 36.81,
+        "price_cny": 36.74,
         "source": "structured_data"
       },
       {
@@ -6199,7 +6289,7 @@
         "currency": "USD",
         "price": "US$14.99 / month",
         "price_number": "14.99",
-        "price_cny": 100.51,
+        "price_cny": 100.32,
         "source": "structured_data"
       },
       {
@@ -6208,11 +6298,11 @@
         "currency": "USD",
         "price": "US$18.99 / month",
         "price_number": "18.99",
-        "price_cny": 127.33,
+        "price_cny": 127.09,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:40",
+    "scraped_at": "2026-10-11 10:55:40",
     "source_url": "https://www.spotify.com/pw/premium",
     "attempt": 1
   },
@@ -6226,7 +6316,7 @@
         "currency": "EUR",
         "price": "10,99 €/mois ensuite",
         "price_number": "10.99",
-        "price_cny": 82.95,
+        "price_cny": 82.4,
         "source": "structured_data"
       },
       {
@@ -6235,7 +6325,7 @@
         "currency": "EUR",
         "price": "6,99 €/mois ensuite",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -6244,7 +6334,7 @@
         "currency": "EUR",
         "price": "14,99 €/mois",
         "price_number": "14.99",
-        "price_cny": 113.14,
+        "price_cny": 112.39,
         "source": "structured_data"
       },
       {
@@ -6253,11 +6343,11 @@
         "currency": "EUR",
         "price": "17,99 €/mois",
         "price_number": "17.99",
-        "price_cny": 135.78,
+        "price_cny": 134.89,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:18",
+    "scraped_at": "2026-10-11 10:51:18",
     "source_url": "https://www.spotify.com/mc/premium",
     "attempt": 1
   },
@@ -6271,7 +6361,7 @@
         "currency": "EUR",
         "price": "€11.99/month after",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6280,7 +6370,7 @@
         "currency": "EUR",
         "price": "€6.49/month after",
         "price_number": "6.49",
-        "price_cny": 48.98,
+        "price_cny": 48.66,
         "source": "structured_data"
       },
       {
@@ -6289,7 +6379,7 @@
         "currency": "EUR",
         "price": "€15.99 / month",
         "price_number": "15.99",
-        "price_cny": 120.69,
+        "price_cny": 119.89,
         "source": "structured_data"
       },
       {
@@ -6298,11 +6388,11 @@
         "currency": "EUR",
         "price": "€19.99 / month",
         "price_number": "19.99",
-        "price_cny": 150.88,
+        "price_cny": 149.88,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:25",
+    "scraped_at": "2026-10-11 10:50:26",
     "source_url": "https://www.spotify.com/ee-en/premium",
     "attempt": 1
   },
@@ -6316,7 +6406,7 @@
         "currency": "EUR",
         "price": "€11.99/month after",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6325,7 +6415,7 @@
         "currency": "EUR",
         "price": "€6.49/month after",
         "price_number": "6.49",
-        "price_cny": 48.98,
+        "price_cny": 48.66,
         "source": "structured_data"
       },
       {
@@ -6334,7 +6424,7 @@
         "currency": "EUR",
         "price": "€15.99 / month",
         "price_number": "15.99",
-        "price_cny": 120.69,
+        "price_cny": 119.89,
         "source": "structured_data"
       },
       {
@@ -6343,11 +6433,11 @@
         "currency": "EUR",
         "price": "€19.99 / month",
         "price_number": "19.99",
-        "price_cny": 150.88,
+        "price_cny": 149.88,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:56",
+    "scraped_at": "2026-10-11 10:50:56",
     "source_url": "https://www.spotify.com/lv-en/premium",
     "attempt": 1
   },
@@ -6361,7 +6451,7 @@
         "currency": "EUR",
         "price": "Después, 11,99 €/mes",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6370,7 +6460,7 @@
         "currency": "EUR",
         "price": "Después, 6,49 €/mes",
         "price_number": "6.49",
-        "price_cny": 48.98,
+        "price_cny": 48.66,
         "source": "structured_data"
       },
       {
@@ -6379,7 +6469,7 @@
         "currency": "EUR",
         "price": "16,99 € al mes",
         "price_number": "16.99",
-        "price_cny": 128.24,
+        "price_cny": 127.39,
         "source": "structured_data"
       },
       {
@@ -6388,11 +6478,11 @@
         "currency": "EUR",
         "price": "20,99 € al mes",
         "price_number": "20.99",
-        "price_cny": 158.43,
+        "price_cny": 157.38,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:54",
+    "scraped_at": "2026-10-11 10:49:54",
     "source_url": "https://www.spotify.com/ad/premium",
     "attempt": 1
   },
@@ -6406,7 +6496,7 @@
         "currency": "EUR",
         "price": "Danach € 12,99/Monat",
         "price_number": "12.99",
-        "price_cny": 98.04,
+        "price_cny": 97.4,
         "source": "structured_data"
       },
       {
@@ -6415,7 +6505,7 @@
         "currency": "EUR",
         "price": "Danach € 6,99/Monat",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -6424,7 +6514,7 @@
         "currency": "EUR",
         "price": "€ 16,99/Monat",
         "price_number": "16.99",
-        "price_cny": 128.24,
+        "price_cny": 127.39,
         "source": "structured_data"
       },
       {
@@ -6433,11 +6523,11 @@
         "currency": "EUR",
         "price": "€ 20,99/Monat",
         "price_number": "20.99",
-        "price_cny": 158.43,
+        "price_cny": 157.38,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:58",
+    "scraped_at": "2026-10-11 10:50:01",
     "source_url": "https://www.spotify.com/at/premium",
     "attempt": 1
   },
@@ -6451,7 +6541,7 @@
         "currency": "EUR",
         "price": "€11.99/month after",
         "price_number": "11.99",
-        "price_cny": 90.5,
+        "price_cny": 89.9,
         "source": "structured_data"
       },
       {
@@ -6460,7 +6550,7 @@
         "currency": "EUR",
         "price": "€6.49/month after",
         "price_number": "6.49",
-        "price_cny": 48.98,
+        "price_cny": 48.66,
         "source": "structured_data"
       },
       {
@@ -6469,7 +6559,7 @@
         "currency": "EUR",
         "price": "€16.99 / month",
         "price_number": "16.99",
-        "price_cny": 128.24,
+        "price_cny": 127.39,
         "source": "structured_data"
       },
       {
@@ -6478,13 +6568,58 @@
         "currency": "EUR",
         "price": "€20.99 / month",
         "price_number": "20.99",
-        "price_cny": 158.43,
+        "price_cny": 157.38,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:01",
+    "scraped_at": "2026-10-11 10:51:58",
     "source_url": "https://www.spotify.com/sm-en/premium",
     "attempt": 1
+  },
+  "DE": {
+    "country_code": "DE",
+    "country_name": "Germany",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "EUR",
+        "price": "€12.99/month after",
+        "price_number": "12.99",
+        "price_cny": 97.4,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "EUR",
+        "price": "€6.99/month after",
+        "price_number": "6.99",
+        "price_cny": 52.41,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "EUR",
+        "price": "€17.99 / month",
+        "price_number": "17.99",
+        "price_cny": 134.89,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "EUR",
+        "price": "€21.99 / month",
+        "price_number": "21.99",
+        "price_cny": 164.88,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:50:41",
+    "source_url": "https://www.spotify.com/de-en/premium",
+    "attempt": 2
   },
   "IS": {
     "country_code": "IS",
@@ -6496,7 +6631,7 @@
         "currency": "EUR",
         "price": "€12.99/month after",
         "price_number": "12.99",
-        "price_cny": 98.04,
+        "price_cny": 97.4,
         "source": "structured_data"
       },
       {
@@ -6505,7 +6640,7 @@
         "currency": "EUR",
         "price": "€7.49/month after",
         "price_number": "7.49",
-        "price_cny": 56.53,
+        "price_cny": 56.16,
         "source": "structured_data"
       },
       {
@@ -6514,7 +6649,7 @@
         "currency": "EUR",
         "price": "€18.49 / month",
         "price_number": "18.49",
-        "price_cny": 139.56,
+        "price_cny": 138.63,
         "source": "structured_data"
       },
       {
@@ -6523,11 +6658,11 @@
         "currency": "EUR",
         "price": "€21.99 / month",
         "price_number": "21.99",
-        "price_cny": 165.97,
+        "price_cny": 164.88,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:48",
+    "scraped_at": "2026-10-11 10:50:47",
     "source_url": "https://www.spotify.com/is-en/premium",
     "attempt": 1
   },
@@ -6541,7 +6676,7 @@
         "currency": "EUR",
         "price": "Daarna € 13,99 per maand",
         "price_number": "13.99",
-        "price_cny": 105.59,
+        "price_cny": 104.89,
         "source": "structured_data"
       },
       {
@@ -6550,7 +6685,7 @@
         "currency": "EUR",
         "price": "Daarna € 6,99 per maand",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -6559,7 +6694,7 @@
         "currency": "EUR",
         "price": "€ 19,99 per maand",
         "price_number": "19.99",
-        "price_cny": 150.88,
+        "price_cny": 149.88,
         "source": "structured_data"
       },
       {
@@ -6568,11 +6703,11 @@
         "currency": "EUR",
         "price": "€ 23,99 per maand",
         "price_number": "23.99",
-        "price_cny": 181.07,
+        "price_cny": 179.87,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:08",
+    "scraped_at": "2026-10-11 10:50:08",
     "source_url": "https://www.spotify.com/be/premium",
     "attempt": 1
   },
@@ -6586,7 +6721,7 @@
         "currency": "EUR",
         "price": "13,99 €/mois ensuite",
         "price_number": "13.99",
-        "price_cny": 105.59,
+        "price_cny": 104.89,
         "source": "structured_data"
       },
       {
@@ -6595,7 +6730,7 @@
         "currency": "EUR",
         "price": "6,99 €/mois ensuite",
         "price_number": "6.99",
-        "price_cny": 52.76,
+        "price_cny": 52.41,
         "source": "structured_data"
       },
       {
@@ -6604,7 +6739,7 @@
         "currency": "EUR",
         "price": "19,99 €/mois",
         "price_number": "19.99",
-        "price_cny": 150.88,
+        "price_cny": 149.88,
         "source": "structured_data"
       },
       {
@@ -6613,11 +6748,11 @@
         "currency": "EUR",
         "price": "23,99 €/mois",
         "price_number": "23.99",
-        "price_cny": 181.07,
+        "price_cny": 179.87,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:11",
+    "scraped_at": "2026-10-11 10:51:10",
     "source_url": "https://www.spotify.com/lu/premium",
     "attempt": 1
   },
@@ -6631,7 +6766,7 @@
         "currency": "CHF",
         "price": "Danach CHF 15.95/Monat",
         "price_number": "15.95",
-        "price_cny": 129.1,
+        "price_cny": 128.66,
         "source": "structured_data"
       },
       {
@@ -6640,7 +6775,7 @@
         "currency": "CHF",
         "price": "Danach CHF 8.95/Monat",
         "price_number": "8.95",
-        "price_cny": 72.44,
+        "price_cny": 72.2,
         "source": "structured_data"
       },
       {
@@ -6649,7 +6784,7 @@
         "currency": "CHF",
         "price": "CHF 21.95/Monat",
         "price_number": "21.95",
-        "price_cny": 177.67,
+        "price_cny": 177.07,
         "source": "structured_data"
       },
       {
@@ -6658,11 +6793,11 @@
         "currency": "CHF",
         "price": "CHF 26.95/Monat",
         "price_number": "26.95",
-        "price_cny": 218.14,
+        "price_cny": 217.4,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:03",
+    "scraped_at": "2026-10-11 10:51:04",
     "source_url": "https://www.spotify.com/li/premium",
     "attempt": 1
   },
@@ -6676,7 +6811,7 @@
         "currency": "CHF",
         "price": "Danach CHF 15.95/Monat",
         "price_number": "15.95",
-        "price_cny": 129.1,
+        "price_cny": 128.66,
         "source": "structured_data"
       },
       {
@@ -6685,7 +6820,7 @@
         "currency": "CHF",
         "price": "Danach CHF 8.95/Monat",
         "price_number": "8.95",
-        "price_cny": 72.44,
+        "price_cny": 72.2,
         "source": "structured_data"
       },
       {
@@ -6694,7 +6829,7 @@
         "currency": "CHF",
         "price": "CHF 21.95/Monat",
         "price_number": "21.95",
-        "price_cny": 177.67,
+        "price_cny": 177.07,
         "source": "structured_data"
       },
       {
@@ -6703,11 +6838,11 @@
         "currency": "CHF",
         "price": "CHF 26.95/Monat",
         "price_number": "26.95",
-        "price_cny": 218.14,
+        "price_cny": 217.4,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:23",
+    "scraped_at": "2026-10-11 10:52:20",
     "source_url": "https://www.spotify.com/ch/premium",
     "attempt": 1
   },
@@ -6721,7 +6856,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -6730,11 +6865,11 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:03",
+    "scraped_at": "2026-10-11 10:46:17",
     "source_url": "https://www.spotify.com/ly-en/premium",
     "attempt": 1
   },
@@ -6748,7 +6883,7 @@
         "currency": "USD",
         "price": "US$3.29/month after",
         "price_number": "3.29",
-        "price_cny": 22.06,
+        "price_cny": 22.02,
         "source": "structured_data"
       },
       {
@@ -6757,12 +6892,30 @@
         "currency": "USD",
         "price": "US$1.69/month after",
         "price_number": "1.69",
-        "price_cny": 11.33,
+        "price_cny": 11.31,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:19:31",
+    "scraped_at": "2026-10-11 10:46:44",
     "source_url": "https://www.spotify.com/cg-en/premium",
+    "attempt": 1
+  },
+  "NG": {
+    "country_code": "NG",
+    "country_name": "Nigeria",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "NGN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:46:46",
+    "source_url": "https://www.spotify.com/ng/premium",
     "attempt": 1
   },
   "IN": {
@@ -6788,8 +6941,35 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:20:41",
+    "scraped_at": "2026-10-11 10:47:45",
     "source_url": "https://www.spotify.com/in-en/premium",
+    "attempt": 1
+  },
+  "TJ": {
+    "country_code": "TJ",
+    "country_name": "Tajikistan",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$5.49/month after",
+        "price_number": "5.49",
+        "price_cny": 36.74,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$2.99/month after",
+        "price_number": "2.99",
+        "price_cny": 20.01,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-10-11 10:49:24",
+    "source_url": "https://www.spotify.com/tj-en/premium",
     "attempt": 1
   },
   "KR": {
@@ -6802,7 +6982,7 @@
         "currency": "KRW",
         "price": "₩11,990 (incl. VAT)/month after",
         "price_number": "11,990",
-        "price_cny": 59.85,
+        "price_cny": 59.87,
         "source": "structured_data"
       },
       {
@@ -6811,7 +6991,7 @@
         "currency": "KRW",
         "price": "₩8,690 (incl. VAT) / month",
         "price_number": "8,690",
-        "price_cny": 43.38,
+        "price_cny": 43.39,
         "source": "structured_data"
       },
       {
@@ -6829,39 +7009,12 @@
         "currency": "KRW",
         "price": "₩17,985 (incl. VAT) / month",
         "price_number": "17,985",
-        "price_cny": 89.78,
+        "price_cny": 89.8,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:24",
+    "scraped_at": "2026-10-11 10:49:25",
     "source_url": "https://www.spotify.com/kr-en/premium",
-    "attempt": 1
-  },
-  "TJ": {
-    "country_code": "TJ",
-    "country_name": "Tajikistan",
-    "plans": [
-      {
-        "plan": "Premium Individual",
-        "original_plan_name": "Premium Individual",
-        "currency": "USD",
-        "price": "US$5.49/month after",
-        "price_number": "5.49",
-        "price_cny": 36.81,
-        "source": "structured_data"
-      },
-      {
-        "plan": "Premium Student",
-        "original_plan_name": "Premium Student",
-        "currency": "USD",
-        "price": "US$2.99/month after",
-        "price_number": "2.99",
-        "price_cny": 20.05,
-        "source": "structured_data"
-      }
-    ],
-    "scraped_at": "2026-10-04 11:22:25",
-    "source_url": "https://www.spotify.com/tj-en/premium",
     "attempt": 1
   },
   "VN": {
@@ -6874,7 +7027,7 @@
         "currency": "VND",
         "price": "₫65,000/month after",
         "price_number": "65,000",
-        "price_cny": 16.77,
+        "price_cny": 16.8,
         "source": "structured_data"
       },
       {
@@ -6883,11 +7036,11 @@
         "currency": "VND",
         "price": "₫33,000/month after",
         "price_number": "33,000",
-        "price_cny": 8.51,
+        "price_cny": 8.53,
         "source": "structured_data"
       }
     ],
-    "scraped_at": "2026-10-04 11:22:39",
+    "scraped_at": "2026-10-11 10:49:40",
     "source_url": "https://www.spotify.com/vn-en/premium",
     "attempt": 1
   },
@@ -6905,7 +7058,7 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:23:33",
+    "scraped_at": "2026-10-11 10:50:33",
     "source_url": "https://www.spotify.com/fr/premium",
     "attempt": 1
   },
@@ -6923,7 +7076,7 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:24:03",
+    "scraped_at": "2026-10-11 10:51:00",
     "source_url": "https://www.spotify.com/it/premium",
     "attempt": 1
   },
@@ -6941,7 +7094,7 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:25:16",
+    "scraped_at": "2026-10-11 10:52:11",
     "source_url": "https://www.spotify.com/es/premium",
     "attempt": 1
   },
@@ -7004,7 +7157,7 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:26:18",
+    "scraped_at": "2026-10-11 10:53:15",
     "source_url": "https://www.spotify.com/br-en/premium",
     "attempt": 1
   },
@@ -7067,7 +7220,7 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:27:01",
+    "scraped_at": "2026-10-11 10:54:00",
     "source_url": "https://www.spotify.com/mx-en/premium",
     "attempt": 1
   },
@@ -7094,7 +7247,7 @@
         "source": "regex_parsing"
       }
     ],
-    "scraped_at": "2026-10-04 11:28:02",
+    "scraped_at": "2026-10-11 10:55:01",
     "source_url": "https://www.spotify.com/ve-en/premium",
     "attempt": 1
   }
