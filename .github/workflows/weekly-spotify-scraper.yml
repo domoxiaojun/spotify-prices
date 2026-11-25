@@ -17,7 +17,7 @@ env:
 
 jobs:
   scrape-and-update:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     
     steps:
@@ -25,130 +25,77 @@ jobs:
       uses: actions/checkout@v4
       
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.9'
-        
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '18'
-        
-    - name: Cache pip dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
+        python-version: '3.12'
+        cache: pip
         
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
-    - name: Install Playwright and browsers
+    - name: Install and verify Chromium
       env:
         PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
       run: |
-        # 安装基础依赖和虚拟显示器
-        sudo apt-get update
-        sudo apt-get install -y xvfb
-        # 显示当前Python和Playwright版本
-        echo "Python version: $(python --version)"
-        echo "Playwright version: $(python -c 'import playwright; print(playwright.__version__)')"
-        # 参考官方方式安装依赖
-        npx playwright install-deps
-        # 设置浏览器安装路径并安装所有浏览器
-        export PLAYWRIGHT_BROWSERS_PATH=/home/runner/.cache/ms-playwright
-        python -m playwright install
-        # 验证安装
-        python -c "
+        python -m playwright install --with-deps chromium
+        python - <<'PY'
         from playwright.sync_api import sync_playwright
-        import os
         with sync_playwright() as p:
-            print('Chromium executable:', p.chromium.executable_path)
-            if os.path.exists(p.chromium.executable_path):
-                print('✅ Chromium executable exists')
-            else:
-                print('❌ Chromium executable NOT found')
-                # Check actual browser cache location
-                cache_path = '/home/runner/.cache/ms-playwright'
-                if os.path.exists(cache_path):
-                    print(f'Browser cache directory exists: {cache_path}')
-                    import glob
-                    chromium_dirs = glob.glob(f'{cache_path}/chromium*')
-                    print(f'Found chromium directories: {chromium_dirs}')
-                else:
-                    print(f'Browser cache directory NOT found: {cache_path}')
-        "
-        # 设置浏览器路径环境变量
-        export PLAYWRIGHT_BROWSERS_PATH=/home/runner/.cache/ms-playwright
-        
-    - name: Create output directory
-      run: mkdir -p output
-        
+            browser = p.chromium.launch(headless=True)
+            browser.close()
+        PY
+
     - name: Run Spotify scraper
       id: scraper
       env:
-        # Playwright 环境变量 - 使用正确的浏览器路径
         PLAYWRIGHT_BROWSERS_PATH: /home/runner/.cache/ms-playwright
-        PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
-        # 确保headless模式
-        DISPLAY: ":99"
       run: |
-        echo "开始爬取Spotify价格数据..."
-        # 启动虚拟显示器
-        sudo Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-        sleep 2
-        # 检查Playwright浏览器安装状态
-        echo "检查Playwright浏览器安装..."
-        python -c "
-        from playwright.sync_api import sync_playwright
-        import os
-        with sync_playwright() as p:
-            print('Available browsers:', p.chromium, p.firefox, p.webkit)
-            print('Chromium executable path:', p.chromium.executable_path)
-            if os.path.exists(p.chromium.executable_path):
-                print('✅ Chromium executable exists')
-            else:
-                print('❌ Chromium executable NOT found')
-        "
-        # 运行爬虫
-        python spotify.py
+        rm -f spotify_prices_all_countries.json
+        python -u spotify.py
         echo "scraper_status=success" >> $GITHUB_OUTPUT
-      continue-on-error: true
-        
+
     - name: Check scraper output
       run: |
-        if [ -f "spotify_prices_all_countries.json" ]; then
-          echo "✅ 爬虫数据文件生成成功"
-          ls -la spotify_prices_all_countries*.json
-        else
-          echo "❌ 爬虫数据文件未生成"
-          exit 1
-        fi
-        
+        python - <<'PY'
+        import json
+        from pathlib import Path
+
+        data = json.loads(Path("spotify_prices_all_countries.json").read_text(encoding="utf-8"))
+        priced_countries = sum(
+            any(isinstance(plan.get("price_number"), (int, float)) and plan["price_number"] > 0
+                for plan in country.get("plans", []))
+            for country in data.values()
+        )
+        if not priced_countries:
+            raise SystemExit("Spotify scrape produced no priced countries")
+        print(f"Fresh Spotify scrape: {len(data)} countries, {priced_countries} with prices")
+        PY
+
     - name: Run rate converter
       id: converter
       env:
         API_KEY: ${{ secrets.API_KEY }}
       run: |
-        echo "开始汇率转换..."
+        rm -f spotify_prices_cny_sorted.json
         python spotify_rate_converter.py
         echo "converter_status=success" >> $GITHUB_OUTPUT
-      continue-on-error: true
         
     - name: Check converter output
       run: |
-        if [ -f "spotify_prices_cny_sorted.json" ]; then
-          echo "✅ 汇率转换文件生成成功"
-          ls -la spotify_prices_cny_sorted.json
-        else
-          echo "❌ 汇率转换文件未生成"
-          exit 1
-        fi
-        
+        python - <<'PY'
+        import json
+        from datetime import date
+        from pathlib import Path
+
+        data = json.loads(Path("spotify_prices_cny_sorted.json").read_text(encoding="utf-8"))
+        ranking = data.get("_top_10_cheapest_premium_family", {})
+        if ranking.get("updated_at") != date.today().isoformat() or not ranking.get("data"):
+            raise SystemExit("Spotify conversion produced no current priced ranking")
+        print(f"Fresh Spotify CNY ranking: {len(ranking['data'])} plans")
+        PY
+
     - name: Check for changes
       id: check_changes
       run: |
@@ -204,7 +151,7 @@ jobs:
       continue-on-error: true
         
     - name: Commit and push changes
-      if: steps.check_changes.outputs.changes == 'true'
+      if: github.ref == 'refs/heads/main' && steps.check_changes.outputs.changes == 'true'
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
