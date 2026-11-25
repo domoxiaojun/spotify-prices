@@ -1,0 +1,3393 @@
+{
+  "_top_10_cheapest_premium_family": {
+    "description": "最便宜的10个Premium Family套餐",
+    "updated_at": "2026-11-25",
+    "data": [
+      {
+        "rank": 1,
+        "country_code": "DJ",
+        "country_name": "Djibouti",
+        "country_name_cn": "Djibouti",
+        "original_price": "US$5.79 / month",
+        "currency": "USD",
+        "price_number": "5.79",
+        "price_cny": 38.64
+      },
+      {
+        "rank": 2,
+        "country_code": "CD",
+        "country_name": "Democratic Republic of the Congo",
+        "country_name_cn": "Democratic Republic of the Congo",
+        "original_price": "US$ 5,79 kwa mwezi",
+        "currency": "USD",
+        "price_number": null,
+        "price_cny": 38.64
+      },
+      {
+        "rank": 3,
+        "country_code": "ET",
+        "country_name": "Ethiopia",
+        "country_name_cn": "Ethiopia",
+        "original_price": "US$5.79 / month",
+        "currency": "USD",
+        "price_number": "5.79",
+        "price_cny": 38.64
+      },
+      {
+        "rank": 4,
+        "country_code": "GW",
+        "country_name": "Guinea-Bissau",
+        "country_name_cn": "Guinea-Bissau",
+        "original_price": "US$5.79 / month",
+        "currency": "USD",
+        "price_number": "5.79",
+        "price_cny": 38.64
+      },
+      {
+        "rank": 5,
+        "country_code": "ZW",
+        "country_name": "Zimbabwe",
+        "country_name_cn": "Zimbabwe",
+        "original_price": "US$5.79 / month",
+        "currency": "USD",
+        "price_number": "5.79",
+        "price_cny": 38.64
+      },
+      {
+        "rank": 6,
+        "country_code": "TN",
+        "country_name": "Tunisia",
+        "country_name_cn": "突尼斯",
+        "original_price": "19,90 DT/mois ensuite",
+        "currency": "TND",
+        "price_number": null,
+        "price_cny": 43.49
+      },
+      {
+        "rank": 7,
+        "country_code": "SC",
+        "country_name": "Seychelles",
+        "country_name_cn": "Seychelles",
+        "original_price": "US$9.49 / month",
+        "currency": "USD",
+        "price_number": "9.49",
+        "price_cny": 63.33
+      },
+      {
+        "rank": 8,
+        "country_code": "KW",
+        "country_name": "Kuwait",
+        "country_name_cn": "Kuwait",
+        "original_price": "US$9.49 / month",
+        "currency": "USD",
+        "price_number": "9.49",
+        "price_cny": 63.33
+      },
+      {
+        "rank": 9,
+        "country_code": "DO",
+        "country_name": "Dominican Republic",
+        "country_name_cn": "Dominican Republic",
+        "original_price": "US$10.99 al mes",
+        "currency": "USD",
+        "price_number": "10.99",
+        "price_cny": 73.34
+      },
+      {
+        "rank": 10,
+        "country_code": "ME",
+        "country_name": "Montenegro",
+        "country_name_cn": "Montenegro",
+        "original_price": "€10.49 / month",
+        "currency": "EUR",
+        "price_number": "10.49",
+        "price_cny": 76.57
+      }
+    ]
+  },
+  "DJ": {
+    "country_code": "DJ",
+    "country_name": "Djibouti",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 21.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.28,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 29.96,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.64,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:16",
+    "source_url": "https://www.spotify.com/dj-en/premium",
+    "attempt": 1
+  },
+  "CD": {
+    "country_code": "CD",
+    "country_name": "Democratic Republic of the Congo",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium ya Binafsi",
+        "currency": "USD",
+        "price": "US$ 3,29 kila mwezi baada ya hapo",
+        "price_number": "3.29",
+        "price_cny": 21.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Ya Wanachuo",
+        "original_plan_name": "Premium ya Wanachuo",
+        "currency": "USD",
+        "price": "US$ 1,69 kila mwezi baada ya hapo",
+        "price_number": "1.69",
+        "price_cny": 11.28,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$ 4,49 kwa mwezi",
+        "price_number": "4.49",
+        "price_cny": 29.96,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium ya Familia",
+        "currency": "USD",
+        "price": "US$ 5,79 kwa mwezi",
+        "price_number": "5.79",
+        "price_cny": 38.64,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:23",
+    "source_url": "https://www.spotify.com/cd/premium",
+    "attempt": 1
+  },
+  "ET": {
+    "country_code": "ET",
+    "country_name": "Ethiopia",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 21.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.28,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 29.96,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.64,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:30",
+    "source_url": "https://www.spotify.com/et-en/premium",
+    "attempt": 1
+  },
+  "GW": {
+    "country_code": "GW",
+    "country_name": "Guinea-Bissau",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 21.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.28,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 29.96,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.64,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:56",
+    "source_url": "https://www.spotify.com/gw-en/premium",
+    "attempt": 1
+  },
+  "ZW": {
+    "country_code": "ZW",
+    "country_name": "Zimbabwe",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 21.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.28,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$4.49 / month",
+        "price_number": "4.49",
+        "price_cny": 29.96,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$5.79 / month",
+        "price_number": "5.79",
+        "price_cny": 38.64,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:29",
+    "source_url": "https://www.spotify.com/zw/premium",
+    "attempt": 1
+  },
+  "TN": {
+    "country_code": "TN",
+    "country_name": "Tunisia",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Personnel",
+        "currency": "TND",
+        "price": "12,50 DT/mois ensuite",
+        "price_number": "12.5",
+        "price_cny": 27.32,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "TND",
+        "price": "16,50 DT/mois ensuite",
+        "price_number": "16.5",
+        "price_cny": 36.06,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Famille",
+        "currency": "TND",
+        "price": "19,90 DT/mois ensuite",
+        "price_number": "19.9",
+        "price_cny": 43.49,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:14",
+    "source_url": "https://www.spotify.com/tn/premium",
+    "attempt": 1
+  },
+  "SC": {
+    "country_code": "SC",
+    "country_name": "Seychelles",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$5.49/month after",
+        "price_number": "5.49",
+        "price_cny": 36.63,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$2.99/month after",
+        "price_number": "2.99",
+        "price_cny": 19.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$7.49 / month",
+        "price_number": "7.49",
+        "price_cny": 49.98,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$9.49 / month",
+        "price_number": "9.49",
+        "price_cny": 63.33,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:50",
+    "source_url": "https://www.spotify.com/sc-en/premium",
+    "attempt": 1
+  },
+  "KW": {
+    "country_code": "KW",
+    "country_name": "Kuwait",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$5.49/month after",
+        "price_number": "5.49",
+        "price_cny": 36.63,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$2.99/month after",
+        "price_number": "2.99",
+        "price_cny": 19.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$7.49 / month",
+        "price_number": "7.49",
+        "price_cny": 49.98,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$9.49 / month",
+        "price_number": "9.49",
+        "price_cny": 63.33,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:46",
+    "source_url": "https://www.spotify.com/kw-en/premium",
+    "attempt": 1
+  },
+  "DO": {
+    "country_code": "DO",
+    "country_name": "Dominican Republic",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "Después, US$6.49 por mes",
+        "price_number": "6.49",
+        "price_cny": 43.31,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium para Estudiantes",
+        "currency": "USD",
+        "price": "Después, US$3.49 por mes",
+        "price_number": "3.49",
+        "price_cny": 23.29,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$8.99 al mes",
+        "price_number": "8.99",
+        "price_cny": 59.99,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Familiar 4",
+        "currency": "USD",
+        "price": "US$10.99 al mes",
+        "price_number": "10.99",
+        "price_cny": 73.34,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Familiar 6",
+        "currency": "USD",
+        "price": "US$11.99 al mes",
+        "price_number": "11.99",
+        "price_cny": 80.01,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:52",
+    "source_url": "https://www.spotify.com/do/premium",
+    "attempt": 1
+  },
+  "ME": {
+    "country_code": "ME",
+    "country_name": "Montenegro",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "EUR",
+        "price": "€5.99/month after",
+        "price_number": "5.99",
+        "price_cny": 43.72,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "EUR",
+        "price": "€3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 24.01,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "EUR",
+        "price": "€8.49 / month",
+        "price_number": "8.49",
+        "price_cny": 61.97,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "EUR",
+        "price": "€10.49 / month",
+        "price_number": "10.49",
+        "price_cny": 76.57,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:56:05",
+    "source_url": "https://www.spotify.com/me-en/premium",
+    "attempt": 1
+  },
+  "VC": {
+    "country_code": "VC",
+    "country_name": "St. Vincent and the Grenadines",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$6.49/month after",
+        "price_number": "6.49",
+        "price_cny": 43.31,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$3.49/month after",
+        "price_number": "3.49",
+        "price_cny": 23.29,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "US$8.99 / month",
+        "price_number": "8.99",
+        "price_cny": 59.99,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "USD",
+        "price": "US$11.49 / month",
+        "price_number": "11.49",
+        "price_cny": 76.67,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:21",
+    "source_url": "https://www.spotify.com/vc/premium",
+    "attempt": 1
+  },
+  "JP": {
+    "country_code": "JP",
+    "country_name": "Japan",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Standard",
+        "currency": "JPY",
+        "price": "キャンペーン期間終了後は月額￥1,080",
+        "price_number": "1,080",
+        "price_cny": 45.2,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "JPY",
+        "price": "キャンペーン期間終了後は月額￥580",
+        "price_number": "580",
+        "price_cny": 24.27,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "JPY",
+        "price": "月額￥1,480",
+        "price_number": "1,480",
+        "price_cny": 61.94,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "JPY",
+        "price": "月額￥1,880",
+        "price_number": "1,880",
+        "price_cny": 78.68,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:44",
+    "source_url": "https://www.spotify.com/jp/premium",
+    "attempt": 1
+  },
+  "TV": {
+    "country_code": "TV",
+    "country_name": "Tuvalu",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "AUD",
+        "price": "$12.99/month after",
+        "price_number": "12.99",
+        "price_cny": 56.91,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "AUD",
+        "price": "$6.99/month after",
+        "price_number": "6.99",
+        "price_cny": 30.62,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "AUD",
+        "price": "$17.99 / month",
+        "price_number": "17.99",
+        "price_cny": 78.82,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "AUD",
+        "price": "$22.49 / month",
+        "price_number": "22.49",
+        "price_cny": 98.53,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:44",
+    "source_url": "https://www.spotify.com/tv/premium",
+    "attempt": 1
+  },
+  "CH": {
+    "country_code": "CH",
+    "country_name": "Switzerland",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "CHF",
+        "price": "Danach CHF 15.95/Monat",
+        "price_number": "15.95",
+        "price_cny": 127.53,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "CHF",
+        "price": "Danach CHF 8.95/Monat",
+        "price_number": "8.95",
+        "price_cny": 71.56,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "CHF",
+        "price": "CHF 21.95/Monat",
+        "price_number": "21.95",
+        "price_cny": 175.5,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "CHF",
+        "price": "CHF 26.95/Monat",
+        "price_number": "26.95",
+        "price_cny": 215.48,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:57:53",
+    "source_url": "https://www.spotify.com/ch/premium",
+    "attempt": 2
+  },
+  "AO": {
+    "country_code": "AO",
+    "country_name": "Angola",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:00",
+    "source_url": "https://www.spotify.com/ao-en/premium",
+    "attempt": 1
+  },
+  "BJ": {
+    "country_code": "BJ",
+    "country_name": "Benin",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:00",
+    "source_url": "https://www.spotify.com/bj-en/premium",
+    "attempt": 1
+  },
+  "BF": {
+    "country_code": "BF",
+    "country_name": "Burkina Faso",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:00",
+    "source_url": "https://www.spotify.com/bf-en/premium",
+    "attempt": 1
+  },
+  "BW": {
+    "country_code": "BW",
+    "country_name": "Botswana",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:06",
+    "source_url": "https://www.spotify.com/bw/premium",
+    "attempt": 1
+  },
+  "CV": {
+    "country_code": "CV",
+    "country_name": "Cabo Verde",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:08",
+    "source_url": "https://www.spotify.com/cv-en/premium",
+    "attempt": 1
+  },
+  "TD": {
+    "country_code": "TD",
+    "country_name": "Chad",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:08",
+    "source_url": "https://www.spotify.com/td-en/premium",
+    "attempt": 1
+  },
+  "CM": {
+    "country_code": "CM",
+    "country_name": "Cameroon",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:09",
+    "source_url": "https://www.spotify.com/cm-en/premium",
+    "attempt": 1
+  },
+  "KM": {
+    "country_code": "KM",
+    "country_name": "Comoros",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:14",
+    "source_url": "https://www.spotify.com/km-en/premium",
+    "attempt": 1
+  },
+  "CI": {
+    "country_code": "CI",
+    "country_name": "Côte d'Ivoire",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:16",
+    "source_url": "https://www.spotify.com/ci-en/premium",
+    "attempt": 1
+  },
+  "GQ": {
+    "country_code": "GQ",
+    "country_name": "Equatorial Guinea",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:24",
+    "source_url": "https://www.spotify.com/gq-en/premium",
+    "attempt": 1
+  },
+  "SZ": {
+    "country_code": "SZ",
+    "country_name": "Eswatini",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:31",
+    "source_url": "https://www.spotify.com/sz/premium",
+    "attempt": 1
+  },
+  "GA": {
+    "country_code": "GA",
+    "country_name": "Gabon",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:32",
+    "source_url": "https://www.spotify.com/ga-en/premium",
+    "attempt": 1
+  },
+  "GM": {
+    "country_code": "GM",
+    "country_name": "The Gambia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:39",
+    "source_url": "https://www.spotify.com/gm/premium",
+    "attempt": 1
+  },
+  "GN": {
+    "country_code": "GN",
+    "country_name": "Guinea",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:39",
+    "source_url": "https://www.spotify.com/gn-en/premium",
+    "attempt": 1
+  },
+  "GH": {
+    "country_code": "GH",
+    "country_name": "Ghana",
+    "plans": [
+      {
+        "plan": "Individual",
+        "original_plan_name": "Individual",
+        "currency": "GHS",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "Student",
+        "currency": "GHS",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "GHS",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "GHS",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:48:45",
+    "source_url": "https://www.spotify.com/gh/premium",
+    "attempt": 1
+  },
+  "LR": {
+    "country_code": "LR",
+    "country_name": "Liberia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:03",
+    "source_url": "https://www.spotify.com/lr/premium",
+    "attempt": 1
+  },
+  "MG": {
+    "country_code": "MG",
+    "country_name": "Madagascar",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:04",
+    "source_url": "https://www.spotify.com/mg-en/premium",
+    "attempt": 1
+  },
+  "LS": {
+    "country_code": "LS",
+    "country_name": "Lesotho",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:05",
+    "source_url": "https://www.spotify.com/ls/premium",
+    "attempt": 1
+  },
+  "ML": {
+    "country_code": "ML",
+    "country_name": "Mali",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:12",
+    "source_url": "https://www.spotify.com/ml-en/premium",
+    "attempt": 1
+  },
+  "MR": {
+    "country_code": "MR",
+    "country_name": "Mauritania",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:13",
+    "source_url": "https://www.spotify.com/mr-en/premium",
+    "attempt": 1
+  },
+  "MW": {
+    "country_code": "MW",
+    "country_name": "Malawi",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:18",
+    "source_url": "https://www.spotify.com/mw/premium",
+    "attempt": 1
+  },
+  "MZ": {
+    "country_code": "MZ",
+    "country_name": "Mozambique",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:26",
+    "source_url": "https://www.spotify.com/mz-en/premium",
+    "attempt": 1
+  },
+  "MU": {
+    "country_code": "MU",
+    "country_name": "Mauritius",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:26",
+    "source_url": "https://www.spotify.com/mu/premium",
+    "attempt": 1
+  },
+  "NA": {
+    "country_code": "NA",
+    "country_name": "Namibia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:29",
+    "source_url": "https://www.spotify.com/na-en/premium",
+    "attempt": 1
+  },
+  "NE": {
+    "country_code": "NE",
+    "country_name": "Niger",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:29",
+    "source_url": "https://www.spotify.com/ne-en/premium",
+    "attempt": 1
+  },
+  "ST": {
+    "country_code": "ST",
+    "country_name": "Sao Tome and Principe",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:37",
+    "source_url": "https://www.spotify.com/st-en/premium",
+    "attempt": 1
+  },
+  "RW": {
+    "country_code": "RW",
+    "country_name": "Rwanda",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:43",
+    "source_url": "https://www.spotify.com/rw/premium",
+    "attempt": 1
+  },
+  "SN": {
+    "country_code": "SN",
+    "country_name": "Senegal",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:45",
+    "source_url": "https://www.spotify.com/sn-en/premium",
+    "attempt": 1
+  },
+  "CG": {
+    "country_code": "CG",
+    "country_name": "Republic of the Congo",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$3.29/month after",
+        "price_number": "3.29",
+        "price_cny": 21.95,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$1.69/month after",
+        "price_number": "1.69",
+        "price_cny": 11.28,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:49:50",
+    "source_url": "https://www.spotify.com/cg-en/premium",
+    "attempt": 2
+  },
+  "TG": {
+    "country_code": "TG",
+    "country_name": "Togo",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:09",
+    "source_url": "https://www.spotify.com/tg-en/premium",
+    "attempt": 1
+  },
+  "SL": {
+    "country_code": "SL",
+    "country_name": "Sierra Leone",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:15",
+    "source_url": "https://www.spotify.com/sl/premium",
+    "attempt": 1
+  },
+  "ZM": {
+    "country_code": "ZM",
+    "country_name": "Zambia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:29",
+    "source_url": "https://www.spotify.com/zm/premium",
+    "attempt": 1
+  },
+  "AZ": {
+    "country_code": "AZ",
+    "country_name": "Azerbaijan",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:37",
+    "source_url": "https://www.spotify.com/az-en/premium",
+    "attempt": 1
+  },
+  "BH": {
+    "country_code": "BH",
+    "country_name": "Bahrain",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:39",
+    "source_url": "https://www.spotify.com/bh-en/premium",
+    "attempt": 1
+  },
+  "AM": {
+    "country_code": "AM",
+    "country_name": "Armenia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:42",
+    "source_url": "https://www.spotify.com/am/premium",
+    "attempt": 1
+  },
+  "BN": {
+    "country_code": "BN",
+    "country_name": "Brunei Darussalam",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:47",
+    "source_url": "https://www.spotify.com/bn-en/premium",
+    "attempt": 1
+  },
+  "BT": {
+    "country_code": "BT",
+    "country_name": "Bhutan",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:51",
+    "source_url": "https://www.spotify.com/bt/premium",
+    "attempt": 1
+  },
+  "KH": {
+    "country_code": "KH",
+    "country_name": "Cambodia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:54",
+    "source_url": "https://www.spotify.com/kh/premium",
+    "attempt": 1
+  },
+  "HK": {
+    "country_code": "HK",
+    "country_name": "Hong Kong",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "HKD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "HKD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:50:58",
+    "source_url": "https://www.spotify.com/hk-en/premium",
+    "attempt": 1
+  },
+  "IN": {
+    "country_code": "IN",
+    "country_name": "India",
+    "plans": [
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "INR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Individual",
+        "original_plan_name": "individual",
+        "currency": "INR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:01",
+    "source_url": "https://www.spotify.com/in-en/premium",
+    "attempt": 1
+  },
+  "KZ": {
+    "country_code": "KZ",
+    "country_name": "Kazakhstan",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:38",
+    "source_url": "https://www.spotify.com/kz-en/premium",
+    "attempt": 1
+  },
+  "JO": {
+    "country_code": "JO",
+    "country_name": "Jordan",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:38",
+    "source_url": "https://www.spotify.com/jo-en/premium",
+    "attempt": 1
+  },
+  "KG": {
+    "country_code": "KG",
+    "country_name": "Kyrgyz Republic",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:46",
+    "source_url": "https://www.spotify.com/kg-en/premium",
+    "attempt": 1
+  },
+  "LB": {
+    "country_code": "LB",
+    "country_name": "Lebanon",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:53",
+    "source_url": "https://www.spotify.com/lb-en/premium",
+    "attempt": 1
+  },
+  "MO": {
+    "country_code": "MO",
+    "country_name": "Macao",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:54",
+    "source_url": "https://www.spotify.com/mo-en/premium",
+    "attempt": 1
+  },
+  "LA": {
+    "country_code": "LA",
+    "country_name": "Laos",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:51:58",
+    "source_url": "https://www.spotify.com/la/premium",
+    "attempt": 1
+  },
+  "MV": {
+    "country_code": "MV",
+    "country_name": "Maldives",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:52:02",
+    "source_url": "https://www.spotify.com/mv-en/premium",
+    "attempt": 1
+  },
+  "NP": {
+    "country_code": "NP",
+    "country_name": "Nepal",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:52:08",
+    "source_url": "https://www.spotify.com/np-en/premium",
+    "attempt": 1
+  },
+  "OM": {
+    "country_code": "OM",
+    "country_name": "Oman",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:52:10",
+    "source_url": "https://www.spotify.com/om-en/premium",
+    "attempt": 1
+  },
+  "MN": {
+    "country_code": "MN",
+    "country_name": "Mongolia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:52:13",
+    "source_url": "https://www.spotify.com/mn/premium",
+    "attempt": 1
+  },
+  "PS": {
+    "country_code": "PS",
+    "country_name": "Palestine",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:52:16",
+    "source_url": "https://www.spotify.com/ps-en/premium",
+    "attempt": 1
+  },
+  "TJ": {
+    "country_code": "TJ",
+    "country_name": "Tajikistan",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "USD",
+        "price": "US$5.49/month after",
+        "price_number": "5.49",
+        "price_cny": 36.63,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "USD",
+        "price": "US$2.99/month after",
+        "price_number": "2.99",
+        "price_cny": 19.95,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:00",
+    "source_url": "https://www.spotify.com/tj-en/premium",
+    "attempt": 1
+  },
+  "TW": {
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "plans": [
+      {
+        "plan": "Duo",
+        "original_plan_name": "Duo",
+        "currency": "TWD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "TWD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:05",
+    "source_url": "https://www.spotify.com/tw/premium",
+    "attempt": 1
+  },
+  "TL": {
+    "country_code": "TL",
+    "country_name": "Timor-Leste",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:13",
+    "source_url": "https://www.spotify.com/tl-en/premium",
+    "attempt": 1
+  },
+  "KR": {
+    "country_code": "KR",
+    "country_name": "South Korea",
+    "plans": [
+      {
+        "plan": "Premium Individual",
+        "original_plan_name": "Premium Individual",
+        "currency": "KRW",
+        "price": "₩11,990 (incl. VAT)/month after",
+        "price_number": "11,990",
+        "price_cny": 59.54,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Basic",
+        "original_plan_name": "Premium Basic",
+        "currency": "KRW",
+        "price": "₩8,690 (incl. VAT) / month",
+        "price_number": "8,690",
+        "price_cny": 43.15,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Student",
+        "original_plan_name": "Premium Student",
+        "currency": "KRW",
+        "price": "₩6,600 (incl. VAT)/month after",
+        "price_number": "6,600",
+        "price_cny": 32.78,
+        "source": "structured_data"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "KRW",
+        "price": "₩17,985 (incl. VAT) / month",
+        "price_number": "17,985",
+        "price_cny": 89.31,
+        "source": "structured_data"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:16",
+    "source_url": "https://www.spotify.com/kr-en/premium",
+    "attempt": 2
+  },
+  "UZ": {
+    "country_code": "UZ",
+    "country_name": "Uzbekistan",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:36",
+    "source_url": "https://www.spotify.com/uz/premium",
+    "attempt": 1
+  },
+  "AD": {
+    "country_code": "AD",
+    "country_name": "Andorra",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:50",
+    "source_url": "https://www.spotify.com/ad/premium",
+    "attempt": 1
+  },
+  "BY": {
+    "country_code": "BY",
+    "country_name": "Belarus",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:54",
+    "source_url": "https://www.spotify.com/by-en/premium",
+    "attempt": 1
+  },
+  "AT": {
+    "country_code": "AT",
+    "country_name": "Austria",
+    "plans": [
+      {
+        "plan": "Duo",
+        "original_plan_name": "Duo",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:53:59",
+    "source_url": "https://www.spotify.com/at/premium",
+    "attempt": 1
+  },
+  "BG": {
+    "country_code": "BG",
+    "country_name": "Bulgaria",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "BGN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:54:09",
+    "source_url": "https://www.spotify.com/bg/premium",
+    "attempt": 1
+  },
+  "HR": {
+    "country_code": "HR",
+    "country_name": "Croatia",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:54:14",
+    "source_url": "https://www.spotify.com/hr/premium",
+    "attempt": 1
+  },
+  "GR": {
+    "country_code": "GR",
+    "country_name": "Greece",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:55:19",
+    "source_url": "https://www.spotify.com/gr/premium",
+    "attempt": 1
+  },
+  "IT": {
+    "country_code": "IT",
+    "country_name": "Italy",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:55:21",
+    "source_url": "https://www.spotify.com/it/premium",
+    "attempt": 1
+  },
+  "LV": {
+    "country_code": "LV",
+    "country_name": "Latvia",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:55:35",
+    "source_url": "https://www.spotify.com/lv/premium",
+    "attempt": 1
+  },
+  "LT": {
+    "country_code": "LT",
+    "country_name": "Lithuania",
+    "plans": [
+      {
+        "plan": "Individual",
+        "original_plan_name": "Individual",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "Student",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:55:49",
+    "source_url": "https://www.spotify.com/lt/premium",
+    "attempt": 1
+  },
+  "MD": {
+    "country_code": "MD",
+    "country_name": "Moldova",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:55:57",
+    "source_url": "https://www.spotify.com/md-en/premium",
+    "attempt": 1
+  },
+  "PT": {
+    "country_code": "PT",
+    "country_name": "Portugal",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:56:53",
+    "source_url": "https://www.spotify.com/pt/premium",
+    "attempt": 1
+  },
+  "SM": {
+    "country_code": "SM",
+    "country_name": "San Marino",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:57:08",
+    "source_url": "https://www.spotify.com/sm/premium",
+    "attempt": 1
+  },
+  "RS": {
+    "country_code": "RS",
+    "country_name": "Serbia",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:57:23",
+    "source_url": "https://www.spotify.com/rs/premium",
+    "attempt": 1
+  },
+  "SI": {
+    "country_code": "SI",
+    "country_name": "Slovenia",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:57:24",
+    "source_url": "https://www.spotify.com/si/premium",
+    "attempt": 1
+  },
+  "ES": {
+    "country_code": "ES",
+    "country_name": "Spain",
+    "plans": [
+      {
+        "plan": "Premium",
+        "original_plan_name": "Premium",
+        "currency": "EUR",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:57:25",
+    "source_url": "https://www.spotify.com/es/premium",
+    "attempt": 1
+  },
+  "AG": {
+    "country_code": "AG",
+    "country_name": "Antigua and Barbuda",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:57:54",
+    "source_url": "https://www.spotify.com/ag/premium",
+    "attempt": 1
+  },
+  "BZ": {
+    "country_code": "BZ",
+    "country_name": "Belize",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:02",
+    "source_url": "https://www.spotify.com/bz-en/premium",
+    "attempt": 1
+  },
+  "BS": {
+    "country_code": "BS",
+    "country_name": "The Bahamas",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:08",
+    "source_url": "https://www.spotify.com/bs/premium",
+    "attempt": 1
+  },
+  "BB": {
+    "country_code": "BB",
+    "country_name": "Barbados",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:08",
+    "source_url": "https://www.spotify.com/bb/premium",
+    "attempt": 1
+  },
+  "CW": {
+    "country_code": "CW",
+    "country_name": "Curacao",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:36",
+    "source_url": "https://www.spotify.com/cw-en/premium",
+    "attempt": 1
+  },
+  "BR": {
+    "country_code": "BR",
+    "country_name": "Brazil",
+    "plans": [
+      {
+        "plan": "Individual",
+        "original_plan_name": "Individual",
+        "currency": "BRL",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "Student",
+        "currency": "BRL",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "BRL",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "BRL",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Family",
+        "original_plan_name": "Family",
+        "currency": "BRL",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "BRL",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:37",
+    "source_url": "https://www.spotify.com/br-en/premium",
+    "attempt": 1
+  },
+  "DM": {
+    "country_code": "DM",
+    "country_name": "Dominica",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:58:51",
+    "source_url": "https://www.spotify.com/dm/premium",
+    "attempt": 1
+  },
+  "GD": {
+    "country_code": "GD",
+    "country_name": "Grenada",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:59:14",
+    "source_url": "https://www.spotify.com/gd/premium",
+    "attempt": 1
+  },
+  "GY": {
+    "country_code": "GY",
+    "country_name": "Guyana",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:59:15",
+    "source_url": "https://www.spotify.com/gy/premium",
+    "attempt": 1
+  },
+  "HT": {
+    "country_code": "HT",
+    "country_name": "Haiti",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:59:22",
+    "source_url": "https://www.spotify.com/ht-en/premium",
+    "attempt": 1
+  },
+  "MX": {
+    "country_code": "MX",
+    "country_name": "Mexico",
+    "plans": [
+      {
+        "plan": "Individual",
+        "original_plan_name": "Individual",
+        "currency": "MXN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "Student",
+        "currency": "MXN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "MXN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "MXN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Family",
+        "original_plan_name": "Family",
+        "currency": "MXN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Family",
+        "original_plan_name": "Premium Family",
+        "currency": "MXN",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:59:28",
+    "source_url": "https://www.spotify.com/mx-en/premium",
+    "attempt": 1
+  },
+  "JM": {
+    "country_code": "JM",
+    "country_name": "Jamaica",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 17:59:34",
+    "source_url": "https://www.spotify.com/jm/premium",
+    "attempt": 1
+  },
+  "SR": {
+    "country_code": "SR",
+    "country_name": "Suriname",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:14",
+    "source_url": "https://www.spotify.com/sr-en/premium",
+    "attempt": 1
+  },
+  "TT": {
+    "country_code": "TT",
+    "country_name": "Trinidad and Tobago",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:21",
+    "source_url": "https://www.spotify.com/tt/premium",
+    "attempt": 1
+  },
+  "KN": {
+    "country_code": "KN",
+    "country_name": "St. Kitts and Nevis",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:22",
+    "source_url": "https://www.spotify.com/kn/premium",
+    "attempt": 1
+  },
+  "LC": {
+    "country_code": "LC",
+    "country_name": "St. Lucia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:22",
+    "source_url": "https://www.spotify.com/lc/premium",
+    "attempt": 1
+  },
+  "UY": {
+    "country_code": "UY",
+    "country_name": "Uruguay",
+    "plans": [
+      {
+        "plan": "Duo",
+        "original_plan_name": "Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:28",
+    "source_url": "https://www.spotify.com/uy/premium",
+    "attempt": 1
+  },
+  "VE": {
+    "country_code": "VE",
+    "country_name": "Venezuela",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:29",
+    "source_url": "https://www.spotify.com/ve-en/premium",
+    "attempt": 1
+  },
+  "CA": {
+    "country_code": "CA",
+    "country_name": "Canada",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "CAD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Family",
+        "original_plan_name": "Family",
+        "currency": "CAD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:29",
+    "source_url": "https://www.spotify.com/ca-en/premium",
+    "attempt": 1
+  },
+  "FJ": {
+    "country_code": "FJ",
+    "country_name": "Fiji",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:43",
+    "source_url": "https://www.spotify.com/fj/premium",
+    "attempt": 1
+  },
+  "FM": {
+    "country_code": "FM",
+    "country_name": "Micronesia",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:00:57",
+    "source_url": "https://www.spotify.com/fm/premium",
+    "attempt": 1
+  },
+  "PW": {
+    "country_code": "PW",
+    "country_name": "Palau",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:11",
+    "source_url": "https://www.spotify.com/pw/premium",
+    "attempt": 1
+  },
+  "PG": {
+    "country_code": "PG",
+    "country_name": "Papua New Guinea",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:13",
+    "source_url": "https://www.spotify.com/pg/premium",
+    "attempt": 1
+  },
+  "WS": {
+    "country_code": "WS",
+    "country_name": "Samoa",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:17",
+    "source_url": "https://www.spotify.com/ws/premium",
+    "attempt": 1
+  },
+  "SB": {
+    "country_code": "SB",
+    "country_name": "Solomon Islands",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:25",
+    "source_url": "https://www.spotify.com/sb/premium",
+    "attempt": 1
+  },
+  "VU": {
+    "country_code": "VU",
+    "country_name": "Vanuatu",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:37",
+    "source_url": "https://www.spotify.com/vu-en/premium",
+    "attempt": 1
+  },
+  "TO": {
+    "country_code": "TO",
+    "country_name": "Tonga",
+    "plans": [
+      {
+        "plan": "Student",
+        "original_plan_name": "student",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      },
+      {
+        "plan": "Premium Duo",
+        "original_plan_name": "Premium Duo",
+        "currency": "USD",
+        "price": "",
+        "price_number": null,
+        "price_cny": null,
+        "source": "regex_parsing"
+      }
+    ],
+    "scraped_at": "2026-11-25 18:01:45",
+    "source_url": "https://www.spotify.com/to/premium",
+    "attempt": 1
+  }
+}
