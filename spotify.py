@@ -185,46 +185,52 @@ def extract_price_number(price_str: str) -> float:
         return 0.0
 
 def detect_currency(price_str: str, country_code: str = None) -> str:
-    """检测价格字符串中的货币"""
-
-    expected = SPOTIFY_REAL_CURRENCY_MAP.get((country_code or "").upper(), {}).get("currency")
-    explicit_codes = {entry["currency"] for entry in SPOTIFY_REAL_CURRENCY_MAP.values()}
-    code = re.search(r"(?<![A-Za-z])([A-Z]{3})(?=\s*\d)|(?<=\d)\s*([A-Z]{3})(?![A-Za-z])", price_str)
-    if code and (code.group(1) or code.group(2)) in explicit_codes:
-        return code.group(1) or code.group(2)
-    
-    currency_symbols = {
-        # 优先检查带前缀的美元符号
-        'US$': 'USD', 'USD': 'USD',
-        # 其他特殊美元符号
-        'C$': 'CAD', 'CA$': 'CAD', 'A$': 'AUD', 'S$': 'SGD', 'HK$': 'HKD',
-        'MX$': 'MXN', 'NZ$': 'NZD', 'NT$': 'TWD',
-        # 其他货币符号
-        'R$': 'BRL', '€': 'EUR', '£': 'GBP', '¥': 'JPY', '￥': 'JPY',
-        '₹': 'INR', '₱': 'PHP', '₪': 'ILS', '₨': 'PKR',
-        '₦': 'NGN', '₵': 'GHS', '₡': 'CRC',
-        '₩': 'KRW', '₴': 'UAH', '₽': 'RUB',
-        '₺': 'TRY', 'zł': 'PLN', 'Kč': 'CZK', 'Ft': 'HUF',
-        'CHF': 'CHF', 'NOK': 'NOK', 'SEK': 'SEK', 'DKK': 'DKK',
-        'SGD': 'SGD', 'MYR': 'MYR', 'THB': 'THB', 'IDR': 'IDR', 
-        'PKR': 'PKR', 'LKR': 'LKR', 'BDT': 'BDT', 'NGN': 'NGN', 
-        'GHS': 'GHS', 'KES': 'KES', 'TZS': 'TZS', 'UGX': 'UGX', 
-        'ZAR': 'ZAR', 'EGP': 'EGP', 'SAR': 'SAR', 'AED': 'AED', 
-        'QAR': 'QAR', 'IQD': 'IQD', 'COP': 'COP', 'TRY': 'TRY', 
-        'RON': 'RON', 'BGN': 'BGN', 'kr': 'SEK',
-        # 最后检查通用美元符号
-        '$': 'USD'
+    """Resolve the currency next to the recurring amount; never assume USD."""
+    market = (country_code or "").upper()
+    expected = SPOTIFY_REAL_CURRENCY_MAP.get(market, {}).get("currency")
+    # Spotify uses an unqualified dollar for these USD-billed markets.
+    expected = expected or {"EC": "USD", "SV": "USD"}.get(market)
+    explicit = {item["currency"] for item in SPOTIFY_REAL_CURRENCY_MAP.values()}
+    explicit.update({"USD", "EUR", "KRW", "HUF"})
+    aliases = {
+        "US$": "USD", "CA$": "CAD", "C$": "CAD", "AU$": "AUD", "A$": "AUD",
+        "SG$": "SGD", "S$": "SGD", "HK$": "HKD", "MX$": "MXN", "NZ$": "NZD",
+        "NT$": "TWD", "R$": "BRL", "€": "EUR", "£": "GBP", "₹": "INR",
+        "₱": "PHP", "₪": "ILS", "₦": "NGN", "₵": "GHS", "₡": "CRC",
+        "GH₵": "GHS", "₩": "KRW", "₴": "UAH", "₽": "RUB", "₺": "TRY", "zł": "PLN",
+        "Kč": "CZK", "Ft": "HUF", "RM": "MYR", "Ksh": "KES", "TSh": "TZS",
+        "USh": "UGX", "Rp": "IDR", "₫": "VND", "đ": "VND", "฿": "THB",
+        "S/": "PEN", "DT": "TND",
     }
-    
-    # 按符号长度从长到短排序，优先匹配更具体的符号
-    sorted_symbols = sorted(currency_symbols.items(), key=lambda x: len(x[0]), reverse=True)
-    
-    for symbol, currency in sorted_symbols:
-        if symbol in price_str:
-            return currency
-    
-    # 默认返回美元
-    return 'USD'
+    aliases.update({iso: iso for iso in explicit})
+    aliases = {token.casefold(): iso for token, iso in aliases.items()}
+    amount = r"\d+(?:[.,\u00a0\u202f ]\d+)*"
+    tokens = "|".join(re.escape(token) for token in sorted(aliases, key=len, reverse=True))
+    quote = re.compile(
+        rf"(?<![A-Za-z])(?:(?P<prefix>{tokens})\s*{amount}|{amount}\s*(?P<suffix>{tokens})(?![A-Za-z]))",
+        re.IGNORECASE,
+    )
+    found = {aliases[(m["prefix"] or m["suffix"]).casefold()] for m in quote.finditer(price_str)}
+    if found:
+        return next(iter(found)) if len(found) == 1 else ""
+
+    # A bare symbol is meaningful only with a verified market context.
+    contextual = {
+        "$": {"USD", "CAD", "AUD", "NZD", "SGD", "HKD", "TWD", "ARS", "CLP", "COP", "MXN", "UYU"},
+        "kr": {"DKK", "NOK", "SEK", "ISK"},
+        "¥": {"JPY", "CNY"}, "￥": {"JPY", "CNY"},
+        "Rs": {"PKR", "LKR", "INR", "NPR", "MUR", "SCR"},
+        "₨": {"PKR", "LKR", "INR", "NPR", "MUR", "SCR"},
+        "R": {"ZAR"},
+    }
+    for symbol, currencies in contextual.items():
+        if expected not in currencies:
+            continue
+        escaped = re.escape(symbol)
+        if re.search(rf"(?<![A-Za-z]){escaped}\.?\s*{amount}|{amount}\s*{escaped}(?![A-Za-z])", price_str, re.I):
+            return expected
+    return ""
+
 
 # 基于 Spotify 实际显示货币的静态映射表
 SPOTIFY_REAL_CURRENCY_MAP = {

@@ -39,6 +39,21 @@ class SpotifyPricesTests(unittest.TestCase):
         self.assertEqual(detect_currency("US$5.79 / month", "HK"), "USD")
         self.assertEqual(extract_price_number("VND 149\u202f000 / month"), 149000)
 
+    def test_currency_resolves_market_symbols_without_guessing_usd(self):
+        examples = (
+            ("RM 27.90 / month", "MY", "MYR"), ("Ksh 669 / month", "KE", "KES"),
+            ("TSh 13,000 / month", "TZ", "TZS"), ("毎月 $298", "TW", "TWD"),
+            ("$8.250 al mes", "CL", "CLP"), ("229 kr. / month", "DK", "DKK"),
+            ("219 kr / month", "NO", "NOK"), ("US$ 5.79 / month", "MY", "USD"),
+            ("€9.97/month", "BG", "EUR"), ("S/ 32.90 al mes", "PE", "PEN"),
+            ("12,50 DT/mois", "TN", "TND"), ("Rp 59.900/month", "ID", "IDR"),
+            ("$23.99 / month", "CA", "CAD"), ("$19.99 / month", None, ""),
+            ("GH₵43 / month", "GH", "GHS"), ("half price for 2 months", "MY", ""),
+        )
+        for price, market, expected in examples:
+            with self.subTest(price=price, market=market):
+                self.assertEqual(detect_currency(price, market), expected)
+
     def test_card_prices_stay_with_their_own_plans(self):
         html = """<div><h3>Student</h3><p>HK$0 for 1 month</p><p>HK$48/month after</p></div>
                   <div><h3>Duo</h3><p>HK$98 / month</p></div>
