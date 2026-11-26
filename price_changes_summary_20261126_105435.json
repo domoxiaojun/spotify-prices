@@ -1,0 +1,1387 @@
+{
+  "date": "2026-11-26 10:54:35",
+  "timestamp": "2026-11-26T10:54:35.019373",
+  "total_changes": 172,
+  "price_increases": 0,
+  "price_decreases": 0,
+  "new_plans": 167,
+  "removed_plans": 5,
+  "changes": [
+    {
+      "country": "NG",
+      "plan": "Premium Individual",
+      "new_price_cny": 7.87,
+      "price_original": "₦1,600/month after",
+      "currency": "NGN",
+      "type": "new_plan"
+    },
+    {
+      "country": "NG",
+      "plan": "Premium Student",
+      "new_price_cny": 3.93,
+      "price_original": "₦800/month after",
+      "currency": "NGN",
+      "type": "new_plan"
+    },
+    {
+      "country": "NG",
+      "plan": "Premium Duo",
+      "new_price_cny": 10.33,
+      "price_original": "₦2,100 / month",
+      "currency": "NGN",
+      "type": "new_plan"
+    },
+    {
+      "country": "NG",
+      "plan": "Premium Family",
+      "new_price_cny": 12.29,
+      "price_original": "₦2,500 / month",
+      "currency": "NGN",
+      "type": "new_plan"
+    },
+    {
+      "country": "EG",
+      "plan": "Premium Individual",
+      "new_price_cny": 9.62,
+      "price_original": "EGP 79/month after",
+      "currency": "EGP",
+      "type": "new_plan"
+    },
+    {
+      "country": "EG",
+      "plan": "Premium Student",
+      "new_price_cny": 4.75,
+      "price_original": "EGP 39/month after",
+      "currency": "EGP",
+      "type": "new_plan"
+    },
+    {
+      "country": "EG",
+      "plan": "Premium Duo",
+      "new_price_cny": 13.27,
+      "price_original": "EGP 109 / month",
+      "currency": "EGP",
+      "type": "new_plan"
+    },
+    {
+      "country": "EG",
+      "plan": "Premium Family",
+      "new_price_cny": 16.92,
+      "price_original": "EGP 139 / month",
+      "currency": "EGP",
+      "type": "new_plan"
+    },
+    {
+      "country": "TR",
+      "plan": "Premium Individual",
+      "new_price_cny": 15.13,
+      "price_original": "TRY 115/month after",
+      "currency": "TRY",
+      "type": "new_plan"
+    },
+    {
+      "country": "TR",
+      "plan": "Premium Student",
+      "new_price_cny": 7.89,
+      "price_original": "TRY 60/month after",
+      "currency": "TRY",
+      "type": "new_plan"
+    },
+    {
+      "country": "TR",
+      "plan": "Premium Duo",
+      "new_price_cny": 20.92,
+      "price_original": "TRY 159 / month",
+      "currency": "TRY",
+      "type": "new_plan"
+    },
+    {
+      "country": "TR",
+      "plan": "Premium Family",
+      "new_price_cny": 26.18,
+      "price_original": "TRY 199 / month",
+      "currency": "TRY",
+      "type": "new_plan"
+    },
+    {
+      "country": "PH",
+      "plan": "Premium Individual",
+      "new_price_cny": 17.71,
+      "price_original": "₱169 / month after",
+      "currency": "PHP",
+      "type": "new_plan"
+    },
+    {
+      "country": "PH",
+      "plan": "Premium Student",
+      "new_price_cny": 8.91,
+      "price_original": "₱85 / month after",
+      "currency": "PHP",
+      "type": "new_plan"
+    },
+    {
+      "country": "PH",
+      "plan": "Premium Duo",
+      "new_price_cny": 24.0,
+      "price_original": "₱229 / month after",
+      "currency": "PHP",
+      "type": "new_plan"
+    },
+    {
+      "country": "PH",
+      "plan": "Premium Family",
+      "new_price_cny": 29.24,
+      "price_original": "₱279 / month after",
+      "currency": "PHP",
+      "type": "new_plan"
+    },
+    {
+      "country": "CD",
+      "plan": "Premium Student",
+      "new_price_cny": 11.27,
+      "price_original": "US$ 1,69 kila mwezi baada ya hapo",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "BR",
+      "plan": "Premium Individual",
+      "new_price_cny": 27.37,
+      "price_original": "R$23.90/month after",
+      "currency": "BRL",
+      "type": "new_plan"
+    },
+    {
+      "country": "BR",
+      "plan": "Premium Student",
+      "new_price_cny": 14.77,
+      "price_original": "R$12.90/month after",
+      "currency": "BRL",
+      "type": "new_plan"
+    },
+    {
+      "country": "BR",
+      "plan": "Premium Duo",
+      "new_price_cny": 36.53,
+      "price_original": "R$31.90 / month",
+      "currency": "BRL",
+      "type": "new_plan"
+    },
+    {
+      "country": "BR",
+      "plan": "Premium Family",
+      "new_price_cny": 46.83,
+      "price_original": "R$40.90 / month",
+      "currency": "BRL",
+      "type": "new_plan"
+    },
+    {
+      "country": "MA",
+      "plan": "Premium Individual",
+      "new_price_cny": 29.92,
+      "price_original": "45 MAD/mois ensuite",
+      "currency": "MAD",
+      "type": "new_plan"
+    },
+    {
+      "country": "MA",
+      "plan": "Premium Student",
+      "new_price_cny": 15.29,
+      "price_original": "23 MAD/mois ensuite",
+      "currency": "MAD",
+      "type": "new_plan"
+    },
+    {
+      "country": "MA",
+      "plan": "Premium Duo",
+      "new_price_cny": 39.89,
+      "price_original": "60 MAD/mois ensuite",
+      "currency": "MAD",
+      "type": "new_plan"
+    },
+    {
+      "country": "MA",
+      "plan": "Premium Family",
+      "new_price_cny": 49.87,
+      "price_original": "75 MAD/mois ensuite",
+      "currency": "MAD",
+      "type": "new_plan"
+    },
+    {
+      "country": "KZ",
+      "plan": "Premium Individual",
+      "new_price_cny": 33.26,
+      "price_original": "US$4.99/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "KZ",
+      "plan": "Premium Student",
+      "new_price_cny": 16.6,
+      "price_original": "US$2.49/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "KZ",
+      "plan": "Premium Duo",
+      "new_price_cny": 43.26,
+      "price_original": "US$6.49 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "KZ",
+      "plan": "Premium Family",
+      "new_price_cny": 53.26,
+      "price_original": "US$7.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CO",
+      "plan": "Premium Individual",
+      "new_price_cny": 34.18,
+      "price_original": "COP 18,500/month after",
+      "currency": "COP",
+      "type": "new_plan"
+    },
+    {
+      "country": "CO",
+      "plan": "Premium Student",
+      "new_price_cny": 18.66,
+      "price_original": "COP 10,100/month after",
+      "currency": "COP",
+      "type": "new_plan"
+    },
+    {
+      "country": "CO",
+      "plan": "Premium Duo",
+      "new_price_cny": 45.26,
+      "price_original": "COP 24,500 / month",
+      "currency": "COP",
+      "type": "new_plan"
+    },
+    {
+      "country": "CO",
+      "plan": "Premium Family",
+      "new_price_cny": 56.35,
+      "price_original": "COP 30,500 / month",
+      "currency": "COP",
+      "type": "new_plan"
+    },
+    {
+      "country": "GT",
+      "plan": "Premium Individual",
+      "new_price_cny": 43.26,
+      "price_original": "Después, USD 6.49 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "GT",
+      "plan": "Premium Student",
+      "new_price_cny": 23.27,
+      "price_original": "Después, USD 3.49 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "GT",
+      "plan": "Premium Duo",
+      "new_price_cny": 53.26,
+      "price_original": "USD 7.99 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "GT",
+      "plan": "Premium Family",
+      "new_price_cny": 66.6,
+      "price_original": "USD 9.99 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "EC",
+      "plan": "Premium Individual",
+      "new_price_cny": 46.6,
+      "price_original": "Después, $6,99*** por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "EC",
+      "plan": "Premium Student",
+      "new_price_cny": 26.6,
+      "price_original": "Después, $3,99*** por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "EC",
+      "plan": "Premium Duo",
+      "new_price_cny": 59.93,
+      "price_original": "$8,99*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "EC",
+      "plan": "Premium Family",
+      "new_price_cny": 73.26,
+      "price_original": "$10,99*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NI",
+      "plan": "Premium Individual",
+      "new_price_cny": 43.26,
+      "price_original": "Después, USD 6.49 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NI",
+      "plan": "Premium Student",
+      "new_price_cny": 23.27,
+      "price_original": "Después, USD 3.49 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NI",
+      "plan": "Premium Duo",
+      "new_price_cny": 59.93,
+      "price_original": "USD 8.99 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NI",
+      "plan": "Premium Family",
+      "new_price_cny": 76.6,
+      "price_original": "USD 11.49 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "VE",
+      "plan": "Premium Individual",
+      "new_price_cny": 43.26,
+      "price_original": "US$6.49/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "VE",
+      "plan": "Premium Student",
+      "new_price_cny": 23.27,
+      "price_original": "US$3.49/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "VE",
+      "plan": "Premium Duo",
+      "new_price_cny": 59.93,
+      "price_original": "US$8.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "VE",
+      "plan": "Premium Family",
+      "new_price_cny": 76.6,
+      "price_original": "US$11.49 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "JP",
+      "plan": "Premium Individual",
+      "new_price_cny": 45.25,
+      "price_original": "キャンペーン期間終了後は月額￥1,080",
+      "currency": "JPY",
+      "type": "new_plan"
+    },
+    {
+      "country": "JP",
+      "plan": "Premium Student",
+      "new_price_cny": 24.3,
+      "price_original": "キャンペーン期間終了後は月額￥580",
+      "currency": "JPY",
+      "type": "new_plan"
+    },
+    {
+      "country": "JP",
+      "plan": "Premium Duo",
+      "new_price_cny": 62.02,
+      "price_original": "月額￥1,480",
+      "currency": "JPY",
+      "type": "new_plan"
+    },
+    {
+      "country": "JP",
+      "plan": "Premium Family",
+      "new_price_cny": 78.78,
+      "price_original": "月額￥1,880",
+      "currency": "JPY",
+      "type": "new_plan"
+    },
+    {
+      "country": "SV",
+      "plan": "Premium Individual",
+      "new_price_cny": 43.26,
+      "price_original": "Después, $6.49 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SV",
+      "plan": "Premium Student",
+      "new_price_cny": 23.27,
+      "price_original": "Después, $3.49 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SV",
+      "plan": "Premium Duo",
+      "new_price_cny": 59.93,
+      "price_original": "$8.99 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SV",
+      "plan": "Premium Family",
+      "new_price_cny": 79.93,
+      "price_original": "$11.99 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "MX",
+      "plan": "Premium Individual",
+      "new_price_cny": 47.21,
+      "price_original": "MX$139/month after",
+      "currency": "MXN",
+      "type": "new_plan"
+    },
+    {
+      "country": "MX",
+      "plan": "Premium Student",
+      "new_price_cny": 25.13,
+      "price_original": "MX$74/month after",
+      "currency": "MXN",
+      "type": "new_plan"
+    },
+    {
+      "country": "MX",
+      "plan": "Premium Duo",
+      "new_price_cny": 64.19,
+      "price_original": "MX$189 / month",
+      "currency": "MXN",
+      "type": "new_plan"
+    },
+    {
+      "country": "MX",
+      "plan": "Premium Family",
+      "new_price_cny": 81.18,
+      "price_original": "MX$239 / month",
+      "currency": "MXN",
+      "type": "new_plan"
+    },
+    {
+      "country": "SG",
+      "plan": "Premium Individual",
+      "new_price_cny": 79.86,
+      "price_original": "$11.98/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SG",
+      "plan": "Premium Student",
+      "new_price_cny": 43.2,
+      "price_original": "$6.48/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SG",
+      "plan": "Premium Duo",
+      "new_price_cny": 113.19,
+      "price_original": "$16.98 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SG",
+      "plan": "Premium Family",
+      "new_price_cny": 139.86,
+      "price_original": "$20.98 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NO",
+      "plan": "Premium Individual",
+      "new_price_cny": 90.48,
+      "price_original": "139 kr/month after",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "NO",
+      "plan": "Premium Student",
+      "new_price_cny": 48.82,
+      "price_original": "75 kr/month after",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "NO",
+      "plan": "Premium Duo",
+      "new_price_cny": 123.02,
+      "price_original": "189 kr / month",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "NO",
+      "plan": "Premium Family",
+      "new_price_cny": 142.55,
+      "price_original": "219 kr / month",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "US",
+      "plan": "Premium Individual",
+      "new_price_cny": 86.6,
+      "price_original": "$12.99 / month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "US",
+      "plan": "Premium Student",
+      "new_price_cny": 46.6,
+      "price_original": "$6.99 / month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "US",
+      "plan": "Premium Duo",
+      "new_price_cny": 126.59,
+      "price_original": "$18.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "US",
+      "plan": "Premium Family",
+      "new_price_cny": 146.59,
+      "price_original": "$21.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "DK",
+      "plan": "Premium Individual",
+      "new_price_cny": 83.97,
+      "price_original": "129 kr./month after",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "DK",
+      "plan": "Premium Student",
+      "new_price_cny": 42.31,
+      "price_original": "65 kr./month after",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "DK",
+      "plan": "Premium Duo",
+      "new_price_cny": 123.02,
+      "price_original": "189 kr. / month",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "DK",
+      "plan": "Premium Family",
+      "new_price_cny": 149.06,
+      "price_original": "229 kr. / month",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "ES",
+      "plan": "Premium Individual",
+      "new_price_cny": 87.65,
+      "price_original": "Después, 11,99 €/mes",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "ES",
+      "plan": "Premium Student",
+      "new_price_cny": 47.44,
+      "price_original": "Después, 6,49 €/mes",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "ES",
+      "plan": "Premium Duo",
+      "new_price_cny": 124.2,
+      "price_original": "16,99 € al mes",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "ES",
+      "plan": "Premium Family",
+      "new_price_cny": 153.44,
+      "price_original": "20,99 € al mes",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IT",
+      "plan": "Premium Individual",
+      "new_price_cny": 87.65,
+      "price_original": "Dopo, 11,99 € al mese",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IT",
+      "plan": "Premium Student",
+      "new_price_cny": 47.44,
+      "price_original": "Dopo, 6,49 € al mese",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IT",
+      "plan": "Premium Duo",
+      "new_price_cny": 124.2,
+      "price_original": "16,99 € / mese",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IT",
+      "plan": "Premium Family",
+      "new_price_cny": 153.44,
+      "price_original": "20,99 € / mese",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FR",
+      "plan": "Premium Individual",
+      "new_price_cny": 88.75,
+      "price_original": "12,14 €/mois ensuite",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FR",
+      "plan": "Premium Student",
+      "new_price_cny": 51.68,
+      "price_original": "7,07 €/mois ensuite",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FR",
+      "plan": "Premium Duo",
+      "new_price_cny": 125.74,
+      "price_original": "17,20 €/mois",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FR",
+      "plan": "Premium Family",
+      "new_price_cny": 155.27,
+      "price_original": "21,24 €/mois",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "CA",
+      "plan": "Premium Individual",
+      "new_price_cny": 93.26,
+      "price_original": "$13.99 / month after. Cancel anytime.",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CA",
+      "plan": "Premium Student",
+      "new_price_cny": 42.6,
+      "price_original": "$6.39 / month after. Cancel anytime.",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CA",
+      "plan": "Premium Duo",
+      "new_price_cny": 133.26,
+      "price_original": "$19.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CA",
+      "plan": "Premium Family",
+      "new_price_cny": 159.92,
+      "price_original": "$23.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "DE",
+      "plan": "Premium Individual",
+      "new_price_cny": 94.96,
+      "price_original": "€12.99/month after",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "DE",
+      "plan": "Premium Student",
+      "new_price_cny": 51.1,
+      "price_original": "€6.99/month after",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "DE",
+      "plan": "Premium Duo",
+      "new_price_cny": 131.51,
+      "price_original": "€17.99 / month",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "DE",
+      "plan": "Premium Family",
+      "new_price_cny": 160.75,
+      "price_original": "€21.99 / month",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FI",
+      "plan": "Premium Individual",
+      "new_price_cny": 94.96,
+      "price_original": "Myöhemmin 12,99 €/kk",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FI",
+      "plan": "Premium Student",
+      "new_price_cny": 54.75,
+      "price_original": "Myöhemmin 7,49 €/kk",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FI",
+      "plan": "Premium Duo",
+      "new_price_cny": 135.17,
+      "price_original": "18,49 € kuukaudessa",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "FI",
+      "plan": "Premium Family",
+      "new_price_cny": 160.75,
+      "price_original": "21,99 € kuukaudessa",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "SE",
+      "plan": "Premium Individual",
+      "new_price_cny": 96.98,
+      "price_original": "149 kr/månad därefter",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "SE",
+      "plan": "Premium Student",
+      "new_price_cny": 45.56,
+      "price_original": "70 kr/månad därefter",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "SE",
+      "plan": "Premium Duo",
+      "new_price_cny": 129.53,
+      "price_original": "199 kr/månad",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "SE",
+      "plan": "Premium Family",
+      "new_price_cny": 162.07,
+      "price_original": "249 kr/månad",
+      "currency": "SEK",
+      "type": "new_plan"
+    },
+    {
+      "country": "IE",
+      "plan": "Premium Individual",
+      "new_price_cny": 94.96,
+      "price_original": "€12.99/month after",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IE",
+      "plan": "Premium Student",
+      "new_price_cny": 51.1,
+      "price_original": "€6.99/month after",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IE",
+      "plan": "Premium Duo",
+      "new_price_cny": 138.82,
+      "price_original": "€18.99 / month",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IE",
+      "plan": "Premium Family",
+      "new_price_cny": 168.06,
+      "price_original": "€22.99 / month",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "BE",
+      "plan": "Premium Individual",
+      "new_price_cny": 102.27,
+      "price_original": "Daarna € 13,99 per maand",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "BE",
+      "plan": "Premium Student",
+      "new_price_cny": 51.1,
+      "price_original": "Daarna € 6,99 per maand",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "BE",
+      "plan": "Premium Duo",
+      "new_price_cny": 146.13,
+      "price_original": "€ 19,99 per maand",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "BE",
+      "plan": "Premium Family",
+      "new_price_cny": 175.37,
+      "price_original": "€ 23,99 per maand",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "NL",
+      "plan": "Premium Individual",
+      "new_price_cny": 102.27,
+      "price_original": "€13.99/month after",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "NL",
+      "plan": "Premium Student",
+      "new_price_cny": 51.1,
+      "price_original": "€6.99/month after",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "NL",
+      "plan": "Premium Duo",
+      "new_price_cny": 146.13,
+      "price_original": "€19.99 / month",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "NL",
+      "plan": "Premium Family",
+      "new_price_cny": 175.37,
+      "price_original": "€23.99 / month",
+      "currency": "EUR",
+      "type": "new_plan"
+    },
+    {
+      "country": "AU",
+      "plan": "Premium Individual",
+      "new_price_cny": 106.59,
+      "price_original": "$15.99/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AU",
+      "plan": "Premium Student",
+      "new_price_cny": 53.26,
+      "price_original": "$7.99/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AU",
+      "plan": "Premium Duo",
+      "new_price_cny": 153.26,
+      "price_original": "$22.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AU",
+      "plan": "Premium Family",
+      "new_price_cny": 186.59,
+      "price_original": "$27.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CH",
+      "plan": "Premium Individual",
+      "new_price_cny": 127.87,
+      "price_original": "Danach CHF 15.95/Monat",
+      "currency": "CHF",
+      "type": "new_plan"
+    },
+    {
+      "country": "CH",
+      "plan": "Premium Student",
+      "new_price_cny": 71.75,
+      "price_original": "Danach CHF 8.95/Monat",
+      "currency": "CHF",
+      "type": "new_plan"
+    },
+    {
+      "country": "CH",
+      "plan": "Premium Duo",
+      "new_price_cny": 175.98,
+      "price_original": "CHF 21.95/Monat",
+      "currency": "CHF",
+      "type": "new_plan"
+    },
+    {
+      "country": "CH",
+      "plan": "Premium Family",
+      "new_price_cny": 216.06,
+      "price_original": "CHF 26.95/Monat",
+      "currency": "CHF",
+      "type": "new_plan"
+    },
+    {
+      "country": "PE",
+      "plan": "Premium Individual",
+      "new_price_cny": 139.33,
+      "price_original": "Después, S/ 20.90 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PE",
+      "plan": "Premium Student",
+      "new_price_cny": 79.33,
+      "price_original": "Después, S/ 11.90 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PE",
+      "plan": "Premium Duo",
+      "new_price_cny": 179.32,
+      "price_original": "S/ 26.90 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PE",
+      "plan": "Premium Family",
+      "new_price_cny": 219.32,
+      "price_original": "S/ 32.90 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NZ",
+      "plan": "Premium Individual",
+      "new_price_cny": 139.93,
+      "price_original": "$20.99/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NZ",
+      "plan": "Premium Student",
+      "new_price_cny": 69.93,
+      "price_original": "$10.49/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NZ",
+      "plan": "Premium Duo",
+      "new_price_cny": 193.26,
+      "price_original": "$28.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "NZ",
+      "plan": "Premium Family",
+      "new_price_cny": 226.59,
+      "price_original": "$33.99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "TW",
+      "plan": "Premium Individual",
+      "new_price_cny": 1119.94,
+      "price_original": "後續每月只要 $168",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "TW",
+      "plan": "Premium Student",
+      "new_price_cny": 586.63,
+      "price_original": "後續每月只要 $88",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "TW",
+      "plan": "Premium Duo",
+      "new_price_cny": 1519.92,
+      "price_original": "每月 $228",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "TW",
+      "plan": "Premium Family",
+      "new_price_cny": 1986.56,
+      "price_original": "每月 $298",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PK",
+      "plan": "Premium Individual",
+      "new_price_cny": 2526.53,
+      "price_original": "Rs 379/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PK",
+      "plan": "Premium Student",
+      "new_price_cny": 1326.59,
+      "price_original": "Rs 199/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PK",
+      "plan": "Premium Duo",
+      "new_price_cny": 3459.81,
+      "price_original": "Rs 519 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "PK",
+      "plan": "Premium Family",
+      "new_price_cny": 4526.42,
+      "price_original": "Rs 679 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AR",
+      "plan": "Premium Individual",
+      "new_price_cny": 29991.68,
+      "price_original": "Después, cuesta $ 4.499*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AR",
+      "plan": "Premium Student",
+      "new_price_cny": 15325.82,
+      "price_original": "Después, cuesta $ 2.299*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AR",
+      "plan": "Premium Duo",
+      "new_price_cny": 39991.13,
+      "price_original": "$ 5.999*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "AR",
+      "plan": "Premium Family",
+      "new_price_cny": 50657.21,
+      "price_original": "$ 7.599*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CL",
+      "plan": "Premium Individual",
+      "new_price_cny": 32998.19,
+      "price_original": "Después, $4.950 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CL",
+      "plan": "Premium Student",
+      "new_price_cny": 17999.01,
+      "price_original": "Después, $2.700 por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CL",
+      "plan": "Premium Duo",
+      "new_price_cny": 44997.53,
+      "price_original": "$6.750 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CL",
+      "plan": "Premium Family",
+      "new_price_cny": 54996.98,
+      "price_original": "$8.250 al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "ZA",
+      "plan": "Premium Individual",
+      "new_price_cny": 466.57,
+      "price_original": "R 69,99/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "ZA",
+      "plan": "Premium Platinum",
+      "new_price_cny": 1199.87,
+      "price_original": "R 179,99 / month",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "ZA",
+      "plan": "Premium Student",
+      "new_price_cny": 253.25,
+      "price_original": "R 37,99/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "IN",
+      "plan": "Premium Individual",
+      "new_price_cny": 10.04,
+      "price_original": "₹139/month after",
+      "currency": "INR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IN",
+      "plan": "Premium Platinum",
+      "new_price_cny": 21.6,
+      "price_original": "₹299 / month",
+      "currency": "INR",
+      "type": "new_plan"
+    },
+    {
+      "country": "IN",
+      "plan": "Premium Student",
+      "new_price_cny": 4.98,
+      "price_original": "₹69/month after",
+      "currency": "INR",
+      "type": "new_plan"
+    },
+    {
+      "country": "ID",
+      "plan": "Premium Individual",
+      "new_price_cny": 399311.37,
+      "price_original": "Rp 59.900/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "ID",
+      "plan": "Premium Platinum",
+      "new_price_cny": 799289.37,
+      "price_original": "Rp 119.900/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "ID",
+      "plan": "Premium Student",
+      "new_price_cny": 199322.37,
+      "price_original": "Rp 29.900/month after",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "SA",
+      "plan": "Premium Individual",
+      "new_price_cny": 42.61,
+      "price_original": "SAR 23.99/month after",
+      "currency": "SAR",
+      "type": "new_plan"
+    },
+    {
+      "country": "SA",
+      "plan": "Premium Platinum",
+      "new_price_cny": 106.55,
+      "price_original": "SAR 59.99 / month",
+      "currency": "SAR",
+      "type": "new_plan"
+    },
+    {
+      "country": "SA",
+      "plan": "Premium Student",
+      "new_price_cny": 23.07,
+      "price_original": "SAR 12.99/month after",
+      "currency": "SAR",
+      "type": "new_plan"
+    },
+    {
+      "country": "AE",
+      "plan": "Premium Individual",
+      "new_price_cny": 43.55,
+      "price_original": "AED 23.99/month after",
+      "currency": "AED",
+      "type": "new_plan"
+    },
+    {
+      "country": "AE",
+      "plan": "Premium Platinum",
+      "new_price_cny": 108.89,
+      "price_original": "AED 59.99 / month",
+      "currency": "AED",
+      "type": "new_plan"
+    },
+    {
+      "country": "AE",
+      "plan": "Premium Student",
+      "new_price_cny": 23.58,
+      "price_original": "AED 12.99/month after",
+      "currency": "AED",
+      "type": "new_plan"
+    },
+    {
+      "country": "CR",
+      "plan": "Premium Individual",
+      "new_price_cny": 46.6,
+      "price_original": "Después, USD 6,99*** por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CR",
+      "plan": "Premium Student",
+      "new_price_cny": 26.6,
+      "price_original": "Después, USD 3,99*** por mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CR",
+      "plan": "Premium Duo",
+      "new_price_cny": 59.93,
+      "price_original": "USD 8,99*** al mes",
+      "currency": "USD",
+      "type": "new_plan"
+    },
+    {
+      "country": "CD",
+      "plan": "Premium Ya Wanachuo",
+      "old_price_cny": 11.25,
+      "price_original": "US$ 1,69 kila mwezi baada ya hapo",
+      "currency": "USD",
+      "type": "removed_plan"
+    },
+    {
+      "country": "DO",
+      "plan": "Premium Family",
+      "old_price_cny": 73.16,
+      "price_original": "US$10.99 al mes",
+      "currency": "USD",
+      "type": "removed_plan"
+    },
+    {
+      "country": "HU",
+      "plan": "Premium Family",
+      "old_price_cny": 74.91,
+      "price_original": "3690 Ft/hó",
+      "currency": "HUF",
+      "type": "removed_plan"
+    },
+    {
+      "country": "SK",
+      "plan": "Premium Family",
+      "old_price_cny": 89.4,
+      "price_original": "€11.99 / month",
+      "currency": "EUR",
+      "type": "removed_plan"
+    },
+    {
+      "country": "PT",
+      "plan": "Premium Family",
+      "old_price_cny": 115.49,
+      "price_original": "€15.49 / month",
+      "currency": "EUR",
+      "type": "removed_plan"
+    }
+  ]
+}
