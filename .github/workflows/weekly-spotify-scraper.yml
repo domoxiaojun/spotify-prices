@@ -4,7 +4,12 @@ on:
   schedule:
     # 每周日UTC时间0点执行（北京时间周日上午8点）
     - cron: '0 0 * * 0'
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:
+    inputs:
+      validate_only:
+        description: Validate and upload a candidate without publishing
+        type: boolean
+        default: false
 
 # 添加写入权限以允许推送到仓库
 permissions:
@@ -14,6 +19,8 @@ permissions:
 
 env:
   TZ: Asia/Shanghai
+  # Immutable reviewed coverage reference; do not use the degraded 25 Nov feed.
+  SPOTIFY_COVERAGE_REF: eb93f16088cf975737720eb777d64495d979271b
 
 jobs:
   scrape-and-update:
@@ -46,6 +53,15 @@ jobs:
             browser = p.chromium.launch(headless=True)
             browser.close()
         PY
+
+    - name: Test extraction and publication checks
+      run: python -m unittest -v test_spotify_prices
+
+    - name: Save comparison baselines
+      run: |
+        git fetch --no-tags --depth=1 origin "$SPOTIFY_COVERAGE_REF"
+        git show "$SPOTIFY_COVERAGE_REF:spotify_prices_cny_sorted.json" > "$RUNNER_TEMP/spotify-reviewed.json"
+        git show HEAD:spotify_prices_cny_sorted.json > "$RUNNER_TEMP/spotify-previous.json"
 
     - name: Run Spotify scraper
       id: scraper
@@ -84,17 +100,7 @@ jobs:
         
     - name: Check converter output
       run: |
-        python - <<'PY'
-        import json
-        from datetime import date
-        from pathlib import Path
-
-        data = json.loads(Path("spotify_prices_cny_sorted.json").read_text(encoding="utf-8"))
-        ranking = data.get("_top_10_cheapest_premium_family", {})
-        if ranking.get("updated_at") != date.today().isoformat() or not ranking.get("data"):
-            raise SystemExit("Spotify conversion produced no current priced ranking")
-        print(f"Fresh Spotify CNY ranking: {len(ranking['data'])} plans")
-        PY
+        python validate_price_coverage.py spotify_prices_cny_sorted.json "$RUNNER_TEMP/spotify-reviewed.json"
 
     - name: Check for changes
       id: check_changes
@@ -117,6 +123,16 @@ jobs:
           echo "文件行数: $(wc -l < spotify_prices_cny_sorted.json)"
         fi
         
+    - name: Detect price changes and generate changelog
+      id: price_changes
+      run: |
+        export SPOTIFY_PREVIOUS_EXPORT="$RUNNER_TEMP/spotify-previous.json"
+        # Initial recovery compares against the last healthy reference, not the degraded feed.
+        if ! python -c 'import json, sys; from validate_price_coverage import coverage, CORE; old, ref = [coverage(json.load(open(p))) for p in sys.argv[1:]]; sys.exit(not all(old[k] >= ref[k] * .90 for k in CORE | {"markets"}))' "$SPOTIFY_PREVIOUS_EXPORT" "$RUNNER_TEMP/spotify-reviewed.json"; then
+          export SPOTIFY_PREVIOUS_EXPORT="$RUNNER_TEMP/spotify-reviewed.json"
+        fi
+        python price_change_detector.py
+
     - name: Archive data with timestamp
       if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
       run: |
@@ -136,22 +152,8 @@ jobs:
         fi
         echo "归档完成，文件保存在: ${ARCHIVE_DIR}"
         
-    - name: Detect price changes and generate changelog
-      id: price_changes
-      if: steps.scraper.outputs.scraper_status == 'success' && steps.converter.outputs.converter_status == 'success'
-      run: |
-        echo "🔍 开始检测价格变化..."
-        python price_change_detector.py
-        
-        # 检查脚本执行结果并设置默认值
-        if [ ! -f "$GITHUB_OUTPUT" ] || ! grep -q "changes_count=" "$GITHUB_OUTPUT" 2>/dev/null; then
-          echo "changes_count=0" >> $GITHUB_OUTPUT
-          echo "summary_file=" >> $GITHUB_OUTPUT
-        fi
-      continue-on-error: true
-        
     - name: Commit and push changes
-      if: github.ref == 'refs/heads/main' && steps.check_changes.outputs.changes == 'true'
+      if: github.ref == 'refs/heads/main' && inputs.validate_only != true && steps.check_changes.outputs.changes == 'true'
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"

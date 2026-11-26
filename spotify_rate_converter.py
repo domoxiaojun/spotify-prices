@@ -24,12 +24,6 @@ api_key = os.getenv('API_KEY')
 if api_key:
     API_KEYS.append(api_key)
 
-# 如果没有环境变量，使用默认密钥（仅用于本地开发测试）
-if not API_KEYS:
-    print("错误：未找到API密钥！")
-    print("请设置环境变量 API_KEY 或在 .env 文件中配置")
-    print("获取免费API密钥: https://openexchangerates.org/")
-    exit(1)
 API_URL_TEMPLATE = "https://openexchangerates.org/api/latest.json?app_id={}"
 INPUT_JSON_PATH = 'spotify_prices_all_countries.json'
 OUTPUT_JSON_PATH = 'spotify_prices_cny_sorted.json'
@@ -381,67 +375,22 @@ def process_spotify_data(data, rates):
                 'currency': currency
             }
             
-            # Process primary_price and secondary_price
-            primary_price = plan.get('primary_price', '')
-            secondary_price = plan.get('secondary_price', '')
-            price_number = plan.get('price_number')
-            
-            # 优先使用 secondary_price
-            if secondary_price and secondary_price.strip():
-                processed_plan['price'] = secondary_price
-                
-                # 尝试从 price_number 获取价格，如果为0或None则从文本提取
-                if price_number is not None and price_number > 0:
-                    processed_plan['price_number'] = format_price_number(price_number)
-                    cny_price = convert_to_cny(price_number, currency, rates)
-                    if cny_price is not None:
-                        processed_plan['price_cny'] = float(cny_price)
-                    else:
-                        processed_plan['price_cny'] = None
-                else:
-                    # 从 secondary_price 文本中提取价格
-                    extracted_price = extract_price_from_text(secondary_price, currency)
-                    if extracted_price is not None:
-                        processed_plan['price_number'] = format_price_number(extracted_price)
-                        cny_price = convert_to_cny(extracted_price, currency, rates)
-                        if cny_price is not None:
-                            processed_plan['price_cny'] = float(cny_price)
-                        else:
-                            processed_plan['price_cny'] = None
-                    else:
-                        processed_plan['price_number'] = None
-                        processed_plan['price_cny'] = None
-                        
-            elif primary_price and primary_price.strip():
-                processed_plan['price'] = primary_price
-                
-                # 尝试从 price_number 获取价格，如果为0或None则从文本提取
-                if price_number is not None and price_number > 0:
-                    processed_plan['price_number'] = format_price_number(price_number)
-                    cny_price = convert_to_cny(price_number, currency, rates)
-                    if cny_price is not None:
-                        processed_plan['price_cny'] = float(cny_price)
-                    else:
-                        processed_plan['price_cny'] = None
-                else:
-                    # 从 primary_price 文本中提取价格
-                    extracted_price = extract_price_from_text(primary_price, currency)
-                    if extracted_price is not None:
-                        processed_plan['price_number'] = format_price_number(extracted_price)
-                        cny_price = convert_to_cny(extracted_price, currency, rates)
-                        if cny_price is not None:
-                            processed_plan['price_cny'] = float(cny_price)
-                        else:
-                            processed_plan['price_cny'] = None
-                    else:
-                        processed_plan['price_number'] = None
-                        processed_plan['price_cny'] = None
-            else:
-                # No valid price found
-                processed_plan['price'] = ''
-                processed_plan['price_number'] = None
-                processed_plan['price_cny'] = None
-            
+            primary = (plan.get('primary_price') or '').strip()
+            secondary = (plan.get('secondary_price') or '').strip()
+            # Legacy regex results are not trustworthy: they can pair a plan
+            # with the next card's price. Only accept a verified card fallback.
+            fallback = (plan.get('price') or '').strip() if plan.get('source') == 'plan_card' else ''
+            price = secondary or primary or fallback
+            amount = plan.get('price_number') if price else None
+            if not isinstance(amount, (int, float, Decimal)) or isinstance(amount, bool) or not (0 < amount < float('inf')):
+                amount = extract_price_from_text(price, currency) if price else None
+            if amount is not None and not (0 < amount < float('inf')):
+                amount = None
+            cny = convert_to_cny(amount, currency, rates) if amount is not None else None
+            processed_plan['price'] = price
+            processed_plan['price_number'] = format_price_number(amount)
+            processed_plan['price_cny'] = float(cny) if cny is not None and cny > 0 else None
+
             # Copy other fields if needed
             processed_plan['source'] = plan.get('source', '')
             
@@ -469,8 +418,7 @@ def sort_by_family_plan_cny(processed_data, original_data):
         # Find Premium Family plan (支持多语言)
         for plan in country_info.get('plans', []):
             plan_name = plan.get('plan', '')
-            if ('Premium Family' in plan_name or 'Premium Familiar' in plan_name or 
-                'Premium Famille' in plan_name or 'Premium Familie' in plan_name):
+            if plan_name == 'Premium Family' and (plan.get('price_cny') or 0) > 0:
                 family_plan = plan
                 break
         
@@ -480,7 +428,7 @@ def sort_by_family_plan_cny(processed_data, original_data):
             countries_without_family_price.append((country_code, country_info))
     
     # Sort countries with family plan by CNY price
-    countries_with_family_price.sort(key=lambda x: x[1])
+    countries_with_family_price.sort(key=lambda x: (x[1], x[0]))
     
     # Create sorted result with top 10 cheapest Premium Family plans first
     sorted_data = {}
@@ -489,18 +437,6 @@ def sort_by_family_plan_cny(processed_data, original_data):
     top_10_cheapest = []
     for i, (country_code, price_cny, country_info, family_plan) in enumerate(countries_with_family_price[:10]):
         country_name_cn = COUNTRY_NAMES_CN.get(country_code, country_info.get('country_name', country_code))
-        # 获取原始 price_number 数值进行格式化
-        original_price_number = None
-        for original_plan in original_data.get(country_code, {}).get('plans', []):
-            plan_name = original_plan.get('plan', '')
-            # 支持多语言的家庭套餐名称
-            if ('Premium Family' in plan_name or 'Premium Familiar' in plan_name or 
-                'Premium Famille' in plan_name or 'Premium Familie' in plan_name):
-                original_price_number = original_plan.get('price_number')
-                break
-        
-        formatted_price_number = format_price_number(original_price_number)
-        
         top_10_cheapest.append({
             'rank': i + 1,
             'country_code': country_code,
@@ -508,7 +444,7 @@ def sort_by_family_plan_cny(processed_data, original_data):
             'country_name_cn': country_name_cn,
             'original_price': family_plan.get('price', ''),
             'currency': family_plan.get('currency', ''),
-            'price_number': formatted_price_number,
+            'price_number': family_plan.get('price_number'),
             'price_cny': family_plan.get('price_cny')
         })
     
@@ -547,6 +483,8 @@ def format_price_number(price_number):
 # --- Main Script ---
 
 def main():
+    if not API_KEYS:
+        raise SystemExit("Missing API_KEY for USD exchange rates")
     print("Spotify价格汇率转换器")
     print("=" * 50)
     
@@ -560,8 +498,7 @@ def main():
         else:
             print("警告：汇率表中未找到 CNY!")
     else:
-        print("错误：无法获取汇率")
-        return
+        raise SystemExit("Unable to get exchange rates")
     
     # 2. Load Spotify data
     print(f"\n2. 从 {INPUT_JSON_PATH} 加载Spotify价格数据...")

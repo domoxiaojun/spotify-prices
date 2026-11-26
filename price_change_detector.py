@@ -28,7 +28,7 @@ class PriceChangeDetector:
             return None
             
         # 按文件名中的时间戳排序，获取最新的
-        archive_files.sort(key=lambda x: os.path.basename(x).split('_')[-1])
+        archive_files.sort(key=lambda x: os.path.basename(x))
         latest_file = archive_files[-1]
         print(f"找到最新归档文件: {latest_file}")
         return latest_file
@@ -49,49 +49,41 @@ class PriceChangeDetector:
         """对比价格变化"""
         changes = []
         
-        # 创建以国家-计划为key的字典，便于对比
-        old_prices = {}
-        new_prices = {}
-        
-        # 处理旧数据
-        for country, plans in old_data.items():
-            if isinstance(plans, dict):
-                for plan_name, plan_data in plans.items():
-                    if isinstance(plan_data, dict) and 'price_cny' in plan_data:
-                        key = f"{country}_{plan_name}"
-                        old_prices[key] = {
-                            'country': country,
-                            'plan': plan_name,
-                            'price_cny': plan_data['price_cny'],
-                            'price_original': plan_data.get('price_original', 'N/A'),
-                            'currency': plan_data.get('currency', 'N/A')
-                        }
-        
-        # 处理新数据
-        for country, plans in new_data.items():
-            if isinstance(plans, dict):
-                for plan_name, plan_data in plans.items():
-                    if isinstance(plan_data, dict) and 'price_cny' in plan_data:
-                        key = f"{country}_{plan_name}"
-                        new_prices[key] = {
-                            'country': country,
-                            'plan': plan_name,
-                            'price_cny': plan_data['price_cny'],
-                            'price_original': plan_data.get('price_original', 'N/A'),
-                            'currency': plan_data.get('currency', 'N/A')
-                        }
-        
+        def indexed(data):
+            prices = {}
+            for country, entry in data.items():
+                for plan in entry.get("plans", []):
+                    name, cny = plan.get("plan"), plan.get("price_cny")
+                    if not name or not isinstance(cny, (int, float)) or not (0 < cny < float("inf")):
+                        continue
+                    prices.setdefault((country, name), {
+                        "country": country, "plan": name, "price_cny": cny,
+                        "price_original": plan.get("price", "N/A"),
+                        "price_number": plan.get("price_number"),
+                        "currency": plan.get("currency", "N/A"),
+                    })
+            return prices
+
+        old_prices = indexed(old_data)
+        new_prices = indexed(new_data)
+
         # 对比价格变化
         for key, new_price in new_prices.items():
             if key in old_prices:
                 old_price = old_prices[key]
-                old_cny = float(old_price['price_cny'])
-                new_cny = float(new_price['price_cny'])
-                
-                if abs(old_cny - new_cny) > 0.01:  # 价格变化超过0.01元
-                    change_amount = new_cny - old_cny
-                    change_percent = (change_amount / old_cny) * 100 if old_cny > 0 else 0
-                    
+                if new_price['currency'] != old_price['currency']:
+                    continue  # Do not label unlike currencies an increase/decrease.
+                try:
+                    old_local = float(str(old_price['price_number']).replace(',', ''))
+                    new_local = float(str(new_price['price_number']).replace(',', ''))
+                except (TypeError, ValueError):
+                    continue
+                if old_local > 0 and new_local > 0 and abs(old_local - new_local) > 1e-8:
+                    new_cny = float(new_price['price_cny'])
+                    old_cny = round(new_cny * old_local / new_local, 2)
+                    change_amount = round(new_cny - old_cny, 2)
+                    change_percent = (new_local / old_local - 1) * 100
+
                     changes.append({
                         'country': new_price['country'],
                         'plan': new_price['plan'],
@@ -104,7 +96,7 @@ class PriceChangeDetector:
                         'type': 'price_change'
                     })
             else:
-                # 新增的套餐
+                # 本次新增观测的套餐
                 changes.append({
                     'country': new_price['country'],
                     'plan': new_price['plan'],
@@ -114,7 +106,7 @@ class PriceChangeDetector:
                     'type': 'new_plan'
                 })
         
-        # 检查删除的套餐
+        # 检查本次未抓到的套餐
         for key, old_price in old_prices.items():
             if key not in new_prices:
                 changes.append({
@@ -147,9 +139,9 @@ class PriceChangeDetector:
         if price_decreases:
             content += f"- 📉 降价: {len(price_decreases)} 个套餐\n"
         if new_plans:
-            content += f"- 🆕 新增: {len(new_plans)} 个套餐\n"
+            content += f"- 🆕 本次新增观测: {len(new_plans)} 个套餐\n"
         if removed_plans:
-            content += f"- ❌ 移除: {len(removed_plans)} 个套餐\n"
+            content += f"- ❌ 本次未抓到: {len(removed_plans)} 个套餐\n"
         content += "\n"
         
         # 涨价详情
@@ -286,7 +278,7 @@ class PriceChangeDetector:
             return 0, ""
         
         # 查找最新的归档文件
-        latest_archive = self.find_latest_archive_file()
+        latest_archive = os.environ.get("SPOTIFY_PREVIOUS_EXPORT") or self.find_latest_archive_file()
         if not latest_archive:
             print("⚠️ 没有历史数据，跳过价格对比")
             # 即使没有历史数据，也生成一个空的摘要文件
@@ -313,8 +305,7 @@ class PriceChangeDetector:
         new_data = self.load_price_data(self.current_file)
         
         if not old_data or not new_data:
-            print("❌ 数据加载失败")
-            return 0, ""
+            raise ValueError("Unable to load the prior or candidate Spotify export")
         
         # 对比价格
         changes = self.compare_prices(old_data, new_data)
